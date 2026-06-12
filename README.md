@@ -44,8 +44,12 @@ world-cup/
 │   └── viz.py             ← polished presentation visuals → reports/
 │
 └── docs/
+    ├── PIPELINE.md        ← full pipeline & methodology (purpose, features, validation)
     └── DATA_GUIDE.md      ← plain-English guide to every file & football term
 ```
+
+📖 **For the full methodology** — purpose, data, feature engineering, models, validation —
+see **[docs/PIPELINE.md](docs/PIPELINE.md)**.
 
 **Design rule:** logic lives in `src/`; notebooks/scripts import it. Only `src/load.py` reads `data/`.
 

@@ -21,7 +21,7 @@ from . import load
 from .io import DATA_DIR
 
 MIN_YEAR = 2015          # oldest matches kept for TRAINING (form uses older history too)
-FORM_WINDOW = 10         # how many recent matches define "form"
+FORM_WINDOW = 5          # recent matches that define "form" (tuned: 5 best; >15 goes stale)
 CONFEDS = ["OFC", "AFC", "CAF", "CONCACAF", "UEFA", "CONMEBOL"]
 ELO_BASE, ELO_K, ELO_HOME_ADV = 1500.0, 40.0, 65.0
 

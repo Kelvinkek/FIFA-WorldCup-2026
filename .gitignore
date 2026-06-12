@@ -15,7 +15,6 @@ __pycache__/
 .env
 
 # Local editor / agent config
-.claude/
 .vscode/
 .idea/
 
