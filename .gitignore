@@ -1,0 +1,24 @@
+# Python virtual environment
+.venv/
+
+# Generated reports / images
+reports/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets — never commit the API key
+.env
+
+# Local editor / agent config
+.claude/
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

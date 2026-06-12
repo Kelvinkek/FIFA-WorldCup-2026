@@ -1,0 +1,6 @@
+# Normalize line endings across platforms
+* text=auto
+
+# Treat data + notebooks as text but don't diff them noisily
+*.csv text
+*.ipynb text
