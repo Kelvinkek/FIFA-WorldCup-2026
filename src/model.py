@@ -1,4 +1,4 @@
-"""Match-prediction model — trained without leaking the future.
+"""Match-prediction model - trained without leaking the future.
 
 `OutcomeClassifier` predicts P(home win), P(draw), P(away win) for a match.
 It exposes `.fit(table, cutoff)` (train only on matches strictly before `cutoff`,
@@ -22,7 +22,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 from xgboost import XGBClassifier
 
-# Feature columns — Elo (opponent-adjusted strength) + recent goal form + h2h +
+# Feature columns - Elo (opponent-adjusted strength) + recent goal form + h2h +
 # confederation + neutral. Elo and goal form are the two dominant, complementary signals.
 FEATURES = [
     "elo_diff", "home_elo", "away_elo",
@@ -136,7 +136,7 @@ class OutcomeClassifier:
 
         Plain argmax almost never picks a draw (a draw is rarely the single most
         likely outcome). Nudging the draw probability up by `draw_boost` before
-        choosing recovers ~6x more drawn games at no accuracy cost — see
+        choosing recovers ~6x more drawn games at no accuracy cost - see
         scripts/tune_models.py / the draw-boost sweep. Probabilities from
         `predict_match` are left raw (they're already well-calibrated for log-loss).
         """

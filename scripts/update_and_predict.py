@@ -52,7 +52,7 @@ def main():
         return clf.predict_match(model.match_features(form.loc[home], form.loc[away], neutral, rec))
 
     sch = load.load_schedule_2026().sort_values(["Date", "Time"]).reset_index(drop=True)
-    print(f"\n{'UPCOMING 2026 FIXTURES — form-model prediction':^62}")
+    print(f"\n{'UPCOMING 2026 FIXTURES - form-model prediction':^62}")
     print("-" * 62)
     shown = 0
     for _, r in sch.iterrows():

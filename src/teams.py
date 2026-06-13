@@ -1,4 +1,4 @@
-"""Canonical team-name mapping — the cross-source join key.
+"""Canonical team-name mapping - the cross-source join key.
 
 The two data sources spell many teams differently (e.g. Maven "Iran" vs Kaggle
 "IR Iran"). We standardise on the **Kaggle** spelling because the Kaggle files
@@ -35,7 +35,7 @@ TEAM_NAME_MAP: dict[str, str] = {
     "Gambia": "The Gambia",
     "Brunei": "Brunei Darussalam",
     "Kyrgyzstan": "Kyrgyz Republic",
-    # renamed nations — historical match data uses the old name, 2026 uses the new
+    # renamed nations - historical match data uses the old name, 2026 uses the new
     "Czech Republic": "Czechia",
     "Bosnia and Herzegovina": "Bosnia-Herzegovina",
     # other common variants worth normalising defensively

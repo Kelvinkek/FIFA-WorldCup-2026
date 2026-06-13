@@ -8,7 +8,7 @@ Auth: API-Football (api-sports.io). Key + host are read from a gitignored .env:
     API_FOOTBALL_KEY=...
     API_FOOTBALL_HOST=v3.football.api-sports.io
 
-Free plan = 100 requests/day, so each call counts — one (league, season) = one request.
+Free plan = 100 requests/day, so each call counts - one (league, season) = one request.
 """
 
 from __future__ import annotations
@@ -116,7 +116,7 @@ def fetch_finished(targets: list[tuple[int, int]] | None = None) -> pd.DataFrame
             continue
         print(f"  {INTL_LEAGUES.get(league, league)} {season}: {len(df)} finished matches")
         frames.append(df)
-        time.sleep(7)  # free plan ~10 req/min — stay under the rate limit
+        time.sleep(7)  # free plan ~10 req/min - stay under the rate limit
     out = pd.concat(frames, ignore_index=True) if frames else pd.DataFrame()
     if not out.empty:
         out["date"] = pd.to_datetime(out["date"])

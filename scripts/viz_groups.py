@@ -1,9 +1,9 @@
-"""Group-stage prediction visual — every match as a Win/Draw/Lose bar.
+"""Group-stage prediction visual - every match as a Win/Draw/Lose bar.
 
     python scripts/viz_groups.py  ->  reports/viz_group_predictions.png
 
 Each match is a 100%-stacked bar: green = home win, amber = draw, blue = away win.
-The model's pick (draw-aware) is printed at the right — DRAW picks are amber so the
+The model's pick (draw-aware) is printed at the right - DRAW picks are amber so the
 likely-drawn games stand out.
 """
 
@@ -77,7 +77,7 @@ import matplotlib.patches as mpatches
 def draw_batch(batch, first_letter, fname, subtitle):
     """One image of up to 6 groups (3 rows x 2 cols), no in-bar percentages."""
     fig, axes = plt.subplots(3, 2, figsize=(21, 14))
-    fig.suptitle(f"FIFA World Cup 2026 — Group-Stage Predictions  ({subtitle})",
+    fig.suptitle(f"FIFA World Cup 2026 - Group-Stage Predictions  ({subtitle})",
                  fontsize=22, fontweight="bold", y=1.0)
     for gi, g in enumerate(batch):
         ax = axes[gi // 2][gi % 2]

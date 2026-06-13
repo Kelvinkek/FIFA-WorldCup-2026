@@ -34,7 +34,7 @@ def load_wc_matches() -> pd.DataFrame:
 def load_international() -> pd.DataFrame:
     """All international matches 1872-2022 (Maven). Team names canonicalised.
 
-    Note: this file holds qualifiers, friendlies and continental cups — NOT the
+    Note: this file holds qualifiers, friendlies and continental cups - NOT the
     World Cup finals (those live in `load_wc_matches`). So `is_wc_qualifier`
     flags qualification matches, the closest WC-related rows present here.
     Adds a numeric `year` for convenience.
@@ -65,6 +65,6 @@ def load_schedule_2026() -> pd.DataFrame:
 
 
 def load_tournaments() -> pd.DataFrame:
-    """Tournament-level summary (Kaggle world_cup.csv — has a complete 2022 row)."""
+    """Tournament-level summary (Kaggle world_cup.csv - has a complete 2022 row)."""
     df, _ = io.read_csv_safe(K / "world_cup.csv")
     return df

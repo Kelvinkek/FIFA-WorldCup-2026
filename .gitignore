@@ -11,7 +11,7 @@ __pycache__/
 # Jupyter
 .ipynb_checkpoints/
 
-# Secrets — never commit the API key
+# Secrets
 .env
 
 # Local editor / agent config

@@ -1,4 +1,4 @@
-"""Low-level CSV reading helpers — the raw I/O layer.
+"""Low-level CSV reading helpers - the raw I/O layer.
 
 No cleaning or business logic here: just locate files and read them with the
 right encoding. Cleaning lives in `load.py`, name mapping in `teams.py`.

@@ -72,7 +72,7 @@ if __name__ == "__main__":
     search("EXTRA TREES", et_grid,
            lambda p: ExtraTreesClassifier(n_jobs=-1, random_state=0, **p))
 
-    # XGBoost needs integer labels — wrap so the search helper can score it.
+    # XGBoost needs integer labels - wrap so the search helper can score it.
     from xgboost import XGBClassifier
     from sklearn.preprocessing import LabelEncoder
 

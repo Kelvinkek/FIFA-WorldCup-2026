@@ -1,7 +1,7 @@
 """Validation & accuracy scoring for the match-outcome classifier.
 
 Key idea (no leakage): always train on matches *before* a cut-off date and test on
-matches at/after it — never a random split.
+matches at/after it - never a random split.
 
 Metrics (lower log-loss / rps is better):
   accuracy  - fraction of matches whose most-likely outcome was correct

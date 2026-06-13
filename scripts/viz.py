@@ -70,7 +70,7 @@ for yi, (team, val) in zip(y, top["net_form"].items()):
 ax.set_yticks([]); _clean(ax)
 ax.axvline(0, color=MUTED, lw=1)
 ax.set_xlabel("net recent form  (avg goals scored − conceded, last 5 matches)")
-titled(fig, "Current Form — 2026 World Cup teams",
+titled(fig, "Current Form - 2026 World Cup teams",
        "The model's core input: who's been scoring more than they concede lately")
 fig.savefig(OUT / "viz_form_ranking.png", dpi=140); plt.close(fig)
 print("saved viz_form_ranking.png")
@@ -97,8 +97,8 @@ for b, v in zip(bars, vals):
 ax.set_ylim(0, 55); ax.grid(axis="y", color=GRID, lw=0.8); ax.set_axisbelow(True)
 ax.tick_params(length=0)
 ax.set_ylabel("test accuracy (%)")
-titled(fig, "Model scorecard — does it beat trivial guessing?",
-       "Honest read: the tuned models barely edge 'always predict home' — the data is the ceiling")
+titled(fig, "Model scorecard - does it beat trivial guessing?",
+       "Honest read: the tuned models barely edge 'always predict home' - the data is the ceiling")
 fig.savefig(OUT / "viz_model_scorecard.png", dpi=140); plt.close(fig)
 print("saved viz_model_scorecard.png")
 

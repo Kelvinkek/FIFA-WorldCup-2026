@@ -1,4 +1,4 @@
-"""Feature engineering for the match-outcome model — form-based.
+"""Feature engineering for the match-outcome model - form-based.
 
 Team strength is read off **recent goal form** (how many goals a team has scored /
 conceded over its last N matches), plus head-to-head history, confederation, and a
