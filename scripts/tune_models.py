@@ -1,10 +1,11 @@
-"""Fine-tune the 3 models by walk-forward grid search (2019+ data).
+"""Fine-tune the 5 models by walk-forward grid search.
 
     python scripts/tune_models.py
 
-For each model it tries a grid of hyperparameters, scores every config by the mean
-log-loss across several train/test split dates (no leakage), and prints the best.
-Those winners are baked into `src/model.py` (OutcomeClassifier._make).
+For each model (logistic, random forest, gradient boosting, extra trees, XGBoost) it
+tries a grid of hyperparameters, scores every config by the mean log-loss across
+several train/test split dates (no leakage), and prints the best. Those winners are
+baked into `src/model.py` (OutcomeClassifier._make).
 """
 
 import sys

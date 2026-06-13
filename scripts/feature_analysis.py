@@ -56,7 +56,7 @@ fig, ax = plt.subplots(figsize=(8, 5))
 ax.plot(mids, rate.values, marker="o", color="#cc4444")
 ax.axhline(0.5, ls="--", c="gray", lw=1)
 ax.set_title("Home win rate vs home recent scoring form")
-ax.set_xlabel("home_goals_for_avg (avg goals scored, last 10)"); ax.set_ylabel("P(home win)")
+ax.set_xlabel("home_goals_for_avg (avg goals scored, last 5)"); ax.set_ylabel("P(home win)")
 save(fig, "02_form_vs_winrate.png")
 
 # 03 — feature correlation

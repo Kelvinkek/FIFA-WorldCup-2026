@@ -12,6 +12,9 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import warnings; warnings.filterwarnings("ignore")
 
+import re
+from datetime import timedelta
+
 import numpy as np
 import matplotlib
 matplotlib.use("Agg")
@@ -24,12 +27,22 @@ OUTDIR = ROOT / "reports"
 OUTDIR.mkdir(exist_ok=True)
 
 WIN, DRAW, LOSE = "#1b9e5a", "#e8a33d", "#3b6fd4"
+MUTED = "#6b7280"
 HOSTS = {"United States", "Canada", "Mexico"}
-SHORT = {"Korea Republic": "Korea Rep", "Bosnia-Herzegovina": "Bosnia",
-         "Côte d'Ivoire": "Ivory Coast", "United States": "USA",
-         "South Africa": "S. Africa", "Saudi Arabia": "S. Arabia",
-         "New Zealand": "N. Zealand", "Cape Verde": "Cape Verde", "Switzerland": "Switzerland"}
-def s(t): return SHORT.get(t, t)
+
+# The schedule's Time is "venue-local (UTC+3 reference)", e.g. "13:00 (22:00)".
+# We rebuild the true UTC instant from the two clocks, then convert to Brisbane
+# (AEST, UTC+10, no DST). The two clocks pin down the venue's UTC offset exactly.
+def to_brisbane(date, time):
+    m = re.match(r"\s*(\d{1,2}):(\d{2})\s*\((\d{1,2}):(\d{2})\)", str(time))
+    if not m:
+        return None
+    lh, lm, ph, pm = map(int, m.groups())
+    venue = date.normalize() + timedelta(hours=lh, minutes=lm)
+    diff = ((ph * 60 + pm) - (lh * 60 + lm)) % 1440      # how far the +3 clock leads venue
+    venue_off = 3 * 60 - diff                            # venue offset from UTC (minutes)
+    utc = venue - timedelta(minutes=venue_off)
+    return utc + timedelta(hours=10)                     # -> Brisbane
 
 table, _ = features.build_training_table()
 clf = model.OutcomeClassifier("random_forest").fit(table, "2026-06-11")
@@ -69,11 +82,11 @@ def draw_batch(batch, first_letter, fname, subtitle):
     for gi, g in enumerate(batch):
         ax = axes[gi // 2][gi % 2]
         gs = set(g)
-        matches = [(r.home_team, r.away_team) for _, r in sch.iterrows()
+        matches = [(r.home_team, r.away_team, r.Date, r.Time) for _, r in sch.iterrows()
                    if r.home_team in gs and r.away_team in gs]
         y = np.arange(len(matches))[::-1]
         labels = []
-        for yi, (h, a) in zip(y, matches):
+        for yi, (h, a, date, time) in zip(y, matches):
             p, pick = predict(h, a)
             H, D, A = p["H"] * 100, p["D"] * 100, p["A"] * 100
             ax.barh(yi, H, color=WIN, edgecolor="white", height=0.72)
@@ -85,22 +98,26 @@ def draw_batch(batch, first_letter, fname, subtitle):
                     ax.text(centre, yi, f"{val:.0f}%", ha="center", va="center",
                             color="white", fontsize=9, fontweight="bold")
             col = {"H": WIN, "D": DRAW, "A": LOSE}[pick]
-            txt = "DRAW" if pick == "D" else (s(h) if pick == "H" else s(a))
+            txt = "DRAW" if pick == "D" else (h if pick == "H" else a)
             ax.text(103, yi, txt, ha="left", va="center", fontsize=11, fontweight="bold", color=col)
             host = "*" if h in HOSTS else ""
-            labels.append(f"{s(h)}{host}  v  {s(a)}")
+            bne = to_brisbane(date, time)
+            kick = bne.strftime("%a %d %b · %H:%M") if bne is not None else "TBC"   # Brisbane time
+            labels.append(f"{h}{host}  vs  {a}\n{kick}")
         ax.set_xlim(0, 100); ax.set_ylim(-0.6, len(matches) - 0.4)
-        ax.set_yticks(y); ax.set_yticklabels(labels, fontsize=11)
+        ax.set_yticks(y); ax.set_yticklabels(labels, fontsize=10)
         ax.set_xticks([])
         for sp in ax.spines.values(): sp.set_visible(False)
         ax.tick_params(length=0)
-        ax.set_title(f"Group {chr(first_letter + gi)}:  {', '.join(s(t) for t in g)}",
-                     fontsize=13, fontweight="bold", loc="left", color="#16335c", pad=8)
+        ax.set_title(f"Group {chr(first_letter + gi)}:  {', '.join(g)}",
+                     fontsize=13, fontweight="bold", loc="center", color="#16335c", pad=8)
 
     fig.legend(handles=[mpatches.Patch(color=WIN, label="Home win"),
                         mpatches.Patch(color=DRAW, label="Draw"),
                         mpatches.Patch(color=LOSE, label="Away win")],
                loc="lower center", ncol=3, fontsize=13, frameon=False, bbox_to_anchor=(0.5, -0.01))
+    fig.text(0.5, -0.028, "Kickoff times in Brisbane time (AEST, UTC+10)   ·   * = host nation",
+             ha="center", fontsize=11, color=MUTED)
     plt.tight_layout(rect=[0.0, 0.03, 1, 0.97])
     plt.subplots_adjust(wspace=0.72, hspace=0.4)
     plt.savefig(OUTDIR / fname, dpi=120, bbox_inches="tight")

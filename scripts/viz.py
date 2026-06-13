@@ -69,7 +69,7 @@ for yi, (team, val) in zip(y, top["net_form"].items()):
             fontsize=10.5, color=INK, fontweight="bold")
 ax.set_yticks([]); _clean(ax)
 ax.axvline(0, color=MUTED, lw=1)
-ax.set_xlabel("net recent form  (avg goals scored − conceded, last 10 matches)")
+ax.set_xlabel("net recent form  (avg goals scored − conceded, last 5 matches)")
 titled(fig, "Current Form — 2026 World Cup teams",
        "The model's core input: who's been scoring more than they concede lately")
 fig.savefig(OUT / "viz_form_ranking.png", dpi=140); plt.close(fig)
@@ -113,7 +113,7 @@ ax.barh(range(len(imp)), imp.values, color=cols, edgecolor="white", height=0.72)
 ax.set_yticks(range(len(imp))); ax.set_yticklabels([c.replace("diff_", "") for c in imp.index], fontsize=10)
 ax.axvline(0, color=MUTED, lw=1); _clean(ax)
 ax.set_xlabel("permutation importance  (positive = helps, negative = noise)")
-titled(fig, "What the model learned from squad features",
+titled(fig, "What the model learned (Elo + form features)",
        "Green features add signal; red ones are noise the model would be better without")
 fig.savefig(OUT / "viz_feature_impact.png", dpi=140); plt.close(fig)
 print("saved viz_feature_impact.png")

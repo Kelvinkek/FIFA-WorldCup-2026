@@ -2,7 +2,7 @@
 
 A focused **machine-learning** project: predict the result of an international football
 match — **Home win / Draw / Away win** — from two complementary signals: an **Elo rating**
-(opponent-adjusted team strength) and each team's **recent goal form** (last 10 matches),
+(opponent-adjusted team strength) and each team's **recent goal form** (last 5 matches),
 plus head-to-head, confederation and venue.
 
 Why match-level and not "who wins the World Cup"? There have only been **22 World Cups → 22
@@ -83,8 +83,8 @@ Analysis charts: `python scripts/feature_analysis.py` → `reports/*.png`.
 | Feature | Meaning |
 |---|---|
 | `elo_diff`, `home_elo`, `away_elo` | **Elo strength** (opponent-adjusted) — the dominant feature |
-| `home/away_goals_for_avg` | avg goals **scored**, last 10 matches (recent attacking form) |
-| `home/away_goals_against_avg` | avg goals **conceded**, last 10 matches (recent defensive form) |
+| `home/away_goals_for_avg` | avg goals **scored**, last 5 matches (recent attacking form) |
+| `home/away_goals_against_avg` | avg goals **conceded**, last 5 matches (recent defensive form) |
 | `h2h_home_wins / draws / away_wins` | share of past meetings between the two teams |
 | `home/away_confederation` | region code (UEFA, CONMEBOL, …) |
 | `is_neutral` | neutral venue? |
