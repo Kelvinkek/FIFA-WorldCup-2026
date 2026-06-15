@@ -18,6 +18,7 @@ import warnings; warnings.filterwarnings("ignore")
 import pandas as pd
 
 from src import features, model, load
+from src.teams import display
 
 HOSTS = {"United States", "Canada", "Mexico"}  # 2026 co-hosts -> home advantage
 
@@ -63,10 +64,11 @@ def main():
         # draw-aware pick (plain argmax almost never calls a draw)
         boosted = dict(p); boosted["D"] *= model.DRAW_BOOST
         pick = max(boosted, key=boosted.get)
-        label = {"H": h, "D": "Draw", "A": a}[pick]
+        ph, pa = display(h), display(a)
+        label = {"H": ph, "D": "Draw", "A": pa}[pick]
         host = " (host)" if h in HOSTS else ""
-        print(f"{r['Date'].date()}  {h:>16}{host} vs {a:<16}  "
-              f"{h} {p['H']*100:3.0f}% / D {p['D']*100:3.0f}% / {a} {p['A']*100:3.0f}%  -> {label}")
+        print(f"{r['Date'].date()}  {ph:>16}{host} vs {pa:<16}  "
+              f"{ph} {p['H']*100:3.0f}% / D {p['D']*100:3.0f}% / {pa} {p['A']*100:3.0f}%  -> {label}")
         shown += 1
         if shown >= args.n:
             break

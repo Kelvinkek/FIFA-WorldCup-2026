@@ -22,14 +22,16 @@ from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 from xgboost import XGBClassifier
 
-# Feature columns - Elo (opponent-adjusted strength) + recent goal form + h2h +
-# confederation + neutral. Elo and goal form are the two dominant, complementary signals.
+# Feature columns - eloratings.net Elo (professional, importance-weighted strength) +
+# recent goal form + h2h + confederation + neutral + match importance. Elo and goal
+# form are the two dominant, complementary signals.
 FEATURES = [
     "elo_diff", "home_elo", "away_elo",
     "home_goals_for_avg", "home_goals_against_avg",
     "away_goals_for_avg", "away_goals_against_avg",
     "h2h_home_wins", "h2h_draws", "h2h_away_wins",
     "home_confederation", "away_confederation", "is_neutral",
+    "match_importance",
 ]
 
 # Draws are rarely the single most-likely outcome, so a plain argmax almost never
@@ -38,12 +40,14 @@ FEATURES = [
 DRAW_BOOST = 1.4
 
 
-def match_features(home_form, away_form, neutral: bool, h2h=(1/3, 1/3, 1/3)) -> dict:
+def match_features(home_form, away_form, neutral: bool, h2h=(1/3, 1/3, 1/3),
+                   importance: int = 5) -> dict:
     """Assemble one match's features for a brand-new fixture.
 
     `home_form`/`away_form` are rows from `features.team_form()` (elo, goals_for_avg,
     goals_against_avg, confederation); `h2h` is (home_share, draw_share, away_share)
-    from `features.h2h_table()`.
+    from `features.h2h_table()`. `importance` is the 1..5 stake tier (default 5 = World
+    Cup finals, the case for 2026 fixtures); see features.elodata.importance_of.
     """
     he, ae = float(home_form["elo"]), float(away_form["elo"])
     return {
@@ -56,6 +60,7 @@ def match_features(home_form, away_form, neutral: bool, h2h=(1/3, 1/3, 1/3)) -> 
         "home_confederation": int(home_form["confederation"]),
         "away_confederation": int(away_form["confederation"]),
         "is_neutral": float(bool(neutral)),
+        "match_importance": int(importance),
     }
 
 

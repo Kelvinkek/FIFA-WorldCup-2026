@@ -1,14 +1,19 @@
-"""Feature engineering for the match-outcome model - form-based.
+"""Feature engineering for the match-outcome model.
 
-Team strength is read off **recent goal form** (how many goals a team has scored /
-conceded over its last N matches), plus head-to-head history, confederation, and a
-neutral-venue flag. All features use only matches *before* the one being predicted
-(a shift), so there is no leakage.
+Team strength comes from **eloratings.net Elo** (professional, importance-weighted,
+joined pre-match via src/elodata.py), combined with **recent goal form** (goals scored /
+conceded over the last N matches), head-to-head history, confederation, a neutral-venue
+flag, and match importance. All features use only information available *before* the
+match being predicted (Elo is pre-match; form is shifted), so there is no leakage.
+
+`compute_elo()` (a homemade Elo) is kept as a reference/fallback but is no longer in the
+pipeline - attach_eloratings() supplies the Elo features instead.
 
 Pipeline:
     unified_matches()      -> one chronological table of every match we have
-    build_training_table() -> match rows + form/h2h/confederation features + outcome
-    team_form()            -> each team's latest form (for predicting new fixtures)
+    attach_eloratings()    -> join eloratings pre-match Elo (home_elo/away_elo/elo_diff)
+    build_training_table() -> match rows + Elo/form/h2h/confederation/importance + outcome
+    team_form()            -> each team's latest form + current Elo (for new fixtures)
     h2h_table()            -> head-to-head record for any pair of teams
 """
 
@@ -17,7 +22,7 @@ from __future__ import annotations
 import numpy as np
 import pandas as pd
 
-from . import load
+from . import load, elodata
 from .io import DATA_DIR
 
 MIN_YEAR = 2015          # oldest matches kept for TRAINING (form uses older history too)
@@ -43,6 +48,20 @@ def compute_elo(m, k=ELO_K, home_adv=ELO_HOME_ADV, base=ELO_BASE):
     out = m.copy()
     out["home_elo"] = he; out["away_elo"] = ae; out["elo_diff"] = he - ae
     return out, ratings
+
+
+def attach_eloratings(m: pd.DataFrame) -> pd.DataFrame:
+    """Attach eloratings.net **pre-match** Elo (home_elo/away_elo/elo_diff).
+
+    The professional, importance-weighted ratings from eloratings.net, joined on
+    (date, team). Rows eloratings doesn't cover (mostly obscure/regional sides) get
+    NaN and fall out of training via the FEATURES dropna. Replaces compute_elo()."""
+    h = elodata.load_elo_history()
+    he = h.rename(columns={"team": "home", "elo_before": "home_elo"})[["date", "home", "home_elo"]]
+    ae = h.rename(columns={"team": "away", "elo_before": "away_elo"})[["date", "away", "away_elo"]]
+    out = m.merge(he, on=["date", "home"], how="left").merge(ae, on=["date", "away"], how="left")
+    out["elo_diff"] = out["home_elo"] - out["away_elo"]
+    return out
 
 
 def unified_matches(include_wc_finals: bool = True) -> pd.DataFrame:
@@ -144,11 +163,12 @@ def build_training_table() -> tuple[pd.DataFrame, None]:
     Target: outcome in {H, D, A}.
     """
     m = unified_matches()
-    m, _ = compute_elo(m)
+    m = attach_eloratings(m)
     m = add_form(m)
     m = add_h2h(m)
     m = add_confederation(m)
     m["is_neutral"] = m["neutral"].astype(float)
+    m["match_importance"] = m["competition"].map(elodata.importance_of)
     m = m[m["date"].dt.year >= MIN_YEAR].reset_index(drop=True)
     m["outcome"] = np.where(m["hg"] > m["ag"], "H", np.where(m["hg"] < m["ag"], "A", "D"))
     return m, None
@@ -157,9 +177,11 @@ def build_training_table() -> tuple[pd.DataFrame, None]:
 # ---- helpers for predicting brand-new fixtures ----
 
 def team_form(window: int = FORM_WINDOW) -> pd.DataFrame:
-    """Each team's LATEST state: recent form + confederation + current Elo."""
+    """Each team's LATEST state: recent form + confederation + current Elo.
+
+    Elo is the live eloratings.net rating (same source as training, so scales match)."""
     m = unified_matches()
-    _, ratings = compute_elo(m)
+    ratings = elodata.current_elo()
     long = pd.concat([
         pd.DataFrame({"date": m["date"], "team": m["home"], "gf": m["hg"], "ga": m["ag"]}),
         pd.DataFrame({"date": m["date"], "team": m["away"], "gf": m["ag"], "ga": m["hg"]}),

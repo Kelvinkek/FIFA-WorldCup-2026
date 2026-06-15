@@ -4,6 +4,9 @@
 # Generated reports / images
 reports/
 
+# Daily-update task logs
+logs/
+
 # Python caches
 __pycache__/
 *.pyc

@@ -28,7 +28,8 @@ world-cup/
 │   ├── io.py              <- safe CSV reading
 │   ├── teams.py           <- canonical team-name map
 │   ├── load.py            <- clean, name-normalized loaders
-│   ├── features.py        <- Elo ratings + goal form + h2h + confederation (no leakage)
+│   ├── elodata.py         <- eloratings.net Elo (pre-match, leak-free) + importance
+│   ├── features.py        <- Elo + goal form + h2h + confederation + importance (no leakage)
 │   ├── model.py           <- 5 tuned models + draw-aware prediction
 │   ├── evaluate.py        <- accuracy / log-loss / RPS, model comparison, WC backtest
 │   └── livedata.py        <- fetch recent results from API-Football
@@ -38,11 +39,14 @@ world-cup/
 │   └── match_model.ipynb  <- train, compare models, measure accuracy
 │
 ├── scripts/
+│   ├── daily_update.py       <- daily: API results + eloratings refresh + regen charts
+│   ├── setup_schedule.ps1    <- register/remove the daily Windows Scheduled Task
 │   ├── update_and_predict.py <- fetch latest results + predict upcoming fixtures
 │   ├── tune_models.py        <- grid-search hyperparameter tuning (all 5 models)
 │   ├── feature_analysis.py   <- analysis charts (one image per chart) -> reports/
 │   ├── viz.py                <- polished presentation visuals -> reports/
-│   └── viz_groups.py         <- 2026 group-stage prediction charts -> reports/
+│   ├── viz_groups.py         <- 2026 group-stage prediction charts -> reports/
+│   └── viz_results.py        <- prediction tracker: initial picks vs actual results
 │
 └── docs/
     ├── PIPELINE.md        <- full pipeline & methodology (purpose, features, validation)
@@ -91,12 +95,17 @@ Generate the charts:
 
 | Feature | Meaning |
 |---|---|
-| `elo_diff`, `home_elo`, `away_elo` | **Elo strength** (opponent-adjusted), the dominant feature |
+| `elo_diff`, `home_elo`, `away_elo` | **eloratings.net Elo** (professional, importance-weighted strength), the dominant feature |
 | `home/away_goals_for_avg` | avg goals **scored**, last 5 matches (recent attacking form) |
 | `home/away_goals_against_avg` | avg goals **conceded**, last 5 matches (recent defensive form) |
 | `h2h_home_wins / draws / away_wins` | share of past meetings between the two teams |
 | `home/away_confederation` | region code (UEFA, CONMEBOL, ...) |
 | `is_neutral` | neutral venue (no home advantage)? used to give the 2026 hosts a home boost |
+| `match_importance` | stake tier 1..5 (friendly -> World Cup); teams try harder in big games |
+
+The Elo is sourced from **eloratings.net** (importance-weighted, used pre-match so it
+never leaks). Switching from a homemade Elo to these ratings + the importance feature
+lifted walk-forward accuracy from ~59.3% to ~60.7% (log-loss 0.889 -> 0.873).
 
 **Models compared** (`src/model.py`): all 5 hyperparameter-tuned (`scripts/tune_models.py`):
 `RandomForest` (best), `GradientBoosting`, `XGBoost`, `ExtraTrees`, `LogisticRegression`.
@@ -116,6 +125,35 @@ walk-forward. Plus a `world_cup_backtest()` sanity check on the 2022 finals. Met
  ~17,000 friendlies, qualifiers and continental matches (1872-2022), plus 2022 squads.
 - **[API-Football](https://www.api-football.com/)** (api-sports.io): recent / ongoing results
   to keep the model current (optional; requires a free key).
+- **[eloratings.net](https://eloratings.net/)**: professional, importance-weighted national-team
+  Elo ratings (served as raw TSV). Fetched + cached to `data/eloratings_history.csv` by `src/elodata.py`.
 
 Data is included for convenience and remains the property of its original providers; please
 credit them if you reuse it.
+
+---
+
+## Daily automation
+
+`scripts/daily_update.py` refreshes everything in one run: pulls finished results from
+API-Football, refreshes the eloratings Elo history + recent results, rebuilds features,
+regenerates the group-stage prediction charts, and updates the **prediction tracker**
+(`reports/viz_prediction_tracker.png`) — the model's pre-tournament picks graded against
+the actual results as they come in — plus a **per-day chart** for each match-day
+(`reports/daily/YYYY-MM-DD.png`): that day's fixtures as Win/Draw/Lose probability bars,
+with the actual result outlined once played. It uses only ~3 of the 100 daily API requests.
+
+The "initial" predictions are frozen once into `data/initial_predictions.csv` (model
+trained only on pre-kickoff data, so no leakage) and never overwritten, so the tracker is
+an honest record of how the original forecasts held up.
+
+Schedule it to run once a day on Windows (no admin needed):
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts\setup_schedule.ps1            # daily at 09:00
+powershell -ExecutionPolicy Bypass -File scripts\setup_schedule.ps1 -At 21:30  # custom time
+powershell -ExecutionPolicy Bypass -File scripts\setup_schedule.ps1 -Remove    # uninstall
+```
+
+Output is appended to `logs/daily_update.log`. Run it by hand anytime with
+`.venv\Scripts\python.exe scripts\daily_update.py`.

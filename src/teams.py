@@ -13,6 +13,8 @@ The mappings below were derived by diffing every team string across all 12 CSVs.
 
 from __future__ import annotations
 
+import unicodedata
+
 import pandas as pd
 
 # alternate spelling (mostly Maven) -> canonical (Kaggle) spelling
@@ -50,6 +52,39 @@ def canonical(name: str) -> str:
     if not isinstance(name, str):
         return name
     return TEAM_NAME_MAP.get(name.strip(), name.strip())
+
+
+def plain(name: str) -> str:
+    """Strip accents/diacritics to ASCII (Türkiye -> Turkiye, Curaçao -> Curacao)."""
+    if not isinstance(name, str):
+        return name
+    return unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode("ascii")
+
+
+# Canonical (Kaggle/FIFA) spelling -> friendlier common (Maven-style) name for display.
+# The canonical name stays the join key everywhere; only labels/charts use these.
+DISPLAY_NAMES: dict[str, str] = {
+    "Côte d'Ivoire": "Ivory Coast",
+    "Korea Republic": "South Korea",
+    "Korea DPR": "North Korea",
+    "IR Iran": "Iran",
+    "Türkiye": "Turkey",
+    "China PR": "China",
+    "Congo DR": "DR Congo",
+    "Bosnia-Herzegovina": "Bosnia & Herzegovina",
+    "Hong Kong, China": "Hong Kong",
+    "Kyrgyz Republic": "Kyrgyzstan",
+    "The Gambia": "Gambia",
+    "Brunei Darussalam": "Brunei",
+}
+
+
+def display(name: str) -> str:
+    """Friendly ASCII display name: common spelling (DISPLAY_NAMES) + accent stripping.
+    For labels/charts only - `canonical()` remains the join key everywhere else."""
+    if not isinstance(name, str):
+        return name
+    return plain(DISPLAY_NAMES.get(name.strip(), name.strip()))
 
 
 def normalize_teams(df: pd.DataFrame, cols: list[str]) -> pd.DataFrame:

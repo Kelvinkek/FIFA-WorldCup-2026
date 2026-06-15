@@ -21,6 +21,7 @@ import matplotlib.pyplot as plt
 from matplotlib import font_manager  # noqa: F401
 
 from src import features, model, evaluate, load
+from src.teams import display
 from src.io import ROOT
 
 OUT = ROOT / "reports"
@@ -64,7 +65,7 @@ fig, ax = plt.subplots(figsize=(9, 9))
 y = np.arange(len(top))[::-1]
 ax.barh(y, top["net_form"], color=colors, edgecolor="white", height=0.78)
 for yi, (team, val) in zip(y, top["net_form"].items()):
-    ax.text(val + 0.02 if val >= 0 else val - 0.02, yi, team,
+    ax.text(val + 0.02 if val >= 0 else val - 0.02, yi, display(team),
             va="center", ha="left" if val >= 0 else "right",
             fontsize=10.5, color=INK, fontweight="bold")
 ax.set_yticks([]); _clean(ax)

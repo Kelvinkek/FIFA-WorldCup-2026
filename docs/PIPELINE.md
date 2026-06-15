@@ -36,15 +36,17 @@ Three sources are merged into **one chronological match table**:
 | `data/maven_analytics/international_matches.csv` | all internationals (friendlies, qualifiers, continental cups) | 1872–2022 |
 | `data/kaggle_2026/matches_1930_2022.csv` | World Cup finals | 1930–2022 |
 | `data/live_results.csv` | recent results fetched from **API-Football** | 2022–2026 |
+| `data/eloratings_history.csv` | **eloratings.net** pre-match Elo (fetched per team) | 1872–today |
 
 Plus supporting files: the **2026 schedule** (`kaggle_2026/schedule_2026.csv`, the real
 post-draw fixtures) and **FIFA rankings** (used only to map teams → confederation).
 
-**Why three sources?** Maven gives 150 years of depth; Kaggle adds the World Cup finals; the API
-fills the recent 2022–2026 gap so the model isn't stale. Together they're the fullest free history
-available. For *training* we keep matches from **2015 onward (~4,400 matches)** - recent enough to
-be relevant, deep enough to learn from. (Features like Elo are still computed over the *full*
-history so they're accurate from the first 2015 match.)
+**Why these sources?** Maven gives 150 years of depth; Kaggle adds the World Cup finals; the API
+fills the recent 2022–2026 gap; and **eloratings.net** supplies professional, importance-weighted
+team strength (see `src/elodata.py`). For *training* we keep matches from **2015 onward** - recent
+enough to be relevant, deep enough to learn from. After joining eloratings' pre-match Elo, **~3,900
+matches** carry the full feature set (a handful of obscure/regional teams without an eloratings page
+drop out).
 
 ---
 
@@ -72,23 +74,28 @@ scripts only import it; only `src/load.py` touches `data/`.**
 
 ## 4. Feature engineering - the heart of it
 
-Every feature uses **only information available before kick-off** (no leakage). The 13 features:
+Every feature uses **only information available before kick-off** (no leakage). The 14 features:
 
 | Feature group | Columns | What it captures |
 |---|---|---|
-| **Elo strength** ⭐ | `elo_diff`, `home_elo`, `away_elo` | *opponent-adjusted* team strength - it knows you beat Brazil, not San Marino |
+| **Elo strength** ⭐ | `elo_diff`, `home_elo`, `away_elo` | *opponent-adjusted* team strength from **eloratings.net** (professional, importance-weighted) - it knows you beat Brazil, not San Marino |
 | **Recent goal form** ⭐ | `home/away_goals_for_avg`, `home/away_goals_against_avg` | avg goals scored / conceded over the last **5** matches |
 | **Head-to-head** | `h2h_home_wins`, `h2h_draws`, `h2h_away_wins` | share of past meetings between the two teams |
 | **Confederation** | `home/away_confederation` | region code (UEFA, CONMEBOL, …) |
 | **Venue** | `is_neutral` | neutral venue flag |
+| **Match importance** | `match_importance` | stake tier 1–5 (friendly → World Cup) |
 
 **Two signals do the work, and they're complementary:**
-- **Elo** (`compute_elo`) - every team has a rating; after each match the winner takes points from
-  the loser (more for a bigger win / a stronger opponent). It captures *long-term, opponent-adjusted*
-  strength. **`elo_diff` is by far the most important feature** (~20× any other).
+- **Elo** (from **eloratings.net**, joined pre-match via `src/elodata.py`) - a professional rating
+  where, after each match, the winner takes points from the loser (more for a bigger win, a stronger
+  opponent, and a more important match). It captures *long-term, opponent-adjusted* strength.
+  **`elo_diff` is by far the most important feature** (~20× any other).
 - **Goal form** (`add_form`) - a team's recent scoring/conceding trend. It captures *short-term*
   momentum that Elo is slow to reflect. Window tuned to **5 matches** (3–10 are equivalent; 15+
   goes stale).
+
+A homemade Elo (`compute_elo`) is kept in `features.py` for reference, but the eloratings ratings
+replaced it - switching lifted walk-forward accuracy from **~59.3% to ~60.7%** (log-loss 0.889 → 0.873).
 
 **No-leakage discipline:** form uses `.shift()` so a match never sees its own result; Elo is the
 rating *before* the match; h2h counts only *prior* meetings. This is the single most important
@@ -113,9 +120,9 @@ exposed through one class `OutcomeClassifier(algo=...)`:
 | Extra Trees | randomised trees | competitive |
 | Logistic Regression | linear | strong, simple baseline |
 
-**Why these (and not deep learning)?** This is **small, tabular data** (~4,400 rows, 13 features) -
+**Why these (and not deep learning)?** This is **small, tabular data** (~3,900 rows, 14 features) -
 the regime where tree ensembles and linear models dominate. A neural net was tested and came
-**last** (it needs far more data). All five tuned models cluster at **~59%**, which is reassuring:
+**last** (it needs far more data). All five tuned models cluster at **~60–61%**, which is reassuring:
 the result reflects the *data*, not one lucky algorithm.
 
 **Draw-aware prediction.** A plain "pick the most likely outcome" almost never predicts a draw
@@ -144,12 +151,12 @@ plus **calibration** curves and **permutation feature importance**.
 
 | Test | Accuracy | Log-loss |
 |---|---|---|
-| **Walk-forward** (general matches) | **~59%** | ~0.89 |
-| World Cup backtest (2022 finals) | ~52% | ~1.02 |
+| **Walk-forward** (general matches) | **~60.7%** | ~0.87 |
+| World Cup backtest (2022 finals) | ~50% | ~1.04 |
 | *always predict home* | ~44% | - |
 | *random guess* | ~33% | 1.10 |
 
-The gap (59% vs 52%) is honest and instructive: a top-heavy tournament like the World Cup is
+The gap (61% vs 50%) is honest and instructive: a top-heavy tournament like the World Cup is
 **harder** than general fixtures (elite-vs-elite, neutral venues, no easy lopsided games).
 
 ---
@@ -176,7 +183,8 @@ print(evaluate.compare_models(table, "2023-01-01"))
 # analysis charts / presentation visuals
 .venv\Scripts\python.exe scripts\feature_analysis.py
 .venv\Scripts\python.exe scripts\viz.py
-.venv\Scripts\python.exe scripts\viz_groups.py
+.venv\Scripts\python.exe scripts\viz_groups.py     # 2026 group-stage prediction charts
+.venv\Scripts\python.exe scripts\viz_results.py    # prediction tracker + per-day charts
 ```
 
 Or open `notebooks/match_model.ipynb` and **Run All** for the narrated end-to-end story.
@@ -185,9 +193,9 @@ Or open `notebooks/match_model.ipynb` and **Run All** for the narrated end-to-en
 
 ## 8. Honest limitations
 
-- **~59% is near the ceiling for free data.** Football is genuinely high-variance; even a perfect
+- **~61% is near the ceiling for free data.** Football is genuinely high-variance; even a perfect
   model can't predict draws and upsets reliably. Confirmed repeatedly - more features and more
-  tuning don't move it.
+  tuning barely move it (the eloratings switch added ~1.4 points, the most of anything tried).
 - **No xG / injuries / lineups** - these would help but need a paid data feed (or are infeasible to
   backfill on the free API's 100 requests/day).
 - **Draws are inherently hard** - the model predicts them at a realistic rate now, but you can't
@@ -198,22 +206,32 @@ Or open `notebooks/match_model.ipynb` and **Run All** for the narrated end-to-en
 
 ## 9. Maintaining it for future competitions
 
-The model is only as fresh as `data/live_results.csv`. To keep it current:
+The model is only as fresh as its data. One script does the whole daily refresh:
 
 ```powershell
-.venv\Scripts\python.exe scripts\update_and_predict.py --fetch
+.venv\Scripts\python.exe scripts\daily_update.py
 ```
 
-This pulls finished matches from API-Football, rebuilds Elo + form, refits the models, and predicts
-upcoming fixtures. During a tournament, run it after each matchday (each result updates Elo/form,
-which is what sharpens the next prediction). Between tournaments, run it after each international
-window (~6×/year). Retraining is cheap (seconds), so doing it often is free.
+It (1) pulls finished matches from API-Football, (2) refreshes **eloratings.net** Elo + recent
+results, (3) rebuilds features, (4) regenerates the group-stage charts, and (5) updates the
+**prediction tracker** (`reports/viz_prediction_tracker.png`) plus a **per-day chart** for each
+match-day (`reports/daily/YYYY-MM-DD.png`).
+
+To run it unattended once a day, register the Windows Scheduled Task:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts\setup_schedule.ps1     # daily at 09:00
+```
+
+During a tournament each result updates Elo/form, which sharpens the next prediction; between
+tournaments the eloratings data simply doesn't change until teams play again. Retraining is cheap
+(seconds), so the daily cadence is effectively free.
 
 ---
 
 ### TL;DR
 
-> Merge 150 years of international results → engineer **Elo strength + recent goal form** (no
-> leakage) → train **5 tuned models** (Random Forest best) → validate by **time-split walk-forward**
-> → predict any match's **Home/Draw/Away** odds, draw-aware. Result: **~59%** general accuracy,
-> **~52%** on a real World Cup - honest, interpretable, and reproducible.
+> Merge 150 years of international results → engineer **eloratings.net Elo + recent goal form +
+> match importance** (no leakage) → train **5 tuned models** (Random Forest best) → validate by
+> **time-split walk-forward** → predict any match's **Home/Draw/Away** odds, draw-aware. Result:
+> **~60.7%** general accuracy, **~50%** on a real World Cup - honest, interpretable, and reproducible.
