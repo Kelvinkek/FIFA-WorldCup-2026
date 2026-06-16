@@ -79,7 +79,7 @@ Every feature uses **only information available before kick-off** (no leakage). 
 | Feature group | Columns | What it captures |
 |---|---|---|
 | **Elo strength** ⭐ | `elo_diff`, `home_elo`, `away_elo` | *opponent-adjusted* team strength from **eloratings.net** (professional, importance-weighted) - it knows you beat Brazil, not San Marino |
-| **Recent goal form** ⭐ | `home/away_goals_for_avg`, `home/away_goals_against_avg` | avg goals scored / conceded over the last **5** matches |
+| **Recent goal form** ⭐ | `home/away_goals_for_avg`, `home/away_goals_against_avg` | avg goals scored / conceded over the last **3** matches |
 | **Head-to-head** | `h2h_home_wins`, `h2h_draws`, `h2h_away_wins` | share of past meetings between the two teams |
 | **Confederation** | `home/away_confederation` | region code (UEFA, CONMEBOL, …) |
 | **Venue** | `is_neutral` | neutral venue flag |
@@ -90,8 +90,8 @@ Every feature uses **only information available before kick-off** (no leakage). 
   opponent, and a more important match). It captures *long-term, opponent-adjusted* strength.
   **`elo_diff` is by far the most important feature** (~20× any other).
 - **Goal form** (`add_form`) - a team's recent scoring/conceding trend. It captures *short-term*
-  momentum that Elo is slow to reflect. Window tuned to **5 matches** (3–10 are equivalent; 15+
-  goes stale).
+  momentum that Elo is slow to reflect. Window tuned to **3 matches** (best log-loss; 3–10 are
+  near-equivalent, 15+ goes stale).
 
 A homemade Elo (`compute_elo`) is kept in `features.py` for reference, but the eloratings ratings
 replaced it - switching lifted walk-forward accuracy from **~59.3% to ~60.5%** (log-loss 0.889 → 0.873).

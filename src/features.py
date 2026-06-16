@@ -26,7 +26,7 @@ from . import load, elodata
 from .io import DATA_DIR
 
 MIN_YEAR = 2015          # oldest matches kept for TRAINING (form uses older history too)
-FORM_WINDOW = 5          # recent matches that define "form" (tuned: 5 best; >15 goes stale)
+FORM_WINDOW = 3          # recent matches that define "form" (tuned: 3 best on log-loss; 3-10 ~equal, 15+ stale)
 CONFEDS = ["OFC", "AFC", "CAF", "CONCACAF", "UEFA", "CONMEBOL"]
 ELO_BASE, ELO_K, ELO_HOME_ADV = 1500.0, 40.0, 65.0
 
@@ -191,12 +191,20 @@ def build_training_table() -> tuple[pd.DataFrame, None]:
 
 # ---- helpers for predicting brand-new fixtures ----
 
-def team_form(window: int = FORM_WINDOW) -> pd.DataFrame:
-    """Each team's LATEST state: recent form + confederation + current Elo.
+def team_form(window: int = FORM_WINDOW, as_of=None) -> pd.DataFrame:
+    """Each team's state: recent form + confederation + Elo.
 
-    Elo is the live eloratings.net rating (same source as training, so scales match)."""
+    By default uses the LATEST data (live eloratings Elo) - for predicting upcoming
+    fixtures. Pass `as_of` (a date) to compute everything using only matches *before*
+    that date - e.g. a leak-free "as of kickoff" snapshot. Same Elo source as training."""
     m = unified_matches()
-    ratings = elodata.current_elo()
+    if as_of is not None:
+        m = m[m["date"] < pd.Timestamp(as_of)]
+        h = elodata.load_elo_history()
+        h = h[h["date"] < pd.Timestamp(as_of)].sort_values("date")
+        ratings = h.groupby("team")["elo_after"].last().to_dict()   # rating entering `as_of`
+    else:
+        ratings = elodata.current_elo()
     long = pd.concat([
         pd.DataFrame({"date": m["date"], "team": m["home"], "gf": m["hg"], "ga": m["ag"]}),
         pd.DataFrame({"date": m["date"], "team": m["away"], "gf": m["ag"], "ga": m["hg"]}),

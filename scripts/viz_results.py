@@ -44,10 +44,14 @@ CUTOFF = "2026-06-11"   # tournament kickoff — train strictly before this
 
 
 def build_snapshot() -> pd.DataFrame:
-    """Freeze the model's pre-tournament prediction for every group fixture."""
+    """Freeze the model's pre-tournament prediction for every group fixture.
+
+    Leak-free: the model trains only on data before CUTOFF, and team_form is taken
+    `as_of=CUTOFF` too, so the snapshot reflects what the latest model would have
+    predicted at kickoff - using no match played during the tournament."""
     table, _ = features.build_training_table()
     clf = model.OutcomeClassifier("logistic").fit(table, CUTOFF)
-    form = features.team_form(); h2h = features.h2h_table()
+    form = features.team_form(as_of=CUTOFF); h2h = features.h2h_table()
     sch = load.load_schedule_2026()
     rows = []
     for _, r in sch.iterrows():
@@ -82,10 +86,12 @@ def grade(pred: pd.DataFrame) -> pd.DataFrame:
                for _, r in res.iterrows()}
     out = []
     for _, p in pred.iterrows():
+        raw = max((("H", p.p_H), ("D", p.p_D), ("A", p.p_A)), key=lambda x: x[1])[0]  # plain argmax
         row = {"date": p.date, "home": p.home, "away": p.away,
-               "p_H": p.p_H, "p_D": p.p_D, "p_A": p.p_A, "pick": p.pick,
+               "p_H": p.p_H, "p_D": p.p_D, "p_A": p.p_A, "pick": p.pick, "pick_raw": raw,
                "played": False, "hg": None, "ag": None, "actual": None,
-               "correct": False, "prob_actual": np.nan, "logloss": np.nan, "brier": np.nan}
+               "correct": False, "correct_raw": False,
+               "prob_actual": np.nan, "logloss": np.nan, "brier": np.nan}
         m = by_pair.get(frozenset((p.home, p.away)))
         if m:
             ah, hg, ag = m
@@ -93,7 +99,8 @@ def grade(pred: pd.DataFrame) -> pd.DataFrame:
                 hg, ag = ag, hg
             actual = "H" if hg > ag else "A" if hg < ag else "D"
             pa = {"H": p.p_H, "D": p.p_D, "A": p.p_A}[actual]
-            row.update(played=True, hg=hg, ag=ag, actual=actual, correct=(p.pick == actual),
+            row.update(played=True, hg=hg, ag=ag, actual=actual,
+                       correct=(p.pick == actual), correct_raw=(raw == actual),
                        prob_actual=pa, logloss=-np.log(max(pa, 1e-9)),
                        brier=float(sum((np.array([p.p_H, p.p_D, p.p_A]) -
                                         np.array([actual == o for o in "HDA"], float)) ** 2)))
@@ -112,6 +119,9 @@ def _draw_match_row(ax, yi: float, r) -> None:
         if val >= 7:
             ax.text(centre, yi, f"{val:.0f}%", ha="center", va="center",
                     color="white", fontsize=8.5, fontweight="bold")
+    # caret marking the model's PICK (draw-aware) - can differ from the biggest bar
+    pick_centre = {"H": H / 2, "D": H + D / 2, "A": H + D + A / 2}[r.pick]
+    ax.plot(pick_centre, yi + 0.34, marker="v", markersize=9, color=INK, clip_on=False, zorder=8)
     if r.played:
         left, width = {"H": (0, H), "D": (H, D), "A": (H + D, A)}[r.actual]
         ax.barh(yi, width, left=left, height=0.46, fill=False,
@@ -131,12 +141,15 @@ def _draw_match_row(ax, yi: float, r) -> None:
 
 def _legend(fig, fig_h: float) -> None:
     import matplotlib.patches as mpatches
+    from matplotlib.lines import Line2D
     fig.legend(handles=[mpatches.Patch(color=WIN, label="Predicted home win"),
                         mpatches.Patch(color=DRAW, label="Predicted draw"),
                         mpatches.Patch(color=LOSE, label="Predicted away win"),
+                        Line2D([0], [0], marker="v", color="w", markerfacecolor=INK,
+                               markersize=9, label="Model's pick (draw-aware)"),
                         mpatches.Patch(facecolor="white", edgecolor="#111111", lw=2,
                                        label="Actual result (outlined)")],
-               loc="lower center", ncol=4, fontsize=11, frameon=False,
+               loc="lower center", ncol=5, fontsize=11, frameon=False,
                bbox_to_anchor=(0.5, 0.18 / fig_h))
 
 
@@ -192,10 +205,12 @@ def render_tracker(graded: pd.DataFrame) -> None:
         _render(played, "FIFA World Cup 2026 — Prediction Tracker",
                 f"no completed matches yet  ·  as of {asof}", OUT)
         print(f"Saved {OUT.name} (0 results)"); return
-    acc = played["correct"].mean()
+    acc = played["correct"].mean(); acc_raw = played["correct_raw"].mean()
     stats = [("Matches played", f"{len(played)}", INK),
-             ("Correct picks", f"{played['correct'].sum()} / {len(played)}", GOOD if acc >= .5 else INK),
-             ("Accuracy", f"{acc*100:.0f}%", GOOD if acc >= .5 else BAD),
+             ("Pick correct (draw-aware)", f"{played['correct'].sum()}/{len(played)}  ({acc*100:.0f}%)",
+              GOOD if acc >= .5 else BAD),
+             ("Pick correct (most-likely)", f"{played['correct_raw'].sum()}/{len(played)}  ({acc_raw*100:.0f}%)",
+              GOOD if acc_raw >= .5 else BAD),
              ("Avg log-loss", f"{played['logloss'].mean():.3f}", INK),
              ("Avg Brier", f"{played['brier'].mean():.3f}", INK)]
     _render(played, "FIFA World Cup 2026 — Prediction Tracker",

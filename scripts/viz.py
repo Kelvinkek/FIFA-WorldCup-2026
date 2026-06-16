@@ -70,7 +70,7 @@ for yi, (team, val) in zip(y, top["net_form"].items()):
             fontsize=10.5, color=INK, fontweight="bold")
 ax.set_yticks([]); _clean(ax)
 ax.axvline(0, color=MUTED, lw=1)
-ax.set_xlabel("net recent form  (avg goals scored − conceded, last 5 matches)")
+ax.set_xlabel("net recent form  (avg goals scored − conceded, last 3 matches)")
 titled(fig, "Current Form - 2026 World Cup teams",
        "The model's core input: who's been scoring more than they concede lately")
 fig.savefig(OUT / "viz_form_ranking.png", dpi=140); plt.close(fig)
