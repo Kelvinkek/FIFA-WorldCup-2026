@@ -2,7 +2,6 @@
 
 eloratings.net serves raw TSV files (no scraping/JS needed):
   - en.teams.tsv        : 2-letter code -> team name
-  - en.tournaments.tsv  : competition code -> name (used for match importance)
   - <Team_Name>.tsv     : one team's FULL match history, with the team's Elo *after*
                           each match (spaces in the name become underscores)
 
@@ -16,7 +15,6 @@ Public API:
   load_elo_history()               -> cached DataFrame [date, team, elo_before]
   elo_before_map()                 -> {(Timestamp, canonical_team): elo_before}
   current_elo()                    -> {canonical_team: latest Elo}  (from World.tsv)
-  importance_of(competition_text)  -> 1..5 stake tier for a competition string
 """
 
 from __future__ import annotations
@@ -62,25 +60,6 @@ def code_to_name() -> dict[str, str]:
         if len(parts) >= 2 and not parts[0].endswith("_loc"):
             out[parts[0]] = parts[1]
     return out
-
-
-# eloratings K-factor tiers, reused here as a 1..5 "stake" feature.
-# 5 = World Cup finals, 4 = continental finals / Confederations Cup,
-# 3 = qualifiers + Nations League, 2 = other tournaments, 1 = friendly.
-def importance_of(competition: str) -> int:
-    """Map a competition name (from either data source) to a 1..5 stake tier."""
-    c = (competition or "").lower()
-    if "friendl" in c:
-        return 1
-    if "world cup" in c and "qual" not in c:
-        return 5
-    if "qualif" in c or "qualification" in c or "nations league" in c:
-        return 3
-    finals = ("euro", "copa america", "asian cup", "african cup", "gold cup",
-              "confederations", "nations cup", "championship")
-    if any(f in c for f in finals) and "qual" not in c:
-        return 4
-    return 2
 
 
 # ----------------------------- history build -----------------------------

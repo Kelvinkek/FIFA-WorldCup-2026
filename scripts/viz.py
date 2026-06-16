@@ -85,7 +85,8 @@ test_all = table[table["date"] >= pd.Timestamp("2021-01-01")]
 home_rate = (test_all["outcome"] == "H").mean()
 rows = [("Always predict\nhome", home_rate, WARN),
         ("Random\nguess", 1 / 3, BAD)]
-for m in ["logistic", "random_forest", "gbm"]:
+# all 5 tuned models, logistic first (it's the default used for predictions)
+for m in ["logistic", "xgboost", "gbm", "random_forest", "extra_trees"]:
     rows.append((m.replace("_", "\n"), wf.loc[m, "accuracy"], GOOD if wf.loc[m, "accuracy"] >= home_rate else ACCENT))
 
 labels = [r[0] for r in rows]; vals = [r[1] for r in rows]; cols = [r[2] for r in rows]
@@ -95,11 +96,11 @@ ax.axhline(home_rate * 100, ls="--", color=WARN, lw=1.2)
 for b, v in zip(bars, vals):
     ax.text(b.get_x() + b.get_width() / 2, v * 100 + 0.8, f"{v*100:.1f}%",
             ha="center", fontweight="bold", color=INK)
-ax.set_ylim(0, 55); ax.grid(axis="y", color=GRID, lw=0.8); ax.set_axisbelow(True)
+ax.set_ylim(0, 72); ax.grid(axis="y", color=GRID, lw=0.8); ax.set_axisbelow(True)
 ax.tick_params(length=0)
 ax.set_ylabel("test accuracy (%)")
 titled(fig, "Model scorecard - does it beat trivial guessing?",
-       "Honest read: the tuned models barely edge 'always predict home' - the data is the ceiling")
+       "The tuned models beat 'always predict home' by several points - real signal, but football has a hard ceiling")
 fig.savefig(OUT / "viz_model_scorecard.png", dpi=140); plt.close(fig)
 print("saved viz_model_scorecard.png")
 

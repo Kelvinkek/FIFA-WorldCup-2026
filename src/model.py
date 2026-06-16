@@ -23,15 +23,15 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 from xgboost import XGBClassifier
 
 # Feature columns - eloratings.net Elo (professional, importance-weighted strength) +
-# recent goal form + h2h + confederation + neutral + match importance. Elo and goal
-# form are the two dominant, complementary signals.
+# recent goal form + h2h + confederation + neutral. Elo and goal form are the two
+# dominant, complementary signals. (match_importance was dropped: it's constant for a
+# World-Cup-only predictor and the eloratings Elo already bakes importance in.)
 FEATURES = [
     "elo_diff", "home_elo", "away_elo",
     "home_goals_for_avg", "home_goals_against_avg",
     "away_goals_for_avg", "away_goals_against_avg",
     "h2h_home_wins", "h2h_draws", "h2h_away_wins",
     "home_confederation", "away_confederation", "is_neutral",
-    "match_importance",
 ]
 
 # Draws are rarely the single most-likely outcome, so a plain argmax almost never
@@ -40,14 +40,12 @@ FEATURES = [
 DRAW_BOOST = 1.4
 
 
-def match_features(home_form, away_form, neutral: bool, h2h=(1/3, 1/3, 1/3),
-                   importance: int = 5) -> dict:
+def match_features(home_form, away_form, neutral: bool, h2h=(1/3, 1/3, 1/3)) -> dict:
     """Assemble one match's features for a brand-new fixture.
 
     `home_form`/`away_form` are rows from `features.team_form()` (elo, goals_for_avg,
     goals_against_avg, confederation); `h2h` is (home_share, draw_share, away_share)
-    from `features.h2h_table()`. `importance` is the 1..5 stake tier (default 5 = World
-    Cup finals, the case for 2026 fixtures); see features.elodata.importance_of.
+    from `features.h2h_table()`.
     """
     he, ae = float(home_form["elo"]), float(away_form["elo"])
     return {
@@ -60,7 +58,6 @@ def match_features(home_form, away_form, neutral: bool, h2h=(1/3, 1/3, 1/3),
         "home_confederation": int(home_form["confederation"]),
         "away_confederation": int(away_form["confederation"]),
         "is_neutral": float(bool(neutral)),
-        "match_importance": int(importance),
     }
 
 
@@ -73,17 +70,21 @@ def _xy(table: pd.DataFrame, cutoff) -> pd.DataFrame:
 class OutcomeClassifier:
     """Classifier over {H, D, A}. `algo` selects the ML model.
 
-    Hyperparameters tuned by walk-forward grid search (`scripts/tune_models.py`) on
-    the form-feature dataset (~4,400 matches). Random Forest is the default/best.
+    Hyperparameters tuned by walk-forward grid search (`scripts/tune_models.py`). All
+    five cluster around ~60-61% accuracy. Logistic is the default and the model the
+    prediction scripts use: it's currently best on accuracy, log-loss AND RPS, it's the
+    simplest, and its probabilities are the best-calibrated - which matters most for a
+    predictor whose output is win/draw/loss percentages. (Extra Trees has competitive
+    accuracy but the worst log-loss/RPS, i.e. over-confident probabilities, so it's avoided.)
 
     Five models for comparison:
-    algo='random_forest' -> RandomForestClassifier (best)
-    algo='logistic'      -> LogisticRegression (linear)
+    algo='logistic'      -> LogisticRegression (linear) - the default used for predictions
+    algo='xgb'           -> XGBClassifier (XGBoost)
     algo='gbm'           -> HistGradientBoostingClassifier (boosting)
-    algo='extra_trees'   -> ExtraTreesClassifier (extra-randomised trees)
-    algo='xgb'           -> XGBClassifier (gradient boosting, XGBoost)
+    algo='random_forest' -> RandomForestClassifier (alias: 'rf')
+    algo='extra_trees'   -> ExtraTreesClassifier (best accuracy, worst calibration)
     """
-    algo: str = "random_forest"
+    algo: str = "logistic"
 
     def _make(self):
         if self.algo == "logistic":
@@ -91,7 +92,7 @@ class OutcomeClassifier:
                 StandardScaler(),
                 LogisticRegression(max_iter=3000, C=0.01),
             )
-        if self.algo == "rf":
+        if self.algo in ("rf", "random_forest"):
             return RandomForestClassifier(
                 n_estimators=300, max_depth=None, min_samples_leaf=15,
                 n_jobs=-1, random_state=0,

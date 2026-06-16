@@ -28,8 +28,8 @@ world-cup/
 │   ├── io.py              <- safe CSV reading
 │   ├── teams.py           <- canonical team-name map
 │   ├── load.py            <- clean, name-normalized loaders
-│   ├── elodata.py         <- eloratings.net Elo (pre-match, leak-free) + importance
-│   ├── features.py        <- Elo + goal form + h2h + confederation + importance (no leakage)
+│   ├── elodata.py         <- eloratings.net Elo (pre-match, leak-free) fetch + cache
+│   ├── features.py        <- Elo + goal form + h2h + confederation (no leakage)
 │   ├── model.py           <- 5 tuned models + draw-aware prediction
 │   ├── evaluate.py        <- accuracy / log-loss / RPS, model comparison, WC backtest
 │   └── livedata.py        <- fetch recent results from API-Football
@@ -101,14 +101,11 @@ Generate the charts:
 | `h2h_home_wins / draws / away_wins` | share of past meetings between the two teams |
 | `home/away_confederation` | region code (UEFA, CONMEBOL, ...) |
 | `is_neutral` | neutral venue (no home advantage)? used to give the 2026 hosts a home boost |
-| `match_importance` | stake tier 1..5 (friendly -> World Cup); teams try harder in big games |
-
-The Elo is sourced from **eloratings.net** (importance-weighted, used pre-match so it
-never leaks). Switching from a homemade Elo to these ratings + the importance feature
-lifted walk-forward accuracy from ~59.3% to ~60.7% (log-loss 0.889 -> 0.873).
 
 **Models compared** (`src/model.py`): all 5 hyperparameter-tuned (`scripts/tune_models.py`):
-`RandomForest` (best), `GradientBoosting`, `XGBoost`, `ExtraTrees`, `LogisticRegression`.
+`LogisticRegression`, `XGBoost`, `GradientBoosting`, `RandomForest`, `ExtraTrees`. They cluster
+~60-61%; **Logistic** is the model the prediction scripts use - best on accuracy, log-loss *and*
+RPS, simplest, and best-calibrated probabilities (which matter most for the % bars).
 Single-label output is **draw-aware** (a plain argmax almost never predicts a draw).
 
 **Validation** (`src/evaluate.py`): always a **time split** (train past, test future), averaged

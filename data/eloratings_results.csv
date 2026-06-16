@@ -28,7 +28,7 @@ date,home,away,hg,ag,comp_code
 2025-03-20,Mali,Comoros,3,0,WQ
 2025-03-20,Malawi,Namibia,0,1,WQ
 2025-03-20,Tajikistan,Belarus,0,5,F
-2025-03-20,Japan,Bahrain,2,0,WQ
+2025-03-20,Croatia,France,2,0,ENL
 2025-03-20,Jordan,Palestine,3,1,WQ
 2025-03-20,Denmark,Portugal,1,0,ENL
 2025-03-20,Peru,Bolivia,3,1,WQ
@@ -41,31 +41,31 @@ date,home,away,hg,ag,comp_code
 2025-03-20,Benin,Zimbabwe,2,2,WQ
 2025-03-20,Lebanon,East Timor,4,0,F
 2025-03-20,Kosovo,Iceland,2,1,EBC
-2025-03-20,IR Iran,United Arab Emirates,2,0,WQ
+2025-03-20,Japan,Bahrain,2,0,WQ
 2025-03-20,Bulgaria,Ireland,1,2,EBC
-2025-03-20,Greece,Scotland,0,1,EAB
+2025-03-20,Slovakia,Slovenia,0,0,EBC
 2025-03-20,Armenia,Georgia,0,3,EBC
 2025-03-20,Saudi Arabia,China PR,1,0,WQ
 2025-03-20,Gabon,Seychelles,3,0,WQ
-2025-03-20,Italy,Germany,1,2,ENL
 2025-03-20,Paraguay,Chile,1,0,WQ
+2025-03-20,Italy,Germany,1,2,ENL
 2025-03-20,Australia,Indonesia,5,1,WQ
 2025-03-20,Netherlands,Spain,2,2,ENL
-2025-03-20,Slovakia,Slovenia,0,0,EBC
-2025-03-20,Croatia,France,2,0,ENL
-2025-03-20,Türkiye,Hungary,3,1,EAB
-2025-03-20,Cape Verde,Mauritius,1,0,WQ
+2025-03-20,IR Iran,United Arab Emirates,2,0,WQ
+2025-03-20,United States,Panama,0,1,CNL
+2025-03-20,Greece,Scotland,0,1,EAB
 2025-03-20,Mozambique,Uganda,3,1,WQ
-2025-03-20,Mexico,Canada,2,0,CNL
 2025-03-20,Austria,Serbia,1,1,EAB
+2025-03-20,Mexico,Canada,2,0,CNL
 2025-03-20,Sierra Leone,Guinea-Bissau,3,1,WQ
 2025-03-20,Ukraine,Belgium,3,1,EAB
-2025-03-20,United States,Panama,0,1,CNL
+2025-03-20,Türkiye,Hungary,3,1,EAB
+2025-03-20,Cape Verde,Mauritius,1,0,WQ
 2025-03-21,Singapore,Nepal,0,1,F
 2025-03-21,New Caledonia,Tahiti,3,0,WQ
-2025-03-21,Rwanda,Nigeria,0,2,WQ
-2025-03-21,Poland,Lithuania,1,0,WQ
 2025-03-21,Morocco,Niger,2,1,WQ
+2025-03-21,Poland,Lithuania,1,0,WQ
+2025-03-21,Rwanda,Nigeria,0,2,WQ
 2025-03-21,Suriname,Martinique,1,0,CCQ
 2025-03-21,Cyprus,San Marino,2,0,WQ
 2025-03-21,New Zealand,Fiji,7,0,WQ
@@ -76,330 +76,330 @@ date,home,away,hg,ag,comp_code
 2025-03-21,Congo DR,South Sudan,1,0,WQ
 2025-03-21,Egypt,Ethiopia,2,0,WQ
 2025-03-21,Ecuador,Venezuela,2,1,WQ
-2025-03-21,Guadeloupe,Nicaragua,1,0,CCQ
+2025-03-21,Puerto Rico,Dominican Republic,2,2,F
 2025-03-21,South Africa,Lesotho,2,0,WQ
-2025-03-21,Guyana,Guatemala,3,2,CCQ
+2025-03-21,Guadeloupe,Nicaragua,1,0,CCQ
+2025-03-21,Guinea,Somalia,0,0,WQ
 2025-03-21,Côte d'Ivoire,Burundi,1,0,WQ
 2025-03-21,Burkina Faso,Djibouti,4,1,WQ
 2025-03-21,Northern Ireland,Switzerland,1,1,F
-2025-03-21,Puerto Rico,Dominican Republic,2,2,F
 2025-03-21,Saint Vincent and the Grenadines,Jamaica,1,1,CCQ
 2025-03-21,Romania,Bosnia-Herzegovina,0,1,WQ
 2025-03-21,Bermuda,Honduras,3,5,CCQ
-2025-03-21,Guinea,Somalia,0,0,WQ
+2025-03-21,Guyana,Guatemala,3,2,CCQ
 2025-03-21,Cuba,Trinidad and Tobago,1,2,CCQ
 2025-03-21,Thailand,Afghanistan,2,0,F
-2025-03-21,Andorra,Latvia,0,1,WQ
-2025-03-21,Uruguay,Argentina,0,1,WQ
-2025-03-21,Botswana,Algeria,1,3,WQ
 2025-03-21,England,Albania,2,0,WQ
-2025-03-22,Moldova,Norway,0,5,WQ
-2025-03-22,Azerbaijan,Haiti,0,3,F
-2025-03-22,Wales,Kazakhstan,3,1,WQ
-2025-03-22,Togo,Mauritania,2,2,WQ
-2025-03-22,Israel,Estonia,2,1,WQ
-2025-03-22,Montenegro,Gibraltar,3,1,WQ
-2025-03-22,Luxembourg,Sweden,1,0,F
-2025-03-22,Senegal,Sudan,0,0,WQ
+2025-03-21,Botswana,Algeria,1,3,WQ
+2025-03-21,Uruguay,Argentina,0,1,WQ
+2025-03-21,Andorra,Latvia,0,1,WQ
 2025-03-22,Czechia,Faroe Islands,2,1,WQ
 2025-03-22,Liechtenstein,North Macedonia,0,3,WQ
-2025-03-23,Eswatini,Mauritius,3,3,WQ
-2025-03-23,Georgia,Armenia,6,1,EBC
-2025-03-23,Belgium,Ukraine,3,0,EAB
-2025-03-23,United States,Canada,1,2,CNL
+2025-03-22,Montenegro,Gibraltar,3,1,WQ
+2025-03-22,Luxembourg,Sweden,1,0,F
+2025-03-22,Wales,Kazakhstan,3,1,WQ
+2025-03-22,Moldova,Norway,0,5,WQ
+2025-03-22,Israel,Estonia,2,1,WQ
+2025-03-22,Togo,Mauritania,2,2,WQ
+2025-03-22,Senegal,Sudan,0,0,WQ
+2025-03-22,Azerbaijan,Haiti,0,3,F
 2025-03-23,Mexico,Panama,2,1,CNL
-2025-03-23,Ireland,Bulgaria,2,1,EBC
-2025-03-23,Spain,Netherlands,3,3,ENL
-2025-03-23,Scotland,Greece,0,3,EAB
-2025-03-23,Kenya,Gabon,1,2,WQ
-2025-03-23,Germany,Italy,3,3,ENL
-2025-03-23,Serbia,Austria,2,0,EAB
-2025-03-23,Slovenia,Slovakia,1,0,EBC
-2025-03-23,Iceland,Kosovo,1,3,EBC
 2025-03-23,France,Croatia,2,0,ENL
-2025-03-23,Portugal,Denmark,5,2,ENL
+2025-03-23,Spain,Netherlands,3,3,ENL
+2025-03-23,Belgium,Ukraine,3,0,EAB
+2025-03-23,Eswatini,Mauritius,3,3,WQ
+2025-03-23,Serbia,Austria,2,0,EAB
+2025-03-23,Germany,Italy,3,3,ENL
+2025-03-23,Slovenia,Slovakia,1,0,EBC
 2025-03-23,Hungary,Türkiye,0,3,EAB
-2025-03-24,Guinea-Bissau,Burkina Faso,1,2,WQ
+2025-03-23,Ireland,Bulgaria,2,1,EBC
+2025-03-23,Georgia,Armenia,6,1,EBC
+2025-03-23,Iceland,Kosovo,1,3,EBC
+2025-03-23,Kenya,Gabon,1,2,WQ
+2025-03-23,United States,Canada,1,2,CNL
+2025-03-23,Portugal,Denmark,5,2,ENL
+2025-03-23,Scotland,Greece,0,3,EAB
+2025-03-24,Tunisia,Malawi,2,0,WQ
 2025-03-24,Bosnia-Herzegovina,Cyprus,2,1,WQ
-2025-03-24,Ghana,Madagascar,3,0,WQ
+2025-03-24,Albania,Andorra,3,0,WQ
 2025-03-24,Equatorial Guinea,Namibia,1,1,WQ
 2025-03-24,England,Latvia,3,0,WQ
-2025-03-24,Central African Republic,Mali,0,0,WQ
-2025-03-24,San Marino,Romania,1,5,WQ
-2025-03-24,Lithuania,Finland,2,2,WQ
-2025-03-24,Albania,Andorra,3,0,WQ
 2025-03-24,Poland,Malta,2,0,WQ
-2025-03-24,Tunisia,Malawi,2,0,WQ
+2025-03-24,Central African Republic,Mali,0,0,WQ
+2025-03-24,Lithuania,Finland,2,2,WQ
+2025-03-24,San Marino,Romania,1,5,WQ
+2025-03-24,Ghana,Madagascar,3,0,WQ
 2025-03-24,Liberia,Sao Tome and Principe,2,1,WQ
-2025-03-24,Côte d'Ivoire,The Gambia,1,0,WQ
+2025-03-24,Guinea-Bissau,Burkina Faso,1,2,WQ
 2025-03-24,New Zealand,New Caledonia,3,0,WQ
 2025-03-24,Ethiopia,Djibouti,6,1,WQ
-2025-03-25,Jamaica,Saint Vincent and the Grenadines,3,0,CCQ
+2025-03-24,Côte d'Ivoire,The Gambia,1,0,WQ
+2025-03-25,Palestine,Iraq,2,1,WQ
 2025-03-25,Honduras,Bermuda,2,0,CCQ
+2025-03-25,Philippines,Maldives,4,1,SQ
+2025-03-25,Moldova,Estonia,2,3,WQ
 2025-03-25,Kuwait,Oman,0,1,WQ
 2025-03-25,Lebanon,Brunei Darussalam,5,0,SQ
-2025-03-25,Cameroon,Libya,3,1,WQ
-2025-03-25,Montenegro,Faroe Islands,1,0,WQ
-2025-03-25,Tajikistan,East Timor,1,0,SQ
-2025-03-25,Russia,Zambia,5,0,F
-2025-03-25,India,Bangladesh,0,0,SQ
-2025-03-25,Palestine,Iraq,2,1,WQ
 2025-03-25,Malaysia,Nepal,2,0,SQ
-2025-03-25,Bhutan,Yemen,0,0,SQ
-2025-03-25,South Sudan,Sudan,1,1,WQ
-2025-03-25,Cambodia,Aruba,1,2,F
-2025-03-25,Switzerland,Luxembourg,3,1,F
-2025-03-25,Senegal,Togo,2,0,WQ
-2025-03-25,Nigeria,Zimbabwe,1,1,WQ
-2025-03-25,Chinese Taipei,Turkmenistan,1,2,SQ
-2025-03-25,Sweden,Northern Ireland,5,1,F
-2025-03-25,Costa Rica,Belize,6,1,CCQ
-2025-03-25,IR Iran,Uzbekistan,2,2,WQ
-2025-03-25,South Africa,Benin,2,0,WQ
-2025-03-25,Singapore,"Hong Kong, China",0,0,SQ
-2025-03-25,Chile,Ecuador,0,0,WQ
-2025-03-25,Myanmar,Afghanistan,2,1,SQ
-2025-03-25,Vietnam,Laos,5,0,SQ
-2025-03-25,North Macedonia,Wales,1,1,WQ
-2025-03-25,Angola,Cape Verde,1,2,WQ
-2025-03-25,Colombia,Paraguay,2,2,WQ
-2025-03-25,Comoros,Chad,1,0,WQ
-2025-03-25,Burundi,Seychelles,5,0,WQ
-2025-03-25,Kyrgyz Republic,Qatar,3,1,WQ
-2025-03-25,Philippines,Maldives,4,1,SQ
-2025-03-25,United Arab Emirates,Korea DPR,2,1,WQ
-2025-03-25,Moldova,Estonia,2,3,WQ
-2025-03-25,Rwanda,Lesotho,1,1,WQ
-2025-03-25,Azerbaijan,Belarus,0,2,F
-2025-03-25,Korea Republic,Jordan,1,1,WQ
-2025-03-25,Dominican Republic,Puerto Rico,2,0,F
-2025-03-25,Norway,Israel,4,2,WQ
-2025-03-25,Argentina,Brazil,4,1,WQ
-2025-03-25,Japan,Saudi Arabia,0,0,WQ
-2025-03-25,Egypt,Sierra Leone,1,0,WQ
-2025-03-25,Guatemala,Guyana,2,0,CCQ
-2025-03-25,Venezuela,Peru,1,0,WQ
-2025-03-25,Thailand,Sri Lanka,1,0,SQ
-2025-03-25,Czechia,Gibraltar,4,0,WQ
-2025-03-25,Syria,Pakistan,2,0,SQ
-2025-03-25,Algeria,Mozambique,5,1,WQ
-2025-03-25,Mauritania,Congo DR,0,2,WQ
-2025-03-25,Bolivia,Uruguay,0,0,WQ
-2025-03-25,Trinidad and Tobago,Cuba,4,0,CCQ
-2025-03-25,Uganda,Guinea,1,0,WQ
-2025-03-25,Morocco,Tanzania,2,0,WQ
-2025-03-25,Liechtenstein,Kazakhstan,0,2,WQ
-2025-03-25,Indonesia,Bahrain,1,0,WQ
-2025-03-25,Botswana,Somalia,2,0,WQ
-2025-03-25,Nicaragua,Guadeloupe,0,1,CCQ
-2025-03-25,China PR,Australia,0,2,WQ
-2025-03-25,Martinique,Suriname,0,1,CCQ
 2025-03-25,Niger,Bonaire,6,0,F
+2025-03-25,India,Bangladesh,0,0,SQ
+2025-03-25,Cambodia,Aruba,1,2,F
+2025-03-25,Comoros,Chad,1,0,WQ
+2025-03-25,Guatemala,Guyana,2,0,CCQ
+2025-03-25,Trinidad and Tobago,Cuba,4,0,CCQ
+2025-03-25,Angola,Cape Verde,1,2,WQ
+2025-03-25,Chinese Taipei,Turkmenistan,1,2,SQ
+2025-03-25,Vietnam,Laos,5,0,SQ
+2025-03-25,South Sudan,Sudan,1,1,WQ
+2025-03-25,South Africa,Benin,2,0,WQ
+2025-03-25,Chile,Ecuador,0,0,WQ
+2025-03-25,Switzerland,Luxembourg,3,1,F
+2025-03-25,Norway,Israel,4,2,WQ
+2025-03-25,China PR,Australia,0,2,WQ
+2025-03-25,Costa Rica,Belize,6,1,CCQ
+2025-03-25,Thailand,Sri Lanka,1,0,SQ
+2025-03-25,Colombia,Paraguay,2,2,WQ
+2025-03-25,Argentina,Brazil,4,1,WQ
+2025-03-25,Rwanda,Lesotho,1,1,WQ
+2025-03-25,Uganda,Guinea,1,0,WQ
+2025-03-25,Cameroon,Libya,3,1,WQ
+2025-03-25,Botswana,Somalia,2,0,WQ
+2025-03-25,Montenegro,Faroe Islands,1,0,WQ
+2025-03-25,Kyrgyz Republic,Qatar,3,1,WQ
+2025-03-25,Syria,Pakistan,2,0,SQ
+2025-03-25,Korea Republic,Jordan,1,1,WQ
+2025-03-25,Czechia,Gibraltar,4,0,WQ
+2025-03-25,Egypt,Sierra Leone,1,0,WQ
+2025-03-25,Dominican Republic,Puerto Rico,2,0,F
+2025-03-25,Azerbaijan,Belarus,0,2,F
+2025-03-25,Japan,Saudi Arabia,0,0,WQ
+2025-03-25,Algeria,Mozambique,5,1,WQ
+2025-03-25,Bolivia,Uruguay,0,0,WQ
+2025-03-25,IR Iran,Uzbekistan,2,2,WQ
+2025-03-25,Jamaica,Saint Vincent and the Grenadines,3,0,CCQ
+2025-03-25,Liechtenstein,Kazakhstan,0,2,WQ
+2025-03-25,North Macedonia,Wales,1,1,WQ
+2025-03-25,Morocco,Tanzania,2,0,WQ
+2025-03-25,Burundi,Seychelles,5,0,WQ
+2025-03-25,Singapore,"Hong Kong, China",0,0,SQ
+2025-03-25,Nigeria,Zimbabwe,1,1,WQ
+2025-03-25,Indonesia,Bahrain,1,0,WQ
+2025-03-25,Nicaragua,Guadeloupe,0,1,CCQ
+2025-03-25,Russia,Zambia,5,0,F
+2025-03-25,Myanmar,Afghanistan,2,1,SQ
+2025-03-25,Senegal,Togo,2,0,WQ
+2025-03-25,United Arab Emirates,Korea DPR,2,1,WQ
+2025-03-25,Mauritania,Congo DR,0,2,WQ
+2025-03-25,Tajikistan,East Timor,1,0,SQ
+2025-03-25,Martinique,Suriname,0,1,CCQ
+2025-03-25,Sweden,Northern Ireland,5,1,F
+2025-03-25,Bhutan,Yemen,0,0,SQ
+2025-03-25,Venezuela,Peru,1,0,WQ
 2025-05-08,Dominica,Barbados,0,0,F
 2025-05-11,Dominica,Barbados,0,0,F
 2025-05-20,Saint Kitts and Nevis,Saint Vincent and the Grenadines,1,3,F
 2025-05-23,Saint Martin,Anguilla,2,1,PEL
 2025-05-24,Saint Kitts and Nevis,Anguilla,4,2,PEL
-2025-05-25,Saint Martin,Saint Kitts and Nevis,4,1,PEL
 2025-05-25,Saint Vincent and the Grenadines,Saint Kitts and Nevis,3,0,F
+2025-05-25,Saint Martin,Saint Kitts and Nevis,4,1,PEL
 2025-05-27,Jamaica,Trinidad and Tobago,3,2,UTC
-2025-05-28,Nigeria,Ghana,2,1,UTC
 2025-05-28,Oman,Lebanon,1,0,F
-2025-05-29,Malaysia,Cape Verde,1,1,F
+2025-05-28,Nigeria,Ghana,2,1,UTC
 2025-05-29,Saint Vincent and the Grenadines,British Virgin Islands,1,1,F
+2025-05-29,Malaysia,Cape Verde,1,1,F
 2025-05-30,Saudi Arabia,Jordan,2,0,F
-2025-05-31,Grenada,Anguilla,2,0,F
-2025-05-31,Jamaica,Nigeria,2,2,UTC
 2025-05-31,Ghana,Trinidad and Tobago,4,0,UTC
+2025-05-31,Jamaica,Nigeria,2,2,UTC
+2025-05-31,Grenada,Anguilla,2,0,F
 2025-05-31,El Salvador,Guatemala,1,1,F
 2025-06-01,Nicaragua,Puerto Rico,1,1,F
 2025-06-02,Tunisia,Burkina Faso,2,0,F
 2025-06-03,Malaysia,Cape Verde,0,3,F
-2025-06-04,South Africa,Mozambique,0,1,CSF
-2025-06-04,Thailand,India,2,0,F
+2025-06-04,Bermuda,Cayman Islands,5,0,WQ
+2025-06-04,Grenada,Bahamas,6,0,WQ
+2025-06-04,Barbados,Aruba,1,1,WQ
+2025-06-04,Bangladesh,Bhutan,2,0,F
+2025-06-04,Mauritius,Zimbabwe,0,0,CSF
+2025-06-04,Montserrat,Belize,1,0,WQ
 2025-06-04,Germany,Portugal,1,2,ENL
 2025-06-04,Dominica,British Virgin Islands,3,0,WQ
-2025-06-04,Montserrat,Belize,1,0,WQ
-2025-06-04,Bangladesh,Bhutan,2,0,F
-2025-06-04,Barbados,Aruba,1,1,WQ
-2025-06-04,Grenada,Bahamas,6,0,WQ
-2025-06-04,Mauritius,Zimbabwe,0,0,CSF
 2025-06-04,Saint Vincent and the Grenadines,Anguilla,6,0,WQ
-2025-06-04,Bermuda,Cayman Islands,5,0,WQ
-2025-06-05,Algeria,Rwanda,2,0,F
-2025-06-05,Georgia,Faroe Islands,1,0,F
+2025-06-04,South Africa,Mozambique,0,1,CSF
+2025-06-04,Thailand,India,2,0,F
+2025-06-05,Chinese Taipei,Macao,2,0,F
 2025-06-05,Kuwait,Palestine,0,2,WQ
-2025-06-05,Indonesia,China PR,1,0,WQ
-2025-06-05,Oman,Jordan,0,3,WQ
-2025-06-05,Belarus,Kazakhstan,4,1,F
-2025-06-05,Kyrgyz Republic,Korea DPR,2,2,WQ
-2025-06-05,Sri Lanka,Brunei Darussalam,1,0,F
-2025-06-05,Singapore,Maldives,3,1,F
 2025-06-05,Chile,Argentina,0,1,WQ
+2025-06-05,Sri Lanka,Brunei Darussalam,1,0,F
+2025-06-05,Kyrgyz Republic,Korea DPR,2,2,WQ
 2025-06-05,Congo DR,Mali,1,0,F
+2025-06-05,"Hong Kong, China",Nepal,0,0,F
+2025-06-05,Qatar,IR Iran,1,0,WQ
+2025-06-05,Algeria,Rwanda,2,0,F
+2025-06-05,United Arab Emirates,Uzbekistan,0,0,WQ
+2025-06-05,Oman,Jordan,0,3,WQ
 2025-06-05,Bahrain,Saudi Arabia,0,2,WQ
 2025-06-05,Paraguay,Uruguay,2,0,WQ
-2025-06-05,United Arab Emirates,Uzbekistan,0,0,WQ
-2025-06-05,Lesotho,Malawi,1,0,CSF
+2025-06-05,Singapore,Maldives,3,1,F
+2025-06-05,Georgia,Faroe Islands,1,0,F
+2025-06-05,Belarus,Kazakhstan,4,1,F
 2025-06-05,Ecuador,Brazil,0,0,WQ
-2025-06-05,"Hong Kong, China",Nepal,0,0,F
-2025-06-05,Spain,France,5,4,ENL
-2025-06-05,Qatar,IR Iran,1,0,WQ
-2025-06-05,Angola,Namibia,1,1,CSF
-2025-06-05,Chinese Taipei,Macao,2,0,F
-2025-06-05,Iraq,Korea Republic,0,2,WQ
 2025-06-05,Cambodia,Tajikistan,1,2,F
+2025-06-05,Iraq,Korea Republic,0,2,WQ
+2025-06-05,Spain,France,5,4,ENL
+2025-06-05,Angola,Namibia,1,1,CSF
+2025-06-05,Lesotho,Malawi,1,0,CSF
 2025-06-05,Australia,Japan,1,0,WQ
-2025-06-06,Ireland,Senegal,1,1,F
-2025-06-06,Croatia,Gibraltar,7,0,WQ
-2025-06-06,Norway,Italy,3,0,WQ
-2025-06-06,Nicaragua,Guyana,1,0,WQ
-2025-06-06,Guatemala,Dominican Republic,4,2,WQ
-2025-06-06,Trinidad and Tobago,Saint Kitts and Nevis,6,2,WQ
-2025-06-06,Cameroon,Uganda,3,0,F
-2025-06-06,Morocco,Tunisia,2,0,F
-2025-06-06,Poland,Moldova,2,0,F
+2025-06-05,Indonesia,China PR,1,0,WQ
 2025-06-06,Venezuela,Bolivia,2,0,WQ
 2025-06-06,Antigua and Barbuda,Cuba,0,1,WQ
-2025-06-06,The Gambia,Equatorial Guinea,2,1,F
-2025-06-06,Colombia,Peru,0,0,WQ
-2025-06-06,Wales,Liechtenstein,3,0,WQ
-2025-06-06,Kosovo,Armenia,5,2,F
-2025-06-06,Bulgaria,Cyprus,2,2,F
-2025-06-06,Russia,Nigeria,1,1,F
-2025-06-06,Luxembourg,Slovenia,0,1,F
-2025-06-06,Comoros,Zambia,1,0,CSF
-2025-06-06,Burundi,Guinea-Bissau,1,0,F
+2025-06-06,Burkina Faso,Zimbabwe,2,0,F
+2025-06-06,Trinidad and Tobago,Saint Kitts and Nevis,6,2,WQ
 2025-06-06,South Africa,Tanzania,0,0,F
 2025-06-06,Hungary,Sweden,0,2,F
-2025-06-06,Burkina Faso,Zimbabwe,2,0,F
-2025-06-06,Niger,Gabon,4,3,F
-2025-06-06,Suriname,Puerto Rico,1,0,WQ
-2025-06-06,North Macedonia,Belgium,1,1,WQ
-2025-06-06,Scotland,Iceland,1,3,F
+2025-06-06,Guatemala,Dominican Republic,4,2,WQ
+2025-06-06,Poland,Moldova,2,0,F
+2025-06-06,Morocco,Tunisia,2,0,F
+2025-06-06,Wales,Liechtenstein,3,0,WQ
 2025-06-06,Czechia,Montenegro,2,0,WQ
-2025-06-06,Estonia,Israel,1,3,WQ
+2025-06-06,Cameroon,Uganda,3,0,F
+2025-06-06,Russia,Nigeria,1,1,F
+2025-06-06,North Macedonia,Belgium,1,1,WQ
+2025-06-06,Niger,Gabon,4,3,F
 2025-06-06,Central African Republic,Mauritania,2,1,F
-2025-06-07,England,Andorra,1,0,WQ
-2025-06-07,Belize,Panama,0,2,WQ
-2025-06-07,Austria,Romania,2,1,WQ
-2025-06-07,Albania,Serbia,0,0,WQ
-2025-06-07,New Zealand,Côte d'Ivoire,1,0,CDS
-2025-06-07,Bosnia-Herzegovina,San Marino,1,0,WQ
-2025-06-07,Finland,Netherlands,0,2,WQ
-2025-06-07,Aruba,Haiti,0,5,WQ
-2025-06-07,British Virgin Islands,Jamaica,0,1,WQ
-2025-06-07,Chad,Kenya,0,0,F
-2025-06-07,Greece,Slovakia,4,1,F
-2025-06-07,Latvia,Azerbaijan,0,0,F
-2025-06-07,Anguilla,El Salvador,0,3,WQ
-2025-06-07,Switzerland,Mexico,4,2,F
-2025-06-07,South Africa,Zimbabwe,2,0,CSF
-2025-06-07,Mauritius,Mozambique,0,0,CSF
-2025-06-07,Madagascar,Tanzania,1,0,CSF
-2025-06-07,Denmark,Northern Ireland,2,1,F
-2025-06-07,Costa Rica,Bahamas,8,0,WQ
-2025-06-07,United States,Türkiye,1,2,F
-2025-06-07,Cayman Islands,Honduras,0,1,WQ
-2025-06-07,Malta,Lithuania,0,0,WQ
+2025-06-06,Scotland,Iceland,1,3,F
+2025-06-06,Ireland,Senegal,1,1,F
+2025-06-06,Croatia,Gibraltar,7,0,WQ
+2025-06-06,Nicaragua,Guyana,1,0,WQ
+2025-06-06,Burundi,Guinea-Bissau,1,0,F
+2025-06-06,Bulgaria,Cyprus,2,2,F
+2025-06-06,Kosovo,Armenia,5,2,F
+2025-06-06,Colombia,Peru,0,0,WQ
+2025-06-06,Luxembourg,Slovenia,0,1,F
+2025-06-06,Norway,Italy,3,0,WQ
+2025-06-06,The Gambia,Equatorial Guinea,2,1,F
+2025-06-06,Comoros,Zambia,1,0,CSF
+2025-06-06,Suriname,Puerto Rico,1,0,WQ
+2025-06-06,Estonia,Israel,1,3,WQ
 2025-06-07,Canada,Ukraine,4,2,CDS
-2025-06-08,Georgia,Cape Verde,1,1,F
-2025-06-08,Malawi,Namibia,0,0,CSF
-2025-06-08,Portugal,Spain,2,2,ENL
+2025-06-07,South Africa,Zimbabwe,2,0,CSF
+2025-06-07,England,Andorra,1,0,WQ
+2025-06-07,Bosnia-Herzegovina,San Marino,1,0,WQ
+2025-06-07,Austria,Romania,2,1,WQ
+2025-06-07,Costa Rica,Bahamas,8,0,WQ
+2025-06-07,Albania,Serbia,0,0,WQ
+2025-06-07,British Virgin Islands,Jamaica,0,1,WQ
+2025-06-07,Finland,Netherlands,0,2,WQ
+2025-06-07,Malta,Lithuania,0,0,WQ
+2025-06-07,Madagascar,Tanzania,1,0,CSF
+2025-06-07,Chad,Kenya,0,0,F
+2025-06-07,United States,Türkiye,1,2,F
+2025-06-07,Aruba,Haiti,0,5,WQ
+2025-06-07,Belize,Panama,0,2,WQ
+2025-06-07,Mauritius,Mozambique,0,0,CSF
+2025-06-07,Cayman Islands,Honduras,0,1,WQ
+2025-06-07,Switzerland,Mexico,4,2,F
+2025-06-07,Greece,Slovakia,4,1,F
+2025-06-07,Anguilla,El Salvador,0,3,WQ
+2025-06-07,New Zealand,Côte d'Ivoire,1,0,CDS
+2025-06-07,Latvia,Azerbaijan,0,0,F
+2025-06-07,Denmark,Northern Ireland,2,1,F
 2025-06-08,Congo DR,Madagascar,3,1,F
-2025-06-08,Angola,Lesotho,4,0,CSF
+2025-06-08,Portugal,Spain,2,2,ENL
+2025-06-08,Malawi,Namibia,0,0,CSF
+2025-06-08,Georgia,Cape Verde,1,1,F
 2025-06-08,Germany,France,0,2,ENL
-2025-06-09,Estonia,Norway,0,1,WQ
-2025-06-09,Faroe Islands,Gibraltar,2,1,WQ
-2025-06-09,Eswatini,Madagascar,1,1,CSF
-2025-06-09,The Gambia,Uganda,1,1,F
+2025-06-08,Angola,Lesotho,4,0,CSF
+2025-06-09,Gabon,Guinea-Bissau,2,0,F
 2025-06-09,Kazakhstan,North Macedonia,0,1,WQ
-2025-06-09,Liechtenstein,Scotland,0,4,F
+2025-06-09,The Gambia,Uganda,1,1,F
+2025-06-09,Italy,Moldova,2,0,WQ
+2025-06-09,Croatia,Czechia,5,1,WQ
 2025-06-09,Montenegro,Armenia,2,2,F
+2025-06-09,Estonia,Norway,0,1,WQ
+2025-06-09,Eswatini,Madagascar,1,1,CSF
 2025-06-09,Kosovo,Comoros,4,2,F
 2025-06-09,Morocco,Benin,1,0,F
-2025-06-09,Gabon,Guinea-Bissau,2,0,F
-2025-06-09,Italy,Moldova,2,0,WQ
+2025-06-09,Liechtenstein,Scotland,0,4,F
 2025-06-09,Botswana,Comoros,0,0,CSF
-2025-06-09,Belgium,Wales,4,3,WQ
-2025-06-09,Croatia,Czechia,5,1,WQ
 2025-06-09,Cameroon,Equatorial Guinea,1,1,F
-2025-06-10,Finland,Poland,2,1,WQ
-2025-06-10,"Hong Kong, China",India,1,0,SQ
-2025-06-10,Sri Lanka,Chinese Taipei,3,1,SQ
-2025-06-10,Kenya,Chad,2,1,F
-2025-06-10,Burundi,Mauritania,0,0,F
-2025-06-10,Romania,Cyprus,2,0,WQ
-2025-06-10,Syria,Afghanistan,1,0,SQ
-2025-06-10,Jamaica,Guatemala,3,0,WQ
-2025-06-10,Turkmenistan,Thailand,3,1,SQ
-2025-06-10,Canada,Côte d'Ivoire,0,0,CDS
-2025-06-10,Curaçao,Haiti,5,1,WQ
-2025-06-10,England,Senegal,1,3,F
+2025-06-09,Belgium,Wales,4,3,WQ
+2025-06-09,Faroe Islands,Gibraltar,2,1,WQ
 2025-06-10,Guyana,Montserrat,3,0,WQ
-2025-06-10,Denmark,Lithuania,5,0,F
-2025-06-10,El Salvador,Suriname,1,1,WQ
-2025-06-10,Saint Kitts and Nevis,Grenada,2,3,WQ
-2025-06-10,Costa Rica,Trinidad and Tobago,2,1,WQ
-2025-06-10,Sweden,Algeria,4,3,F
-2025-06-10,Peru,Ecuador,0,0,WQ
 2025-06-10,Uruguay,Venezuela,2,0,WQ
-2025-06-10,United States,Switzerland,0,4,F
-2025-06-10,Dominican Republic,Dominica,5,0,WQ
-2025-06-10,Honduras,Antigua and Barbuda,2,0,WQ
+2025-06-10,Peru,Ecuador,0,0,WQ
+2025-06-10,Costa Rica,Trinidad and Tobago,2,1,WQ
+2025-06-10,Saint Kitts and Nevis,Grenada,2,3,WQ
+2025-06-10,"Hong Kong, China",India,1,0,SQ
 2025-06-10,Latvia,Albania,1,1,WQ
+2025-06-10,El Salvador,Suriname,1,1,WQ
+2025-06-10,Sweden,Algeria,4,3,F
+2025-06-10,Syria,Afghanistan,1,0,SQ
+2025-06-10,Turkmenistan,Thailand,3,1,SQ
+2025-06-10,Romania,Cyprus,2,0,WQ
+2025-06-10,Finland,Poland,2,1,WQ
+2025-06-10,Burundi,Mauritania,0,0,F
+2025-06-10,Honduras,Antigua and Barbuda,2,0,WQ
+2025-06-10,Curaçao,Haiti,5,1,WQ
+2025-06-10,Dominican Republic,Dominica,5,0,WQ
+2025-06-10,Sri Lanka,Chinese Taipei,3,1,SQ
+2025-06-10,United States,Switzerland,0,4,F
+2025-06-10,Canada,Côte d'Ivoire,0,0,CDS
+2025-06-10,Jamaica,Guatemala,3,0,WQ
+2025-06-10,Kenya,Chad,2,1,F
+2025-06-10,Denmark,Lithuania,5,0,F
+2025-06-10,England,Senegal,1,3,F
 2025-06-10,Northern Ireland,Iceland,1,0,F
-2025-06-10,Lebanon,Yemen,0,0,SQ
-2025-06-10,Brazil,Paraguay,1,0,WQ
-2025-06-10,Saudi Arabia,Australia,1,2,WQ
-2025-06-10,Jordan,Iraq,0,1,WQ
-2025-06-10,South Africa,Mauritius,0,0,CSF
-2025-06-10,Myanmar,Pakistan,1,0,SQ
+2025-06-10,Namibia,Lesotho,3,0,CSF
+2025-06-10,Azerbaijan,Hungary,1,2,F
 2025-06-10,Luxembourg,Ireland,0,0,F
 2025-06-10,Israel,Slovakia,1,0,F
-2025-06-10,Puerto Rico,Saint Vincent and the Grenadines,2,1,WQ
-2025-06-10,Zimbabwe,Mozambique,3,1,CSF
-2025-06-10,Belarus,Russia,1,4,F
-2025-06-10,Uzbekistan,Qatar,3,0,WQ
-2025-06-10,Saint Lucia,Barbados,2,1,WQ
-2025-06-10,Slovenia,Bosnia-Herzegovina,2,1,F
-2025-06-10,South Africa,Mozambique,2,0,F
 2025-06-10,Mexico,Türkiye,1,0,F
-2025-06-10,Azerbaijan,Hungary,1,2,F
-2025-06-10,Bolivia,Chile,2,0,WQ
+2025-06-10,South Africa,Mauritius,0,0,CSF
+2025-06-10,Netherlands,Malta,8,0,WQ
+2025-06-10,Slovenia,Bosnia-Herzegovina,2,1,F
+2025-06-10,Serbia,Andorra,3,0,WQ
+2025-06-10,Philippines,Tajikistan,2,2,SQ
+2025-06-10,China PR,Bahrain,1,0,WQ
+2025-06-10,East Timor,Maldives,1,0,SQ
+2025-06-10,Jordan,Iraq,0,1,WQ
+2025-06-10,Malaysia,Vietnam,4,0,SQ
+2025-06-10,Bangladesh,Singapore,1,2,SQ
 2025-06-10,Brunei Darussalam,Bhutan,2,1,SQ
 2025-06-10,Korea Republic,Kuwait,4,0,WQ
-2025-06-10,San Marino,Austria,0,4,WQ
-2025-06-10,Namibia,Lesotho,3,0,CSF
+2025-06-10,Saint Lucia,Barbados,2,1,WQ
+2025-06-10,Puerto Rico,Saint Vincent and the Grenadines,2,1,WQ
+2025-06-10,Belarus,Russia,1,4,F
 2025-06-10,Cuba,Bermuda,1,2,WQ
+2025-06-10,Uzbekistan,Qatar,3,0,WQ
 2025-06-10,Kyrgyz Republic,United Arab Emirates,1,1,WQ
 2025-06-10,Angola,Malawi,1,0,CSF
-2025-06-10,Serbia,Andorra,3,0,WQ
-2025-06-10,Japan,Indonesia,6,0,WQ
+2025-06-10,Lebanon,Yemen,0,0,SQ
+2025-06-10,Bolivia,Chile,2,0,WQ
+2025-06-10,Brazil,Paraguay,1,0,WQ
 2025-06-10,Laos,Nepal,2,1,SQ
 2025-06-10,Argentina,Colombia,1,1,WQ
-2025-06-10,Greece,Bulgaria,4,0,F
-2025-06-10,Bangladesh,Singapore,1,2,SQ
-2025-06-10,Panama,Nicaragua,3,0,WQ
-2025-06-10,Netherlands,Malta,8,0,WQ
-2025-06-10,Philippines,Tajikistan,2,2,SQ
-2025-06-10,Malaysia,Vietnam,4,0,SQ
 2025-06-10,Niger,Zimbabwe,1,1,F
+2025-06-10,South Africa,Mozambique,2,0,F
+2025-06-10,Zimbabwe,Mozambique,3,1,CSF
+2025-06-10,Greece,Bulgaria,4,0,F
+2025-06-10,Panama,Nicaragua,3,0,WQ
 2025-06-10,IR Iran,Korea DPR,3,0,WQ
 2025-06-10,Ukraine,New Zealand,2,1,CDS
+2025-06-10,Saudi Arabia,Australia,1,2,WQ
+2025-06-10,Myanmar,Pakistan,1,0,SQ
+2025-06-10,Japan,Indonesia,6,0,WQ
+2025-06-10,San Marino,Austria,0,4,WQ
 2025-06-10,Oman,Palestine,1,1,WQ
-2025-06-10,East Timor,Maldives,1,0,SQ
-2025-06-10,China PR,Bahrain,1,0,WQ
-2025-06-11,Tanzania,Eswatini,2,1,CSF
 2025-06-11,Botswana,Zambia,3,3,CSF
-2025-06-13,Angola,Madagascar,4,1,CSF
+2025-06-11,Tanzania,Eswatini,2,1,CSF
 2025-06-13,South Africa,Comoros,3,1,CSF
+2025-06-13,Angola,Madagascar,4,1,CSF
 2025-06-14,Mexico,Dominican Republic,3,2,CCH
-2025-06-15,South Africa,Angola,0,3,CSF
-2025-06-15,United States,Trinidad and Tobago,5,0,CCH
-2025-06-15,Comoros,Madagascar,1,0,CSF
 2025-06-15,Saudi Arabia,Haiti,1,0,CCH
+2025-06-15,United States,Trinidad and Tobago,5,0,CCH
+2025-06-15,South Africa,Angola,0,3,CSF
 2025-06-15,Costa Rica,Suriname,4,3,CCH
+2025-06-15,Comoros,Madagascar,1,0,CSF
 2025-06-16,Guatemala,Jamaica,1,0,CCH
 2025-06-16,Panama,Guadeloupe,5,2,CCH
 2025-06-17,Canada,Honduras,6,0,CCH
@@ -412,22 +412,22 @@ date,home,away,hg,ag,comp_code
 2025-06-20,Panama,Guatemala,1,0,CCH
 2025-06-21,Honduras,El Salvador,2,0,CCH
 2025-06-21,Canada,Curaçao,1,1,CCH
-2025-06-22,Saudi Arabia,Trinidad and Tobago,1,1,CCH
+2025-06-22,Costa Rica,Mexico,0,0,CCH
 2025-06-22,United States,Haiti,2,1,CCH
 2025-06-22,Dominican Republic,Suriname,0,0,CCH
-2025-06-22,Costa Rica,Mexico,0,0,CCH
-2025-06-24,Canada,El Salvador,2,0,CCH
-2025-06-24,Guatemala,Guadeloupe,3,2,CCH
-2025-06-24,Panama,Jamaica,4,1,CCH
+2025-06-22,Saudi Arabia,Trinidad and Tobago,1,1,CCH
 2025-06-24,Honduras,Curaçao,2,1,CCH
-2025-06-28,Mexico,Saudi Arabia,2,0,CCH
+2025-06-24,Guatemala,Guadeloupe,3,2,CCH
+2025-06-24,Canada,El Salvador,2,0,CCH
+2025-06-24,Panama,Jamaica,4,1,CCH
 2025-06-28,Panama,Honduras,1,1,CCH
-2025-06-29,United States,Costa Rica,2,2,CCH
+2025-06-28,Mexico,Saudi Arabia,2,0,CCH
 2025-06-29,Canada,Guatemala,1,1,CCH
+2025-06-29,United States,Costa Rica,2,2,CCH
 2025-07-02,Mexico,Honduras,1,0,CCH
 2025-07-02,United States,Guatemala,2,1,CCH
-2025-07-06,Malawi,Botswana,1,1,IPC
 2025-07-06,United States,Mexico,1,2,CCH
+2025-07-06,Malawi,Botswana,1,1,IPC
 2025-07-07,Korea Republic,China PR,3,0,EAH
 2025-07-08,Japan,"Hong Kong, China",6,1,EAH
 2025-07-11,Korea Republic,"Hong Kong, China",2,0,EAH
@@ -448,591 +448,591 @@ date,home,away,hg,ag,comp_code
 2025-09-02,Oman,Kyrgyz Republic,2,1,CNU
 2025-09-03,Qatar,Bahrain,2,2,F
 2025-09-03,Gabon,Seychelles,4,0,WQ
-2025-09-04,Georgia,Türkiye,2,3,WQ
-2025-09-04,Guatemala,El Salvador,0,1,WQ
-2025-09-04,Thailand,Fiji,3,0,KNG
-2025-09-04,Guinea-Bissau,Sierra Leone,1,1,WQ
-2025-09-04,Brazil,Chile,3,0,WQ
-2025-09-04,Luxembourg,Northern Ireland,1,3,WQ
-2025-09-04,Uruguay,Peru,3,0,WQ
-2025-09-04,Lithuania,Malta,1,1,WQ
-2025-09-04,Cameroon,Eswatini,3,0,WQ
-2025-09-04,Mali,Comoros,3,0,WQ
-2025-09-04,Tajikistan,IR Iran,2,2,CNU
-2025-09-04,Bulgaria,Spain,0,3,WQ
-2025-09-04,Argentina,Venezuela,3,0,WQ
-2025-09-04,Saudi Arabia,North Macedonia,2,1,F
 2025-09-04,Malaysia,Singapore,2,1,F
-2025-09-04,Iraq,"Hong Kong, China",2,1,KNG
-2025-09-04,Netherlands,Poland,1,1,WQ
-2025-09-04,Mauritius,Cape Verde,0,2,WQ
-2025-09-04,Algeria,Botswana,3,1,WQ
-2025-09-04,Norway,Finland,1,0,F
-2025-09-04,Slovakia,Germany,2,0,WQ
-2025-09-04,Chad,Ghana,1,1,WQ
-2025-09-04,Gibraltar,Albania,0,1,F
-2025-09-04,Madagascar,Central African Republic,2,0,WQ
-2025-09-04,Paraguay,Ecuador,0,0,WQ
-2025-09-04,Equatorial Guinea,Sao Tome and Principe,3,2,WQ
-2025-09-04,Afghanistan,India,0,0,CNU
-2025-09-04,Suriname,Panama,0,0,WQ
-2025-09-04,United Arab Emirates,Syria,3,1,F
-2025-09-04,Tunisia,Liberia,3,0,WQ
-2025-09-04,Kazakhstan,Wales,0,1,WQ
-2025-09-04,Russia,Jordan,0,0,F
-2025-09-04,Angola,Libya,0,1,WQ
-2025-09-04,Liechtenstein,Belgium,0,6,WQ
 2025-09-04,Colombia,Bolivia,3,0,WQ
-2025-09-05,Mauritania,Togo,2,0,WQ
-2025-09-05,Oman,Turkmenistan,2,1,CNU
-2025-09-05,Faroe Islands,Croatia,0,1,WQ
-2025-09-05,Montenegro,Czechia,0,2,WQ
+2025-09-04,United Arab Emirates,Syria,3,1,F
+2025-09-04,Chad,Ghana,1,1,WQ
+2025-09-04,Kazakhstan,Wales,0,1,WQ
+2025-09-04,Guinea-Bissau,Sierra Leone,1,1,WQ
+2025-09-04,Luxembourg,Northern Ireland,1,3,WQ
+2025-09-04,Bulgaria,Spain,0,3,WQ
+2025-09-04,Mali,Comoros,3,0,WQ
+2025-09-04,Suriname,Panama,0,0,WQ
+2025-09-04,Equatorial Guinea,Sao Tome and Principe,3,2,WQ
+2025-09-04,Thailand,Fiji,3,0,KNG
+2025-09-04,Afghanistan,India,0,0,CNU
+2025-09-04,Mauritius,Cape Verde,0,2,WQ
+2025-09-04,Tajikistan,IR Iran,2,2,CNU
+2025-09-04,Guatemala,El Salvador,0,1,WQ
+2025-09-04,Uruguay,Peru,3,0,WQ
+2025-09-04,Algeria,Botswana,3,1,WQ
+2025-09-04,Paraguay,Ecuador,0,0,WQ
+2025-09-04,Brazil,Chile,3,0,WQ
+2025-09-04,Russia,Jordan,0,0,F
+2025-09-04,Netherlands,Poland,1,1,WQ
+2025-09-04,Cameroon,Eswatini,3,0,WQ
+2025-09-04,Liechtenstein,Belgium,0,6,WQ
+2025-09-04,Georgia,Türkiye,2,3,WQ
+2025-09-04,Lithuania,Malta,1,1,WQ
+2025-09-04,Iraq,"Hong Kong, China",2,1,KNG
+2025-09-04,Saudi Arabia,North Macedonia,2,1,F
+2025-09-04,Argentina,Venezuela,3,0,WQ
+2025-09-04,Madagascar,Central African Republic,2,0,WQ
+2025-09-04,Tunisia,Liberia,3,0,WQ
+2025-09-04,Angola,Libya,0,1,WQ
+2025-09-04,Gibraltar,Albania,0,1,F
+2025-09-04,Slovakia,Germany,2,0,WQ
+2025-09-04,Norway,Finland,1,0,F
 2025-09-05,Congo,Tanzania,1,1,WQ
-2025-09-05,Nicaragua,Costa Rica,1,1,WQ
-2025-09-05,Denmark,Scotland,0,0,WQ
-2025-09-05,Iceland,Azerbaijan,5,0,WQ
-2025-09-05,Uganda,Mozambique,4,0,WQ
-2025-09-05,Australia,New Zealand,1,0,F
-2025-09-05,Egypt,Ethiopia,2,0,WQ
-2025-09-05,South Sudan,Congo DR,1,4,WQ
-2025-09-05,Morocco,Niger,5,0,WQ
-2025-09-05,Burkina Faso,Djibouti,6,0,WQ
-2025-09-05,South Africa,Lesotho,3,0,WQ
-2025-09-05,Switzerland,Kosovo,4,0,WQ
-2025-09-05,Bermuda,Jamaica,0,4,WQ
-2025-09-05,Uzbekistan,Kyrgyz Republic,4,0,CNU
-2025-09-05,Trinidad and Tobago,Curaçao,0,0,WQ
-2025-09-05,Benin,Zimbabwe,1,0,WQ
-2025-09-05,Romania,Canada,0,3,F
-2025-09-05,Moldova,Israel,0,4,WQ
-2025-09-05,Indonesia,Chinese Taipei,6,0,F
-2025-09-05,Côte d'Ivoire,Burundi,1,0,WQ
 2025-09-05,France,Ukraine,2,0,WQ
-2025-09-05,Senegal,Sudan,2,0,WQ
-2025-09-05,Italy,Estonia,5,0,WQ
-2025-09-05,Malawi,Namibia,2,1,WQ
-2025-09-05,Greece,Belarus,5,1,WQ
-2025-09-05,Guinea,Somalia,3,0,WQ
-2025-09-05,Kenya,The Gambia,1,3,WQ
-2025-09-05,Slovenia,Sweden,2,2,WQ
 2025-09-05,Haiti,Honduras,0,0,WQ
-2025-09-06,Ireland,Hungary,2,2,WQ
-2025-09-06,Nepal,Bangladesh,0,0,F
-2025-09-06,Latvia,Serbia,0,1,WQ
-2025-09-06,Sri Lanka,Maldives,0,3,SAS
-2025-09-06,San Marino,Bosnia-Herzegovina,0,6,WQ
-2025-09-06,Japan,Mexico,0,0,F
-2025-09-06,England,Andorra,2,0,WQ
-2025-09-06,Austria,Cyprus,1,0,WQ
+2025-09-05,Uzbekistan,Kyrgyz Republic,4,0,CNU
+2025-09-05,Greece,Belarus,5,1,WQ
+2025-09-05,Oman,Turkmenistan,2,1,CNU
+2025-09-05,South Sudan,Congo DR,1,4,WQ
+2025-09-05,Moldova,Israel,0,4,WQ
+2025-09-05,Romania,Canada,0,3,F
+2025-09-05,Iceland,Azerbaijan,5,0,WQ
+2025-09-05,Trinidad and Tobago,Curaçao,0,0,WQ
+2025-09-05,Egypt,Ethiopia,2,0,WQ
+2025-09-05,Nicaragua,Costa Rica,1,1,WQ
+2025-09-05,Guinea,Somalia,3,0,WQ
+2025-09-05,Mauritania,Togo,2,0,WQ
+2025-09-05,Benin,Zimbabwe,1,0,WQ
+2025-09-05,Montenegro,Czechia,0,2,WQ
+2025-09-05,Slovenia,Sweden,2,2,WQ
+2025-09-05,Bermuda,Jamaica,0,4,WQ
+2025-09-05,Senegal,Sudan,2,0,WQ
+2025-09-05,Denmark,Scotland,0,0,WQ
+2025-09-05,Australia,New Zealand,1,0,F
+2025-09-05,Switzerland,Kosovo,4,0,WQ
+2025-09-05,Indonesia,Chinese Taipei,6,0,F
+2025-09-05,Burkina Faso,Djibouti,6,0,WQ
+2025-09-05,Morocco,Niger,5,0,WQ
+2025-09-05,Faroe Islands,Croatia,0,1,WQ
+2025-09-05,Côte d'Ivoire,Burundi,1,0,WQ
+2025-09-05,Kenya,The Gambia,1,3,WQ
+2025-09-05,Malawi,Namibia,2,1,WQ
+2025-09-05,Italy,Estonia,5,0,WQ
+2025-09-05,South Africa,Lesotho,3,0,WQ
+2025-09-05,Uganda,Mozambique,4,0,WQ
 2025-09-06,Nigeria,Rwanda,1,0,WQ
 2025-09-06,Armenia,Portugal,0,5,WQ
+2025-09-06,Austria,Cyprus,1,0,WQ
+2025-09-06,Sri Lanka,Maldives,0,3,SAS
+2025-09-06,Ireland,Hungary,2,2,WQ
+2025-09-06,Latvia,Serbia,0,1,WQ
+2025-09-06,San Marino,Bosnia-Herzegovina,0,6,WQ
 2025-09-06,United States,Korea Republic,0,2,F
-2025-09-07,Türkiye,Spain,0,6,WQ
-2025-09-07,Thailand,Iraq,0,1,KNG
+2025-09-06,Japan,Mexico,0,0,F
+2025-09-06,England,Andorra,2,0,WQ
+2025-09-06,Nepal,Bangladesh,0,0,F
 2025-09-07,Georgia,Bulgaria,3,0,WQ
-2025-09-07,Qatar,Russia,1,4,F
-2025-09-07,Comoros,Central African Republic,2,0,WQ
-2025-09-07,Germany,Northern Ireland,3,1,WQ
-2025-09-07,Poland,Finland,3,1,WQ
-2025-09-07,Belgium,Kazakhstan,6,0,WQ
-2025-09-07,North Macedonia,Liechtenstein,5,0,WQ
-2025-09-07,"Hong Kong, China",Fiji,8,0,KNG
+2025-09-07,Türkiye,Spain,0,6,WQ
 2025-09-07,Lithuania,Netherlands,2,3,WQ
+2025-09-07,North Macedonia,Liechtenstein,5,0,WQ
 2025-09-07,Luxembourg,Slovakia,0,1,WQ
-2025-09-08,Switzerland,Slovenia,3,0,WQ
-2025-09-08,Uzbekistan,IR Iran,1,0,CNU
+2025-09-07,Belgium,Kazakhstan,6,0,WQ
+2025-09-07,"Hong Kong, China",Fiji,8,0,KNG
+2025-09-07,Poland,Finland,3,1,WQ
+2025-09-07,Comoros,Central African Republic,2,0,WQ
+2025-09-07,Qatar,Russia,1,4,F
+2025-09-07,Thailand,Iraq,0,1,KNG
+2025-09-07,Germany,Northern Ireland,3,1,WQ
 2025-09-08,Czechia,Saudi Arabia,1,1,F
-2025-09-08,Uganda,Somalia,2,0,WQ
-2025-09-08,India,Oman,1,1,CNU
-2025-09-08,Malaysia,Palestine,1,0,F
-2025-09-08,Indonesia,Lebanon,0,0,F
-2025-09-08,Panama,Guatemala,1,1,WQ
-2025-09-08,Guinea-Bissau,Djibouti,2,0,WQ
-2025-09-08,Italy,Israel,5,4,WQ
-2025-09-08,Zambia,Morocco,0,2,WQ
-2025-09-08,Equatorial Guinea,Tunisia,0,1,WQ
-2025-09-08,Kosovo,Sweden,2,0,WQ
 2025-09-08,Kuwait,Syria,2,2,F
 2025-09-08,Malawi,Liberia,2,2,WQ
-2025-09-08,El Salvador,Suriname,1,2,WQ
-2025-09-08,Gibraltar,Faroe Islands,0,1,WQ
+2025-09-08,Switzerland,Slovenia,3,0,WQ
+2025-09-08,Indonesia,Lebanon,0,0,F
+2025-09-08,Kosovo,Sweden,2,0,WQ
 2025-09-08,Greece,Denmark,0,3,WQ
+2025-09-08,Gibraltar,Faroe Islands,0,1,WQ
 2025-09-08,Ghana,Mali,1,0,WQ
+2025-09-08,Malaysia,Palestine,1,0,F
+2025-09-08,Equatorial Guinea,Tunisia,0,1,WQ
+2025-09-08,Zambia,Morocco,0,2,WQ
+2025-09-08,El Salvador,Suriname,1,2,WQ
+2025-09-08,Uzbekistan,IR Iran,1,0,CNU
+2025-09-08,Italy,Israel,5,4,WQ
+2025-09-08,Panama,Guatemala,1,1,WQ
+2025-09-08,India,Oman,1,1,CNU
+2025-09-08,Uganda,Somalia,2,0,WQ
+2025-09-08,Guinea-Bissau,Djibouti,2,0,WQ
 2025-09-08,Libya,Eswatini,2,0,WQ
+2025-09-08,United Arab Emirates,Bahrain,1,0,F
 2025-09-08,Madagascar,Chad,3,1,WQ
+2025-09-08,Mozambique,Botswana,2,0,WQ
+2025-09-08,Croatia,Montenegro,4,0,WQ
 2025-09-08,Algeria,Guinea,0,0,WQ
 2025-09-08,Scotland,Belarus,2,0,WQ
-2025-09-08,Croatia,Montenegro,4,0,WQ
-2025-09-08,United Arab Emirates,Bahrain,1,0,F
-2025-09-08,Mozambique,Botswana,2,0,WQ
-2025-09-09,Peru,Paraguay,0,1,WQ
-2025-09-09,Burkina Faso,Egypt,0,0,WQ
 2025-09-09,Tanzania,Niger,0,1,WQ
-2025-09-09,Bolivia,Brazil,1,0,WQ
-2025-09-09,Mauritania,South Sudan,0,0,WQ
 2025-09-09,Cape Verde,Cameroon,1,0,WQ
-2025-09-09,Togo,Sudan,1,0,WQ
+2025-09-09,Peru,Paraguay,0,1,WQ
 2025-09-09,United States,Japan,2,0,F
-2025-09-09,Serbia,England,0,5,WQ
-2025-09-09,Bosnia-Herzegovina,Austria,1,2,WQ
-2025-09-09,Angola,Mauritius,3,1,WQ
-2025-09-09,Costa Rica,Haiti,3,3,WQ
-2025-09-09,Malta,San Marino,3,1,F
-2025-09-09,Sierra Leone,Ethiopia,2,0,WQ
-2025-09-09,Congo DR,Senegal,2,3,WQ
-2025-09-09,The Gambia,Burundi,2,0,WQ
-2025-09-09,Sri Lanka,Maldives,1,1,SAS
-2025-09-09,Honduras,Nicaragua,2,0,WQ
-2025-09-09,Jordan,Dominican Republic,3,0,F
-2025-09-09,Jamaica,Trinidad and Tobago,2,0,WQ
 2025-09-09,Armenia,Ireland,2,1,WQ
-2025-09-09,South Africa,Nigeria,1,1,WQ
 2025-09-09,Hungary,Portugal,2,3,WQ
-2025-09-09,Wales,Canada,0,1,F
-2025-09-09,Azerbaijan,Ukraine,1,1,WQ
-2025-09-09,Cyprus,Romania,2,2,WQ
-2025-09-09,France,Iceland,2,1,WQ
-2025-09-09,Benin,Lesotho,4,0,WQ
-2025-09-09,Gabon,Côte d'Ivoire,0,0,WQ
-2025-09-09,Estonia,Andorra,0,0,F
-2025-09-09,Mexico,Korea Republic,2,2,F
-2025-09-09,Norway,Moldova,11,1,WQ
-2025-09-09,Ecuador,Argentina,1,0,WQ
-2025-09-09,Namibia,Sao Tome and Principe,3,0,WQ
-2025-09-09,New Zealand,Australia,1,3,F
-2025-09-09,Singapore,Myanmar,1,1,F
+2025-09-09,Sierra Leone,Ethiopia,2,0,WQ
+2025-09-09,Angola,Mauritius,3,1,WQ
 2025-09-09,Curaçao,Bermuda,3,2,WQ
-2025-09-09,Kenya,Seychelles,5,0,WQ
-2025-09-09,Albania,Latvia,1,0,WQ
 2025-09-09,Chile,Uruguay,0,0,WQ
+2025-09-09,Honduras,Nicaragua,2,0,WQ
+2025-09-09,Sri Lanka,Maldives,1,1,SAS
+2025-09-09,Burkina Faso,Egypt,0,0,WQ
+2025-09-09,Malta,San Marino,3,1,F
+2025-09-09,South Africa,Nigeria,1,1,WQ
+2025-09-09,Costa Rica,Haiti,3,3,WQ
+2025-09-09,Jamaica,Trinidad and Tobago,2,0,WQ
+2025-09-09,Bosnia-Herzegovina,Austria,1,2,WQ
+2025-09-09,Togo,Sudan,1,0,WQ
+2025-09-09,Jordan,Dominican Republic,3,0,F
+2025-09-09,New Zealand,Australia,1,3,F
+2025-09-09,Mexico,Korea Republic,2,2,F
+2025-09-09,The Gambia,Burundi,2,0,WQ
+2025-09-09,Wales,Canada,0,1,F
+2025-09-09,Kenya,Seychelles,5,0,WQ
+2025-09-09,Serbia,England,0,5,WQ
 2025-09-09,Rwanda,Zimbabwe,1,0,WQ
+2025-09-09,Ecuador,Argentina,1,0,WQ
 2025-09-09,Venezuela,Colombia,3,6,WQ
+2025-09-09,Singapore,Myanmar,1,1,F
+2025-09-09,Estonia,Andorra,0,0,F
+2025-09-09,Gabon,Côte d'Ivoire,0,0,WQ
+2025-09-09,Namibia,Sao Tome and Principe,3,0,WQ
+2025-09-09,Benin,Lesotho,4,0,WQ
+2025-09-09,Congo DR,Senegal,2,3,WQ
+2025-09-09,Azerbaijan,Ukraine,1,1,WQ
+2025-09-09,France,Iceland,2,1,WQ
+2025-09-09,Mauritania,South Sudan,0,0,WQ
+2025-09-09,Norway,Moldova,11,1,WQ
+2025-09-09,Albania,Latvia,1,0,WQ
+2025-09-09,Bolivia,Brazil,1,0,WQ
+2025-09-09,Cyprus,Romania,2,2,WQ
 2025-10-03,Saint Kitts and Nevis,Saint Martin,5,0,F
 2025-10-04,Saint Kitts and Nevis,Saint Martin,2,1,F
 2025-10-05,Saint Vincent and the Grenadines,Cuba,7,0,F
+2025-10-08,Grenada,British Virgin Islands,4,1,F
+2025-10-08,Eswatini,Angola,2,2,WQ
+2025-10-08,Tanzania,Zambia,0,1,WQ
+2025-10-08,Gibraltar,New Caledonia,0,2,F
+2025-10-08,Mauritius,Cameroon,0,2,WQ
+2025-10-08,Ghana,Central African Republic,5,0,WQ
+2025-10-08,Niger,Congo,3,1,WQ
+2025-10-08,Madagascar,Comoros,2,1,WQ
+2025-10-08,Libya,Cape Verde,3,3,WQ
 2025-10-08,Burkina Faso,Sierra Leone,1,0,WQ
 2025-10-08,Ethiopia,Guinea-Bissau,1,0,WQ
-2025-10-08,Grenada,British Virgin Islands,4,1,F
 2025-10-08,Chad,Mali,0,2,WQ
-2025-10-08,Gibraltar,New Caledonia,0,2,F
-2025-10-08,Libya,Cape Verde,3,3,WQ
-2025-10-08,Ghana,Central African Republic,5,0,WQ
-2025-10-08,Mauritius,Cameroon,0,2,WQ
-2025-10-08,Madagascar,Comoros,2,1,WQ
-2025-10-08,Tanzania,Zambia,0,1,WQ
-2025-10-08,Eswatini,Angola,2,2,WQ
-2025-10-08,Niger,Congo,3,1,WQ
 2025-10-08,Qatar,Oman,0,0,WQ
-2025-10-08,Saint Vincent and the Grenadines,Cuba,1,0,F
 2025-10-08,Saudi Arabia,Indonesia,3,2,WQ
 2025-10-08,Egypt,Djibouti,3,0,WQ
-2025-10-09,Tajikistan,Maldives,2,0,SQ
-2025-10-09,Czechia,Croatia,0,0,WQ
-2025-10-09,Finland,Lithuania,2,1,WQ
-2025-10-09,Austria,San Marino,10,0,WQ
-2025-10-09,Thailand,Chinese Taipei,2,0,SQ
-2025-10-09,Burundi,Kenya,0,1,WQ
-2025-10-09,Lebanon,Bhutan,2,0,SQ
-2025-10-09,Poland,New Zealand,1,0,F
-2025-10-09,Brunei Darussalam,Yemen,0,2,SQ
-2025-10-09,Romania,Moldova,2,1,F
-2025-10-09,Botswana,Uganda,0,1,WQ
-2025-10-09,Syria,Myanmar,5,1,SQ
-2025-10-09,Faroe Islands,Montenegro,4,0,WQ
-2025-10-09,Denmark,Belarus,6,0,WQ
-2025-10-09,England,Wales,3,0,F
-2025-10-09,Liberia,Namibia,3,1,WQ
-2025-10-09,Pakistan,Afghanistan,0,0,SQ
-2025-10-09,Algeria,Somalia,3,0,WQ
-2025-10-09,Singapore,India,1,1,SQ
-2025-10-09,Honduras,Costa Rica,0,0,WQ
-2025-10-09,Uzbekistan,Kuwait,2,0,F
-2025-10-09,Malta,Netherlands,0,4,WQ
-2025-10-09,Morocco,Bahrain,1,0,F
-2025-10-09,Vietnam,Nepal,3,1,SQ
-2025-10-09,Nicaragua,Haiti,0,3,WQ
-2025-10-09,Philippines,East Timor,4,1,SQ
-2025-10-09,Bangladesh,"Hong Kong, China",3,4,SQ
+2025-10-08,Saint Vincent and the Grenadines,Cuba,1,0,F
 2025-10-09,Sri Lanka,Turkmenistan,1,0,SQ
+2025-10-09,Liberia,Namibia,3,1,WQ
+2025-10-09,Romania,Moldova,2,1,F
+2025-10-09,Faroe Islands,Montenegro,4,0,WQ
+2025-10-09,Syria,Myanmar,5,1,SQ
+2025-10-09,Brunei Darussalam,Yemen,0,2,SQ
+2025-10-09,Vietnam,Nepal,3,1,SQ
+2025-10-09,Botswana,Uganda,0,1,WQ
+2025-10-09,Lebanon,Bhutan,2,0,SQ
+2025-10-09,Denmark,Belarus,6,0,WQ
+2025-10-09,Singapore,India,1,1,SQ
+2025-10-09,England,Wales,3,0,F
+2025-10-09,Finland,Lithuania,2,1,WQ
+2025-10-09,Poland,New Zealand,1,0,F
+2025-10-09,Pakistan,Afghanistan,0,0,SQ
 2025-10-09,Scotland,Greece,3,1,WQ
-2025-10-09,Laos,Malaysia,0,3,SQ
-2025-10-09,Cyprus,Bosnia-Herzegovina,2,2,WQ
+2025-10-09,Philippines,East Timor,4,1,SQ
+2025-10-09,Thailand,Chinese Taipei,2,0,SQ
+2025-10-09,Morocco,Bahrain,1,0,F
+2025-10-09,Czechia,Croatia,0,0,WQ
 2025-10-09,Mozambique,Guinea,1,2,WQ
-2025-10-10,Belgium,North Macedonia,0,0,WQ
-2025-10-10,Mauritania,Sudan,0,0,WQ
-2025-10-10,Bolivia,Jordan,1,0,F
-2025-10-10,Kazakhstan,Liechtenstein,4,0,WQ
-2025-10-10,Suriname,Guatemala,1,1,WQ
-2025-10-10,United States,Ecuador,1,1,F
-2025-10-10,Argentina,Venezuela,1,0,F
-2025-10-10,South Africa,Zimbabwe,0,0,WQ
-2025-10-10,Côte d'Ivoire,Seychelles,7,0,WQ
-2025-10-10,France,Azerbaijan,3,0,WQ
-2025-10-10,Gabon,The Gambia,4,3,WQ
-2025-10-10,Bermuda,Trinidad and Tobago,0,3,WQ
-2025-10-10,Kosovo,Slovenia,0,0,WQ
-2025-10-10,Chile,Peru,2,1,F
+2025-10-09,Malta,Netherlands,0,4,WQ
+2025-10-09,Nicaragua,Haiti,0,3,WQ
+2025-10-09,Cyprus,Bosnia-Herzegovina,2,2,WQ
+2025-10-09,Burundi,Kenya,0,1,WQ
+2025-10-09,Tajikistan,Maldives,2,0,SQ
+2025-10-09,Bangladesh,"Hong Kong, China",3,4,SQ
+2025-10-09,Uzbekistan,Kuwait,2,0,F
+2025-10-09,Laos,Malaysia,0,3,SQ
+2025-10-09,Honduras,Costa Rica,0,0,WQ
+2025-10-09,Algeria,Somalia,3,0,WQ
+2025-10-09,Austria,San Marino,10,0,WQ
 2025-10-10,South Sudan,Senegal,0,5,WQ
-2025-10-10,Korea Republic,Brazil,0,5,F
+2025-10-10,Kosovo,Slovenia,0,0,WQ
 2025-10-10,Germany,Luxembourg,4,0,WQ
-2025-10-10,Nigeria,Lesotho,2,1,WQ
+2025-10-10,Bermuda,Trinidad and Tobago,0,3,WQ
 2025-10-10,Canada,Australia,0,1,F
+2025-10-10,South Africa,Zimbabwe,0,0,WQ
+2025-10-10,Nigeria,Lesotho,2,1,WQ
+2025-10-10,Chile,Peru,2,1,F
+2025-10-10,Gabon,The Gambia,4,3,WQ
 2025-10-10,Rwanda,Benin,0,1,WQ
-2025-10-10,Tunisia,Sao Tome and Principe,6,0,WQ
-2025-10-10,Iceland,Ukraine,3,5,WQ
-2025-10-10,Northern Ireland,Slovakia,2,0,WQ
-2025-10-10,El Salvador,Panama,0,1,WQ
-2025-10-10,Togo,Congo DR,0,1,WQ
-2025-10-10,Curaçao,Jamaica,2,0,WQ
-2025-10-10,Uruguay,Dominican Republic,1,0,F
-2025-10-10,Sweden,Switzerland,0,2,WQ
-2025-10-10,Russia,IR Iran,2,1,F
+2025-10-10,Belgium,North Macedonia,0,0,WQ
+2025-10-10,Korea Republic,Brazil,0,5,F
 2025-10-10,Japan,Paraguay,2,2,F
+2025-10-10,Uruguay,Dominican Republic,1,0,F
+2025-10-10,Iceland,Ukraine,3,5,WQ
+2025-10-10,United States,Ecuador,1,1,F
+2025-10-10,Curaçao,Jamaica,2,0,WQ
+2025-10-10,Mauritania,Sudan,0,0,WQ
+2025-10-10,Argentina,Venezuela,1,0,F
+2025-10-10,Tunisia,Sao Tome and Principe,6,0,WQ
+2025-10-10,Côte d'Ivoire,Seychelles,7,0,WQ
+2025-10-10,Suriname,Guatemala,1,1,WQ
+2025-10-10,Northern Ireland,Slovakia,2,0,WQ
+2025-10-10,Russia,IR Iran,2,1,F
+2025-10-10,Bolivia,Jordan,1,0,F
+2025-10-10,Togo,Congo DR,0,1,WQ
+2025-10-10,El Salvador,Panama,0,1,WQ
+2025-10-10,Kazakhstan,Liechtenstein,4,0,WQ
+2025-10-10,France,Azerbaijan,3,0,WQ
+2025-10-10,Sweden,Switzerland,0,2,WQ
+2025-10-11,Serbia,Albania,0,1,WQ
+2025-10-11,Norway,Israel,5,0,WQ
+2025-10-11,Spain,Georgia,2,0,WQ
+2025-10-11,United Arab Emirates,Oman,2,1,WQ
 2025-10-11,Latvia,Andorra,2,2,WQ
 2025-10-11,Portugal,Ireland,1,0,WQ
-2025-10-11,Serbia,Albania,0,1,WQ
-2025-10-11,Iraq,Indonesia,1,0,WQ
-2025-10-11,Grenada,Cuba,2,0,F
-2025-10-11,United Arab Emirates,Oman,2,1,WQ
 2025-10-11,Bulgaria,Türkiye,1,6,WQ
-2025-10-11,Spain,Georgia,2,0,WQ
 2025-10-11,Estonia,Italy,1,3,WQ
 2025-10-11,Hungary,Armenia,2,0,WQ
+2025-10-11,Iraq,Indonesia,1,0,WQ
 2025-10-11,Colombia,Mexico,4,0,F
-2025-10-11,Norway,Israel,5,0,WQ
-2025-10-12,Mali,Madagascar,4,1,WQ
-2025-10-12,Burkina Faso,Ethiopia,3,1,WQ
+2025-10-11,Grenada,Cuba,2,0,F
+2025-10-12,Netherlands,Finland,4,0,WQ
 2025-10-12,Faroe Islands,Czechia,2,1,WQ
 2025-10-12,San Marino,Cyprus,0,4,WQ
-2025-10-12,Netherlands,Finland,4,0,WQ
-2025-10-12,Chad,Central African Republic,2,3,WQ
-2025-10-12,Egypt,Guinea-Bissau,1,0,WQ
-2025-10-12,Lithuania,Poland,0,2,WQ
 2025-10-12,Malta,Bosnia-Herzegovina,1,4,F
-2025-10-12,Croatia,Gibraltar,3,0,WQ
 2025-10-12,Denmark,Greece,3,1,WQ
 2025-10-12,Scotland,Belarus,2,1,WQ
-2025-10-12,Romania,Austria,1,0,WQ
+2025-10-12,Lithuania,Poland,0,2,WQ
 2025-10-12,Zambia,Niger,0,1,WQ
-2025-10-12,Sierra Leone,Djibouti,2,1,WQ
+2025-10-12,Egypt,Guinea-Bissau,1,0,WQ
+2025-10-12,Romania,Austria,1,0,WQ
+2025-10-12,Mali,Madagascar,4,1,WQ
 2025-10-12,Ghana,Comoros,1,0,WQ
-2025-10-13,North Macedonia,Kazakhstan,1,1,WQ
-2025-10-13,Wales,Belgium,2,4,WQ
-2025-10-13,Uruguay,Uzbekistan,2,1,F
-2025-10-13,Sao Tome and Principe,Malawi,1,0,WQ
+2025-10-12,Burkina Faso,Ethiopia,3,1,WQ
+2025-10-12,Sierra Leone,Djibouti,2,1,WQ
+2025-10-12,Croatia,Gibraltar,3,0,WQ
+2025-10-12,Chad,Central African Republic,2,3,WQ
+2025-10-13,Cameroon,Angola,0,0,WQ
+2025-10-13,Northern Ireland,Germany,0,1,WQ
 2025-10-13,Honduras,Haiti,3,0,WQ
+2025-10-13,Slovenia,Switzerland,0,0,WQ
+2025-10-13,Cape Verde,Eswatini,3,0,WQ
+2025-10-13,North Macedonia,Kazakhstan,1,1,WQ
+2025-10-13,Sweden,Kosovo,0,1,WQ
 2025-10-13,Iceland,France,2,2,WQ
+2025-10-13,Uruguay,Uzbekistan,2,1,F
+2025-10-13,Costa Rica,Nicaragua,4,1,WQ
+2025-10-13,Lesotho,Zimbabwe,1,0,WQ
+2025-10-13,South Sudan,Togo,0,0,WQ
+2025-10-13,Sao Tome and Principe,Malawi,1,0,WQ
+2025-10-13,Wales,Belgium,2,4,WQ
+2025-10-13,Slovakia,Luxembourg,2,0,WQ
+2025-10-13,Mauritius,Libya,0,0,WQ
+2025-10-13,Tunisia,Namibia,3,0,WQ
+2025-10-13,Ukraine,Azerbaijan,2,1,WQ
 2025-10-13,Montenegro,Liechtenstein,2,1,F
 2025-10-13,Equatorial Guinea,Liberia,1,1,WQ
-2025-10-13,Costa Rica,Nicaragua,4,1,WQ
-2025-10-13,Northern Ireland,Germany,0,1,WQ
-2025-10-13,Sweden,Kosovo,0,1,WQ
-2025-10-13,Slovenia,Switzerland,0,0,WQ
-2025-10-13,Ukraine,Azerbaijan,2,1,WQ
-2025-10-13,Cape Verde,Eswatini,3,0,WQ
-2025-10-13,Cameroon,Angola,0,0,WQ
-2025-10-13,South Sudan,Togo,0,0,WQ
-2025-10-13,Mauritius,Libya,0,0,WQ
-2025-10-13,Lesotho,Zimbabwe,1,0,WQ
-2025-10-13,Tunisia,Namibia,3,0,WQ
-2025-10-13,Slovakia,Luxembourg,2,0,WQ
-2025-10-14,Russia,Bolivia,3,0,F
-2025-10-14,Andorra,Serbia,1,3,WQ
-2025-10-14,India,Singapore,1,2,SQ
-2025-10-14,Ireland,Armenia,1,0,WQ
-2025-10-14,Spain,Bulgaria,4,0,WQ
-2025-10-14,Gabon,Burundi,2,0,WQ
-2025-10-14,Argentina,Puerto Rico,6,0,F
-2025-10-14,Yemen,Brunei Darussalam,9,0,SQ
-2025-10-14,Portugal,Hungary,2,2,WQ
-2025-10-14,South Africa,Rwanda,3,0,WQ
-2025-10-14,Italy,Israel,3,0,WQ
-2025-10-14,Jamaica,Bermuda,4,0,WQ
-2025-10-14,Japan,Brazil,3,2,F
-2025-10-14,Korea Republic,Paraguay,2,0,F
-2025-10-14,Qatar,United Arab Emirates,2,1,WQ
-2025-10-14,Lebanon,Bhutan,4,0,SQ
-2025-10-14,Botswana,Guinea,2,2,WQ
-2025-10-14,Canada,Colombia,0,0,F
-2025-10-14,IR Iran,Tanzania,2,0,F
-2025-10-14,Philippines,East Timor,3,1,SQ
-2025-10-14,Panama,Suriname,1,1,WQ
-2025-10-14,Norway,New Zealand,1,1,F
-2025-10-14,Saudi Arabia,Iraq,0,0,WQ
-2025-10-14,Albania,Jordan,4,2,F
-2025-10-14,Senegal,Mauritania,4,0,WQ
-2025-10-14,Turkmenistan,Sri Lanka,2,1,SQ
-2025-10-14,Côte d'Ivoire,Kenya,3,0,WQ
-2025-10-14,Myanmar,Syria,0,3,SQ
-2025-10-14,Estonia,Moldova,1,1,WQ
-2025-10-14,Afghanistan,Pakistan,1,1,SQ
-2025-10-14,Chinese Taipei,Thailand,1,6,SQ
-2025-10-14,United States,Australia,2,1,F
-2025-10-14,Mozambique,Somalia,1,0,WQ
-2025-10-14,Malaysia,Laos,5,1,SQ
-2025-10-14,Latvia,England,0,5,WQ
-2025-10-14,Morocco,Congo,1,0,WQ
-2025-10-14,El Salvador,Guatemala,0,1,WQ
-2025-10-14,Algeria,Uganda,2,1,WQ
-2025-10-14,Congo DR,Sudan,1,0,WQ
-2025-10-14,Nigeria,Benin,4,0,WQ
-2025-10-14,The Gambia,Seychelles,7,0,WQ
 2025-10-14,Mexico,Ecuador,1,1,F
 2025-10-14,Maldives,Tajikistan,0,3,SQ
-2025-10-14,Türkiye,Georgia,4,1,WQ
-2025-10-14,Vietnam,Nepal,1,0,SQ
+2025-10-14,Gabon,Burundi,2,0,WQ
+2025-10-14,Estonia,Moldova,1,1,WQ
+2025-10-14,Ireland,Armenia,1,0,WQ
+2025-10-14,Qatar,United Arab Emirates,2,1,WQ
+2025-10-14,Andorra,Serbia,1,3,WQ
+2025-10-14,Latvia,England,0,5,WQ
+2025-10-14,South Africa,Rwanda,3,0,WQ
 2025-10-14,"Hong Kong, China",Bangladesh,1,1,SQ
+2025-10-14,Russia,Bolivia,3,0,F
+2025-10-14,Philippines,East Timor,3,1,SQ
+2025-10-14,Jamaica,Bermuda,4,0,WQ
+2025-10-14,Malaysia,Laos,5,1,SQ
+2025-10-14,Congo DR,Sudan,1,0,WQ
+2025-10-14,Canada,Colombia,0,0,F
+2025-10-14,Morocco,Congo,1,0,WQ
+2025-10-14,Norway,New Zealand,1,1,F
+2025-10-14,El Salvador,Guatemala,0,1,WQ
+2025-10-14,Lebanon,Bhutan,4,0,SQ
+2025-10-14,Korea Republic,Paraguay,2,0,F
+2025-10-14,Turkmenistan,Sri Lanka,2,1,SQ
+2025-10-14,Chinese Taipei,Thailand,1,6,SQ
+2025-10-14,Mozambique,Somalia,1,0,WQ
+2025-10-14,Botswana,Guinea,2,2,WQ
+2025-10-14,Argentina,Puerto Rico,6,0,F
+2025-10-14,Côte d'Ivoire,Kenya,3,0,WQ
+2025-10-14,United States,Australia,2,1,F
+2025-10-14,Panama,Suriname,1,1,WQ
+2025-10-14,Vietnam,Nepal,1,0,SQ
+2025-10-14,Yemen,Brunei Darussalam,9,0,SQ
+2025-10-14,Algeria,Uganda,2,1,WQ
+2025-10-14,Senegal,Mauritania,4,0,WQ
+2025-10-14,IR Iran,Tanzania,2,0,F
+2025-10-14,Afghanistan,Pakistan,1,1,SQ
+2025-10-14,Nigeria,Benin,4,0,WQ
+2025-10-14,Italy,Israel,3,0,WQ
+2025-10-14,Spain,Bulgaria,4,0,WQ
+2025-10-14,The Gambia,Seychelles,7,0,WQ
+2025-10-14,Myanmar,Syria,0,3,SQ
 2025-10-14,Curaçao,Trinidad and Tobago,1,1,WQ
+2025-10-14,Türkiye,Georgia,4,1,WQ
+2025-10-14,Portugal,Hungary,2,2,WQ
+2025-10-14,Saudi Arabia,Iraq,0,0,WQ
+2025-10-14,Japan,Brazil,3,2,F
+2025-10-14,Albania,Jordan,4,2,F
+2025-10-14,India,Singapore,1,2,SQ
 2025-11-09,Saint Martin,Anguilla,1,2,F
-2025-11-12,Saint Martin,Dominica,2,1,CFS
-2025-11-12,Tunisia,Mauritania,1,1,F
 2025-11-12,Dominican Republic,Saint Vincent and the Grenadines,2,0,CFS
-2025-11-12,Russia,Peru,1,1,F
-2025-11-12,Cuba,Saint Lucia,3,0,CFS
+2025-11-12,Tunisia,Mauritania,1,1,F
 2025-11-12,Anguilla,Bahamas,2,1,CFS
+2025-11-12,Russia,Peru,1,1,F
+2025-11-12,Saint Martin,Dominica,2,1,CFS
+2025-11-12,Cuba,Saint Lucia,3,0,CFS
 2025-11-12,Antigua and Barbuda,Aruba,0,0,CFS
 2025-11-12,Barbados,Bonaire,3,2,CFS
 2025-11-12,Cayman Islands,British Virgin Islands,1,2,CFS
 2025-11-12,Saint Kitts and Nevis,Sint Maarten,0,0,CFS
-2025-11-13,Nicaragua,Honduras,2,0,WQ
-2025-11-13,Andorra,Albania,0,1,WQ
-2025-11-13,Guatemala,Panama,2,3,WQ
-2025-11-13,Moldova,Italy,0,2,WQ
-2025-11-13,Haiti,Costa Rica,1,0,WQ
-2025-11-13,Lithuania,Israel,0,0,F
 2025-11-13,Trinidad and Tobago,Jamaica,1,1,WQ
-2025-11-13,Bangladesh,Nepal,2,2,F
-2025-11-13,Armenia,Hungary,0,1,WQ
+2025-11-13,Nigeria,Gabon,4,1,WQ
+2025-11-13,Lithuania,Israel,0,0,F
+2025-11-13,Moldova,Italy,0,2,WQ
+2025-11-13,Bermuda,Curaçao,0,7,WQ
+2025-11-13,Algeria,Zimbabwe,3,1,F
+2025-11-13,Andorra,Albania,0,1,WQ
+2025-11-13,Haiti,Costa Rica,1,0,WQ
+2025-11-13,Nicaragua,Honduras,2,0,WQ
 2025-11-13,Congo DR,Cameroon,1,0,WQ
-2025-11-13,Suriname,El Salvador,4,0,WQ
-2025-11-13,"Hong Kong, China",Cambodia,1,1,F
-2025-11-13,England,Serbia,2,0,WQ
+2025-11-13,Norway,Estonia,4,1,WQ
+2025-11-13,Armenia,Hungary,0,1,WQ
+2025-11-13,Bangladesh,Nepal,2,2,F
+2025-11-13,Guatemala,Panama,2,3,WQ
 2025-11-13,Papua New Guinea,Solomon Islands,1,0,MLN
 2025-11-13,Canada,Ecuador,0,0,F
-2025-11-13,Norway,Estonia,4,1,WQ
-2025-11-13,Algeria,Zimbabwe,3,1,F
-2025-11-13,Azerbaijan,Iceland,0,2,WQ
+2025-11-13,India,Bhutan,6,1,F
 2025-11-13,Cape Verde,IR Iran,0,0,FT
 2025-11-13,Czechia,San Marino,1,0,F
-2025-11-13,United Arab Emirates,Iraq,1,1,WQ
-2025-11-13,Bermuda,Curaçao,0,7,WQ
 2025-11-13,North Macedonia,Latvia,0,0,F
-2025-11-13,Ireland,Portugal,2,0,WQ
-2025-11-13,Thailand,Singapore,3,2,F
+2025-11-13,United Arab Emirates,Iraq,1,1,WQ
+2025-11-13,Suriname,El Salvador,4,0,WQ
+2025-11-13,England,Serbia,2,0,WQ
+2025-11-13,Azerbaijan,Iceland,0,2,WQ
+2025-11-13,"Hong Kong, China",Cambodia,1,1,F
 2025-11-13,France,Ukraine,4,0,WQ
-2025-11-13,India,Bhutan,6,1,F
-2025-11-13,Nigeria,Gabon,4,1,WQ
-2025-11-14,Oman,Sudan,2,0,F
-2025-11-14,Equatorial Guinea,Kenya,1,0,F
-2025-11-14,Angola,Argentina,0,2,F
-2025-11-14,Poland,Netherlands,1,1,WQ
-2025-11-14,Burkina Faso,Niger,3,2,F
+2025-11-13,Thailand,Singapore,3,2,F
+2025-11-13,Ireland,Portugal,2,0,WQ
 2025-11-14,Uganda,Chad,2,1,F
-2025-11-14,Japan,Ghana,2,0,F
-2025-11-14,Uzbekistan,Egypt,2,0,FT
+2025-11-14,Poland,Netherlands,1,1,WQ
+2025-11-14,Saudi Arabia,Côte d'Ivoire,1,0,F
+2025-11-14,Croatia,Faroe Islands,3,1,WQ
+2025-11-14,Finland,Malta,0,1,WQ
+2025-11-14,Comoros,Namibia,1,0,F
+2025-11-14,Morocco,Mozambique,1,0,F
+2025-11-14,Angola,Argentina,0,2,F
 2025-11-14,Slovakia,Northern Ireland,1,0,WQ
 2025-11-14,Luxembourg,Germany,0,2,WQ
-2025-11-14,Gibraltar,Montenegro,1,2,WQ
-2025-11-14,Croatia,Faroe Islands,3,1,WQ
+2025-11-14,Oman,Sudan,2,0,F
+2025-11-14,Uzbekistan,Egypt,2,0,FT
+2025-11-14,Burkina Faso,Niger,3,2,F
 2025-11-14,Tunisia,Jordan,3,2,F
-2025-11-14,Grenada,US Virgin Islands,4,1,F
-2025-11-14,Morocco,Mozambique,1,0,F
-2025-11-14,Finland,Malta,0,1,WQ
-2025-11-14,Saudi Arabia,Côte d'Ivoire,1,0,F
-2025-11-14,Comoros,Namibia,1,0,F
-2025-11-14,Venezuela,Australia,1,0,F
+2025-11-14,Japan,Ghana,2,0,F
+2025-11-14,Gibraltar,Montenegro,1,2,WQ
 2025-11-14,Korea Republic,Bolivia,2,0,F
+2025-11-14,Venezuela,Australia,1,0,F
+2025-11-14,Equatorial Guinea,Kenya,1,0,F
+2025-11-14,Grenada,US Virgin Islands,4,1,F
+2025-11-15,Russia,Chile,0,2,F
+2025-11-15,Sint Maarten,Dominica,3,2,CFS
+2025-11-15,Cuba,Martinique,2,0,CFS
+2025-11-15,Colombia,New Zealand,2,1,F
+2025-11-15,Bosnia-Herzegovina,Romania,3,1,WQ
+2025-11-15,Libya,Mauritania,1,0,F
+2025-11-15,Guyana,Bonaire,2,1,CFS
+2025-11-15,Georgia,Spain,0,4,WQ
+2025-11-15,Switzerland,Sweden,4,1,WQ
+2025-11-15,Kazakhstan,Belgium,1,1,WQ
 2025-11-15,Türkiye,Bulgaria,2,0,WQ
 2025-11-15,Kuwait,Tanzania,4,3,F
-2025-11-15,Bosnia-Herzegovina,Romania,3,1,WQ
-2025-11-15,Aruba,Barbados,3,0,CFS
-2025-11-15,Sint Maarten,Dominica,3,2,CFS
-2025-11-15,United States,Paraguay,2,1,F
-2025-11-15,Georgia,Spain,0,4,WQ
-2025-11-15,South Africa,Zambia,3,1,F
-2025-11-15,Slovenia,Kosovo,0,2,WQ
-2025-11-15,Colombia,New Zealand,2,1,F
-2025-11-15,Belize,Saint Martin,1,0,CFS
-2025-11-15,Lesotho,Malawi,0,0,F
-2025-11-15,Kazakhstan,Belgium,1,1,WQ
-2025-11-15,British Virgin Islands,Bahamas,6,0,CFS
-2025-11-15,Brazil,Senegal,2,0,F
-2025-11-15,Guyana,Bonaire,2,1,CFS
-2025-11-15,Guinea,Liberia,2,0,F
-2025-11-15,Mexico,Uruguay,0,0,F
 2025-11-15,Saint Vincent and the Grenadines,Saint Lucia,3,1,CFS
+2025-11-15,United States,Paraguay,2,1,F
+2025-11-15,Aruba,Barbados,3,0,CFS
+2025-11-15,South Africa,Zambia,3,1,F
+2025-11-15,Mexico,Uruguay,0,0,F
 2025-11-15,Denmark,Belarus,2,2,WQ
-2025-11-15,Liechtenstein,Wales,0,1,WQ
 2025-11-15,Cayman Islands,Anguilla,4,0,CFS
-2025-11-15,Switzerland,Sweden,4,1,WQ
+2025-11-15,Brazil,Senegal,2,0,F
+2025-11-15,Liechtenstein,Wales,0,1,WQ
+2025-11-15,British Virgin Islands,Bahamas,6,0,CFS
+2025-11-15,Guinea,Liberia,2,0,F
+2025-11-15,Belize,Saint Martin,1,0,CFS
+2025-11-15,Slovenia,Kosovo,0,2,WQ
 2025-11-15,Cyprus,Austria,0,2,WQ
+2025-11-15,Lesotho,Malawi,0,0,F
 2025-11-15,Greece,Scotland,3,2,WQ
-2025-11-15,Russia,Chile,0,2,F
-2025-11-15,Libya,Mauritania,1,0,F
-2025-11-15,Cuba,Martinique,2,0,CFS
-2025-11-16,Italy,Norway,1,4,WQ
-2025-11-16,Ukraine,Iceland,2,0,WQ
-2025-11-16,Hungary,Ireland,2,3,WQ
-2025-11-16,Serbia,Latvia,2,1,WQ
-2025-11-16,Albania,England,0,2,WQ
-2025-11-16,Congo DR,Nigeria,1,1,WQ
-2025-11-16,Portugal,Armenia,9,1,WQ
-2025-11-16,Moldova,Israel,1,4,WQ
 2025-11-16,Azerbaijan,France,1,3,WQ
-2025-11-17,Czechia,Gibraltar,6,0,WQ
-2025-11-17,Montenegro,Croatia,2,3,WQ
-2025-11-17,Chad,Mozambique,2,2,F
-2025-11-17,Malta,Poland,2,3,WQ
-2025-11-17,Germany,Slovakia,6,0,WQ
-2025-11-17,Cape Verde,Egypt,1,1,FT
-2025-11-17,Vanuatu,Fiji,2,0,MLN
+2025-11-16,Moldova,Israel,1,4,WQ
+2025-11-16,Serbia,Latvia,2,1,WQ
+2025-11-16,Ukraine,Iceland,2,0,WQ
+2025-11-16,Congo DR,Nigeria,1,1,WQ
+2025-11-16,Albania,England,0,2,WQ
+2025-11-16,Italy,Norway,1,4,WQ
+2025-11-16,Hungary,Ireland,2,3,WQ
+2025-11-16,Portugal,Armenia,9,1,WQ
 2025-11-17,Finland,Andorra,4,0,F
+2025-11-17,Vanuatu,Fiji,2,0,MLN
+2025-11-17,Czechia,Gibraltar,6,0,WQ
+2025-11-17,Cape Verde,Egypt,1,1,FT
 2025-11-17,Comoros,Namibia,4,0,F
+2025-11-17,Chad,Mozambique,2,2,F
+2025-11-17,Montenegro,Croatia,2,3,WQ
 2025-11-17,Qatar,Zimbabwe,1,2,F
-2025-11-17,Netherlands,Lithuania,4,0,WQ
+2025-11-17,Germany,Slovakia,6,0,WQ
 2025-11-17,Madagascar,Equatorial Guinea,2,0,F
+2025-11-17,Netherlands,Lithuania,4,0,WQ
+2025-11-17,Malta,Poland,2,3,WQ
 2025-11-17,Bahrain,Somalia,1,2,F
 2025-11-17,Northern Ireland,Luxembourg,1,0,WQ
-2025-11-18,Paraguay,Mexico,2,1,F
-2025-11-18,Wales,North Macedonia,7,1,WQ
-2025-11-18,The Gambia,Kuwait,2,2,F
 2025-11-18,Iraq,United Arab Emirates,2,1,WQ
-2025-11-18,Kosovo,Switzerland,1,1,WQ
-2025-11-18,Burkina Faso,Benin,3,0,F
-2025-11-18,Trinidad and Tobago,Bermuda,2,2,WQ
+2025-11-18,Japan,Bolivia,3,0,F
+2025-11-18,Colombia,Australia,3,0,F
+2025-11-18,Bangladesh,India,1,0,SQ
+2025-11-18,Austria,Bosnia-Herzegovina,1,1,WQ
+2025-11-18,Malaysia,Nepal,1,0,SQ
 2025-11-18,Maldives,Philippines,0,2,SQ
-2025-11-18,Saint Kitts and Nevis,Belize,2,6,CFS
 2025-11-18,Jamaica,Curaçao,0,0,WQ
+2025-11-18,Trinidad and Tobago,Bermuda,2,2,WQ
 2025-11-18,Senegal,Kenya,8,0,F
-2025-11-18,Belgium,Liechtenstein,7,0,WQ
 2025-11-18,Yemen,Bhutan,7,1,SQ
 2025-11-18,Morocco,Uganda,4,0,F
-2025-11-18,Bangladesh,India,1,0,SQ
-2025-11-18,Jordan,Mali,0,0,F
-2025-11-18,Colombia,Australia,3,0,F
+2025-11-18,Burkina Faso,Benin,3,0,F
 2025-11-18,Belarus,Greece,0,0,WQ
-2025-11-18,Japan,Bolivia,3,0,F
-2025-11-18,Malaysia,Nepal,1,0,SQ
+2025-11-18,Jordan,Mali,0,0,F
+2025-11-18,Kosovo,Switzerland,1,1,WQ
+2025-11-18,Belgium,Liechtenstein,7,0,WQ
+2025-11-18,Wales,North Macedonia,7,1,WQ
+2025-11-18,The Gambia,Kuwait,2,2,F
+2025-11-18,Saint Kitts and Nevis,Belize,2,6,CFS
 2025-11-18,Malawi,Lesotho,1,0,F
-2025-11-18,Austria,Bosnia-Herzegovina,1,1,WQ
-2025-11-18,Antigua and Barbuda,Guyana,1,4,CFS
+2025-11-18,Angola,Zambia,3,2,F
+2025-11-18,Paraguay,Mexico,2,1,F
 2025-11-18,Bulgaria,Georgia,2,1,WQ
-2025-11-18,Scotland,Denmark,4,2,WQ
-2025-11-18,Dominican Republic,Martinique,0,0,CFS
+2025-11-18,Tajikistan,East Timor,5,0,SQ
+2025-11-18,Panama,El Salvador,3,0,WQ
+2025-11-18,Canada,Venezuela,2,0,F
+2025-11-18,"Hong Kong, China",Singapore,1,2,SQ
+2025-11-18,Spain,Türkiye,2,2,WQ
+2025-11-18,Faroe Islands,Kazakhstan,1,0,F
 2025-11-18,Saudi Arabia,Algeria,0,2,F
+2025-11-18,Haiti,Nicaragua,2,0,WQ
+2025-11-18,Antigua and Barbuda,Guyana,1,4,CFS
+2025-11-18,Turkmenistan,Chinese Taipei,3,1,SQ
+2025-11-18,Sweden,Slovenia,1,1,WQ
+2025-11-18,Guinea,Niger,1,1,F
+2025-11-18,Chile,Peru,2,1,F
+2025-11-18,Korea Republic,Ghana,1,0,F
+2025-11-18,Guatemala,Suriname,3,1,WQ
+2025-11-18,Romania,San Marino,7,1,WQ
+2025-11-18,Brunei Darussalam,Lebanon,0,3,SQ
+2025-11-18,IR Iran,Uzbekistan,0,0,FT
+2025-11-18,Sri Lanka,Thailand,0,4,SQ
+2025-11-18,Scotland,Denmark,4,2,WQ
+2025-11-18,Cyprus,Estonia,2,4,F
+2025-11-18,United States,Uruguay,5,1,F
+2025-11-18,Pakistan,Syria,0,5,SQ
+2025-11-18,Oman,Côte d'Ivoire,0,2,F
+2025-11-18,Brazil,Tunisia,1,1,F
 2025-11-18,Costa Rica,Honduras,0,0,WQ
 2025-11-18,Ecuador,New Zealand,2,0,F
-2025-11-18,Guatemala,Suriname,3,1,WQ
-2025-11-18,Angola,Zambia,3,2,F
-2025-11-18,IR Iran,Uzbekistan,0,0,FT
-2025-11-18,Korea Republic,Ghana,1,0,F
-2025-11-18,Faroe Islands,Kazakhstan,1,0,F
-2025-11-18,Spain,Türkiye,2,2,WQ
-2025-11-18,Haiti,Nicaragua,2,0,WQ
-2025-11-18,Sri Lanka,Thailand,0,4,SQ
-2025-11-18,Canada,Venezuela,2,0,F
-2025-11-18,Panama,El Salvador,3,0,WQ
-2025-11-18,Romania,San Marino,7,1,WQ
-2025-11-18,Tajikistan,East Timor,5,0,SQ
-2025-11-18,"Hong Kong, China",Singapore,1,2,SQ
-2025-11-18,Turkmenistan,Chinese Taipei,3,1,SQ
-2025-11-18,Guinea,Niger,1,1,F
-2025-11-18,Pakistan,Syria,0,5,SQ
-2025-11-18,Brazil,Tunisia,1,1,F
-2025-11-18,Brunei Darussalam,Lebanon,0,3,SQ
-2025-11-18,Oman,Côte d'Ivoire,0,2,F
-2025-11-18,Sweden,Slovenia,1,1,WQ
-2025-11-18,United States,Uruguay,5,1,F
-2025-11-18,Chile,Peru,2,1,F
-2025-11-18,Cyprus,Estonia,2,4,F
+2025-11-18,Dominican Republic,Martinique,0,0,CFS
 2025-11-19,Laos,Vietnam,0,2,SQ
 2025-11-20,Vanuatu,Solomon Islands,2,1,MLN
 2025-11-20,Papua New Guinea,Fiji,2,0,MLN
 2025-11-21,Bahrain,Somalia,0,1,F
 2025-11-22,Fiji,Solomon Islands,1,1,MLN
 2025-11-23,Papua New Guinea,Vanuatu,2,2,MLN
+2025-11-25,Libya,Palestine,0,0,ARQ
 2025-11-25,Kuwait,Mauritania,2,0,ARQ
 2025-11-25,Syria,South Sudan,2,0,ARQ
-2025-11-25,Libya,Palestine,0,0,ARQ
 2025-11-26,Oman,Somalia,0,0,ARQ
+2025-11-26,Comoros,Yemen,4,4,ARQ
 2025-11-26,Sudan,Lebanon,2,1,ARQ
 2025-11-26,Bahrain,Djibouti,1,0,ARQ
-2025-11-26,Comoros,Yemen,4,4,ARQ
 2025-12-01,Qatar,Palestine,0,1,ARC
 2025-12-01,Syria,Tunisia,1,0,ARC
 2025-12-02,Saudi Arabia,Oman,2,1,ARC
 2025-12-02,Egypt,Kuwait,1,1,ARC
 2025-12-02,Morocco,Comoros,3,1,ARC
+2025-12-03,Algeria,Sudan,0,0,ARC
 2025-12-03,Jordan,United Arab Emirates,2,1,ARC
 2025-12-03,Iraq,Bahrain,2,1,ARC
-2025-12-03,Algeria,Sudan,0,0,ARC
-2025-12-04,Qatar,Syria,1,1,ARC
 2025-12-04,Palestine,Tunisia,2,2,ARC
-2025-12-05,Saudi Arabia,Comoros,3,1,ARC
+2025-12-04,Qatar,Syria,1,1,ARC
 2025-12-05,Morocco,Oman,0,0,ARC
+2025-12-05,Saudi Arabia,Comoros,3,1,ARC
+2025-12-06,Jordan,Kuwait,3,1,ARC
+2025-12-06,Iraq,Sudan,2,0,ARC
 2025-12-06,Egypt,United Arab Emirates,1,1,ARC
 2025-12-06,Algeria,Bahrain,5,1,ARC
-2025-12-06,Iraq,Sudan,2,0,ARC
-2025-12-06,Jordan,Kuwait,3,1,ARC
-2025-12-07,Qatar,Tunisia,0,3,ARC
 2025-12-07,Palestine,Syria,0,0,ARC
+2025-12-07,Qatar,Tunisia,0,3,ARC
 2025-12-08,Morocco,Saudi Arabia,1,0,ARC
 2025-12-08,Oman,Comoros,2,1,ARC
+2025-12-09,Bahrain,Sudan,3,1,ARC
+2025-12-09,Jordan,Egypt,3,0,ARC
 2025-12-09,United Arab Emirates,Kuwait,3,1,ARC
 2025-12-09,Algeria,Iraq,2,0,ARC
-2025-12-09,Jordan,Egypt,3,0,ARC
-2025-12-09,Bahrain,Sudan,3,1,ARC
 2025-12-11,Saudi Arabia,Palestine,2,1,ARC
 2025-12-11,Morocco,Syria,1,0,ARC
-2025-12-12,Algeria,United Arab Emirates,1,1,ARC
 2025-12-12,Jordan,Iraq,1,0,ARC
-2025-12-15,Morocco,United Arab Emirates,3,0,ARC
+2025-12-12,Algeria,United Arab Emirates,1,1,ARC
 2025-12-15,Jordan,Saudi Arabia,1,0,ARC
+2025-12-15,Morocco,United Arab Emirates,3,0,ARC
 2025-12-16,Congo DR,Zambia,2,0,F
 2025-12-16,Egypt,Nigeria,2,1,F
 2025-12-17,Angola,Mozambique,4,1,F
+2025-12-18,Morocco,Jordan,3,2,ARC
 2025-12-18,Tunisia,Botswana,2,1,F
 2025-12-18,Saudi Arabia,United Arab Emirates,0,0,ARC
-2025-12-18,Morocco,Jordan,3,2,ARC
 2025-12-21,Morocco,Comoros,2,0,AR
 2025-12-21,Peru,Bolivia,2,0,F
 2025-12-22,Egypt,Zimbabwe,2,1,AR
-2025-12-22,South Africa,Angola,2,1,AR
 2025-12-22,Mali,Zambia,1,1,AR
-2025-12-23,Congo DR,Benin,1,0,AR
+2025-12-22,South Africa,Angola,2,1,AR
+2025-12-23,Senegal,Botswana,3,0,AR
 2025-12-23,Tunisia,Uganda,3,1,AR
 2025-12-23,Nigeria,Tanzania,2,1,AR
-2025-12-23,Senegal,Botswana,3,0,AR
+2025-12-23,Congo DR,Benin,1,0,AR
 2025-12-24,Burkina Faso,Equatorial Guinea,2,1,AR
-2025-12-24,Algeria,Sudan,3,0,AR
 2025-12-24,Côte d'Ivoire,Mozambique,1,0,AR
+2025-12-24,Algeria,Sudan,3,0,AR
 2025-12-24,Cameroon,Gabon,1,0,AR
 2025-12-26,Egypt,South Africa,1,0,AR
+2025-12-26,Angola,Zimbabwe,1,1,AR
 2025-12-26,Morocco,Mali,1,1,AR
 2025-12-26,Comoros,Zambia,0,0,AR
-2025-12-26,Angola,Zimbabwe,1,1,AR
-2025-12-27,Congo DR,Senegal,1,1,AR
-2025-12-27,Nigeria,Tunisia,3,2,AR
 2025-12-27,Tanzania,Uganda,1,1,AR
+2025-12-27,Congo DR,Senegal,1,1,AR
 2025-12-27,Benin,Botswana,1,0,AR
-2025-12-28,Algeria,Burkina Faso,1,0,AR
-2025-12-28,Mozambique,Gabon,3,2,AR
-2025-12-28,Sudan,Equatorial Guinea,1,0,AR
+2025-12-27,Nigeria,Tunisia,3,2,AR
 2025-12-28,Cameroon,Côte d'Ivoire,1,1,AR
-2025-12-29,Morocco,Zambia,3,0,AR
+2025-12-28,Mozambique,Gabon,3,2,AR
+2025-12-28,Algeria,Burkina Faso,1,0,AR
+2025-12-28,Sudan,Equatorial Guinea,1,0,AR
 2025-12-29,Comoros,Mali,0,0,AR
 2025-12-29,Angola,Egypt,0,0,AR
 2025-12-29,South Africa,Zimbabwe,3,2,AR
+2025-12-29,Morocco,Zambia,3,0,AR
 2025-12-30,Congo DR,Botswana,3,0,AR
-2025-12-30,Tanzania,Tunisia,1,1,AR
 2025-12-30,Nigeria,Uganda,3,1,AR
+2025-12-30,Tanzania,Tunisia,1,1,AR
 2025-12-30,Senegal,Benin,3,0,AR
 2025-12-31,Côte d'Ivoire,Gabon,3,2,AR
 2025-12-31,Burkina Faso,Sudan,2,0,AR
-2025-12-31,Cameroon,Mozambique,2,1,AR
 2025-12-31,Algeria,Equatorial Guinea,3,1,AR
-2026-01-03,Mali,Tunisia,1,1,AR
+2025-12-31,Cameroon,Mozambique,2,1,AR
 2026-01-03,Senegal,Sudan,3,1,AR
+2026-01-03,Mali,Tunisia,1,1,AR
 2026-01-04,Cameroon,South Africa,2,1,AR
 2026-01-04,Morocco,Tanzania,1,0,AR
 2026-01-05,Nigeria,Mozambique,4,0,AR
@@ -1047,343 +1047,348 @@ date,home,away,hg,ag,comp_code
 2026-01-14,Senegal,Egypt,1,0,AR
 2026-01-17,Egypt,Nigeria,0,0,AR
 2026-01-17,Canada,Guatemala,1,0,F
-2026-01-18,Morocco,Senegal,0,1,AR
 2026-01-18,Grenada,Jamaica,0,1,F
 2026-01-18,Bolivia,Panama,1,1,F
+2026-01-18,Morocco,Senegal,0,1,AR
 2026-01-22,Panama,Mexico,0,1,F
 2026-01-25,Bolivia,Mexico,0,1,F
 2026-01-26,China PR,Uzbekistan,2,2,F
 2026-02-21,Martinique,Jamaica,0,2,F
 2026-02-25,Mexico,Iceland,4,0,F
 2026-03-15,Bolivia,Trinidad and Tobago,3,0,F
-2026-03-25,Puerto Rico,Guam,4,0,FFS
 2026-03-25,Kazakhstan,Namibia,2,0,FFS
-2026-03-25,Equatorial Guinea,Kyrgyz Republic,1,0,F
-2026-03-25,Eritrea,Eswatini,2,0,FQ
-2026-03-25,US Virgin Islands,Eastern Samoa,5,2,FFS
 2026-03-25,Congo DR,Bermuda,2,0,F
-2026-03-26,Poland,Albania,2,1,WQ
+2026-03-25,Eritrea,Eswatini,2,0,FQ
+2026-03-25,Puerto Rico,Guam,4,0,FFS
+2026-03-25,US Virgin Islands,Eastern Samoa,5,2,FFS
+2026-03-25,Equatorial Guinea,Kyrgyz Republic,1,0,F
+2026-03-26,Liechtenstein,Tanzania,1,0,FFS
+2026-03-26,Sweden,Ukraine,3,1,WQ
+2026-03-26,Cyprus,Belarus,0,1,F
+2026-03-26,France,Brazil,2,1,F
+2026-03-26,Wales,Bosnia-Herzegovina,1,1,WQ
 2026-03-26,Moldova,Lithuania,0,2,F
-2026-03-26,Saint Martin,Barbados,3,1,CFS
-2026-03-26,Türkiye,Romania,1,0,WQ
-2026-03-26,Anguilla,Bahamas,3,1,CFS
+2026-03-26,Czechia,Ireland,2,2,WQ
 2026-03-26,Vietnam,Bangladesh,3,0,F
-2026-03-26,Jamaica,New Caledonia,1,0,WQ
 2026-03-26,Malta,Luxembourg,0,2,ECD
-2026-03-26,Italy,Northern Ireland,2,0,WQ
-2026-03-26,South Sudan,Djibouti,4,0,FQ
-2026-03-26,Bonaire,Saint Vincent and the Grenadines,3,1,CFS
+2026-03-26,Türkiye,Romania,1,0,WQ
+2026-03-26,Myanmar,Afghanistan,2,1,SQ
+2026-03-26,Saint Martin,Barbados,3,1,CFS
+2026-03-26,Gibraltar,Latvia,0,1,ECD
 2026-03-26,Cuba,Martinique,2,2,CFS
+2026-03-26,Anguilla,Bahamas,3,1,CFS
+2026-03-26,Jamaica,New Caledonia,1,0,WQ
+2026-03-26,Croatia,Colombia,2,1,F
+2026-03-26,Dominican Republic,El Salvador,2,2,CFS
+2026-03-26,South Sudan,Djibouti,4,0,FQ
+2026-03-26,Poland,Albania,2,1,WQ
 2026-03-26,Bolivia,Suriname,2,1,WQ
 2026-03-26,Denmark,North Macedonia,4,0,WQ
-2026-03-26,Wales,Bosnia-Herzegovina,1,1,WQ
-2026-03-26,Sweden,Ukraine,3,1,WQ
-2026-03-26,Dominican Republic,El Salvador,2,2,CFS
-2026-03-26,Croatia,Colombia,2,1,F
-2026-03-26,Czechia,Ireland,2,2,WQ
-2026-03-26,Liechtenstein,Tanzania,1,0,FFS
-2026-03-26,Cyprus,Belarus,0,1,F
-2026-03-26,Cayman Islands,British Virgin Islands,1,1,CFS
-2026-03-26,Georgia,Israel,2,2,F
-2026-03-26,France,Brazil,2,1,F
-2026-03-26,Gibraltar,Latvia,0,1,ECD
-2026-03-26,Aruba,Macao,4,1,FFS
-2026-03-26,Slovakia,Kosovo,3,4,WQ
-2026-03-26,Myanmar,Afghanistan,2,1,SQ
 2026-03-26,Lesotho,Seychelles,0,0,FQ
-2026-03-27,Sint Maarten,Belize,3,2,CFS
-2026-03-27,Spain,Serbia,3,0,F
-2026-03-27,New Zealand,Finland,0,2,FFS
-2026-03-27,Venezuela,Trinidad and Tobago,4,1,FFS
-2026-03-27,Ecuador,Morocco,1,1,F
-2026-03-27,Switzerland,Germany,3,4,F
-2026-03-27,China PR,Curaçao,2,0,FFS
-2026-03-27,Indonesia,Saint Kitts and Nevis,4,0,FFS
-2026-03-27,Guyana,Dominica,2,0,CFS
-2026-03-27,Uzbekistan,Gabon,3,1,FFS
-2026-03-27,Costa Rica,Jordan,2,2,NSM
-2026-03-27,Benin,Liberia,1,0,F
+2026-03-26,Italy,Northern Ireland,2,0,WQ
+2026-03-26,Georgia,Israel,2,2,F
+2026-03-26,Bonaire,Saint Vincent and the Grenadines,3,1,CFS
+2026-03-26,Slovakia,Kosovo,3,4,WQ
+2026-03-26,Aruba,Macao,4,1,FFS
+2026-03-26,Cayman Islands,British Virgin Islands,1,1,CFS
 2026-03-27,Bulgaria,Solomon Islands,10,2,FFS
-2026-03-27,Netherlands,Norway,2,1,F
-2026-03-27,Nigeria,IR Iran,2,1,NSM
-2026-03-27,England,Uruguay,1,1,F
-2026-03-27,Chad,Burundi,0,4,FQ
-2026-03-27,Mauritius,Somalia,0,0,FQ
+2026-03-27,Ecuador,Morocco,1,1,F
 2026-03-27,Argentina,Mauritania,2,1,F
-2026-03-27,Russia,Nicaragua,3,1,F
-2026-03-27,Libya,Niger,0,0,F
+2026-03-27,Nigeria,IR Iran,2,1,NSM
+2026-03-27,Guyana,Dominica,2,0,CFS
+2026-03-27,Costa Rica,Jordan,2,2,NSM
 2026-03-27,South Africa,Panama,1,1,F
-2026-03-27,Montenegro,Andorra,2,0,F
-2026-03-27,Australia,Cameroon,1,0,FFS
-2026-03-27,Rwanda,Grenada,4,0,FFS
-2026-03-27,Estonia,Kenya,1,1,FFS
 2026-03-27,Azerbaijan,Saint Lucia,6,1,FFS
-2026-03-27,Greece,Paraguay,0,1,F
-2026-03-27,Saudi Arabia,Egypt,0,4,F
-2026-03-27,Ethiopia,Sao Tome and Principe,3,0,FQ
-2026-03-27,Algeria,Guatemala,7,0,F
-2026-03-27,Guinea,Togo,2,2,F
-2026-03-27,Chile,Cape Verde,4,2,FFS
 2026-03-27,Austria,Ghana,5,1,F
-2026-03-28,Côte d'Ivoire,Korea Republic,4,0,F
-2026-03-28,Botswana,Zimbabwe,0,3,MKR
-2026-03-28,Senegal,Peru,2,0,F
-2026-03-28,Guam,Eastern Samoa,6,0,FFS
-2026-03-28,Comoros,Namibia,0,0,FFS
-2026-03-28,Hungary,Slovenia,1,0,F
+2026-03-27,Venezuela,Trinidad and Tobago,4,1,FFS
+2026-03-27,Mauritius,Somalia,0,0,FQ
+2026-03-27,Australia,Cameroon,1,0,FFS
+2026-03-27,New Zealand,Finland,0,2,FFS
+2026-03-27,Saudi Arabia,Egypt,0,4,F
+2026-03-27,China PR,Curaçao,2,0,FFS
+2026-03-27,Guinea,Togo,2,2,F
+2026-03-27,Benin,Liberia,1,0,F
+2026-03-27,Chad,Burundi,0,4,FQ
+2026-03-27,Uzbekistan,Gabon,3,1,FFS
+2026-03-27,Sint Maarten,Belize,3,2,CFS
+2026-03-27,Netherlands,Norway,2,1,F
+2026-03-27,Spain,Serbia,3,0,F
+2026-03-27,Switzerland,Germany,3,4,F
+2026-03-27,Algeria,Guatemala,7,0,F
+2026-03-27,Ethiopia,Sao Tome and Principe,3,0,FQ
+2026-03-27,Chile,Cape Verde,4,2,FFS
+2026-03-27,Estonia,Kenya,1,1,FFS
+2026-03-27,Rwanda,Grenada,4,0,FFS
+2026-03-27,Montenegro,Andorra,2,0,F
+2026-03-27,Libya,Niger,0,0,F
+2026-03-27,England,Uruguay,1,1,F
+2026-03-27,Russia,Nicaragua,3,1,F
+2026-03-27,Greece,Paraguay,0,1,F
+2026-03-27,Indonesia,Saint Kitts and Nevis,4,0,FFS
 2026-03-28,Madagascar,Kyrgyz Republic,5,2,F
-2026-03-28,Scotland,Japan,0,1,F
+2026-03-28,Côte d'Ivoire,Korea Republic,4,0,F
 2026-03-28,Canada,Iceland,2,2,FT
-2026-03-28,Tunisia,Haiti,1,0,FT
-2026-03-28,Burkina Faso,Guinea-Bissau,5,0,F
-2026-03-28,United States,Belgium,2,5,F
-2026-03-28,San Marino,Faroe Islands,1,2,F
+2026-03-28,Guam,Eastern Samoa,6,0,FFS
 2026-03-28,Mexico,Portugal,0,0,F
+2026-03-28,Botswana,Zimbabwe,0,3,MKR
+2026-03-28,Scotland,Japan,0,1,F
+2026-03-28,Tunisia,Haiti,1,0,FT
+2026-03-28,San Marino,Faroe Islands,1,2,F
+2026-03-28,Hungary,Slovenia,1,0,F
 2026-03-28,Puerto Rico,US Virgin Islands,2,0,FFS
+2026-03-28,United States,Belgium,2,5,F
+2026-03-28,Burkina Faso,Guinea-Bissau,5,0,F
+2026-03-28,Senegal,Peru,2,0,F
+2026-03-28,Comoros,Namibia,0,0,FFS
+2026-03-29,Armenia,Belarus,1,2,F
+2026-03-29,El Salvador,Martinique,1,0,CFS
+2026-03-29,Dominican Republic,Cuba,1,1,CFS
+2026-03-29,Bonaire,Saint Martin,0,3,CFS
+2026-03-29,Tanzania,Macao,6,0,FFS
+2026-03-29,Cayman Islands,Bahamas,1,0,CFS
+2026-03-29,South Sudan,Djibouti,0,1,FQ
 2026-03-29,France,Colombia,3,1,F
 2026-03-29,Lithuania,Georgia,0,2,F
 2026-03-29,Aruba,Liechtenstein,4,1,FFS
 2026-03-29,Lesotho,Seychelles,2,1,FQ
 2026-03-29,Saint Vincent and the Grenadines,Barbados,3,2,CFS
-2026-03-29,Dominican Republic,Cuba,1,1,CFS
-2026-03-29,El Salvador,Martinique,1,0,CFS
-2026-03-29,Cayman Islands,Bahamas,1,0,CFS
-2026-03-29,Tanzania,Macao,6,0,FFS
-2026-03-29,South Sudan,Djibouti,0,1,FQ
-2026-03-29,Bonaire,Saint Martin,0,3,CFS
-2026-03-29,Armenia,Belarus,1,2,F
 2026-03-30,Saint Kitts and Nevis,Solomon Islands,4,2,FFS
 2026-03-30,Uzbekistan,Venezuela,0,0,FFS
-2026-03-30,Dominica,Sint Maarten,0,0,CFS
-2026-03-30,Guyana,Belize,3,1,CFS
-2026-03-30,Indonesia,Bulgaria,0,1,FFS
-2026-03-30,Kenya,Grenada,3,0,FFS
 2026-03-30,Cape Verde,Finland,1,1,FFS
 2026-03-30,Cyprus,Moldova,3,2,F
-2026-03-30,Germany,Ghana,2,1,F
+2026-03-30,Dominica,Sint Maarten,0,0,CFS
+2026-03-30,Guyana,Belize,3,1,CFS
 2026-03-30,Azerbaijan,Sierra Leone,1,1,FFS
-2026-03-30,Rwanda,Estonia,2,0,FFS
-2026-03-30,Gabon,Trinidad and Tobago,2,2,FFS
 2026-03-30,New Zealand,Chile,4,1,FFS
-2026-03-31,Haiti,Iceland,1,1,FT
-2026-03-31,Bhutan,Brunei Darussalam,2,1,SQ
-2026-03-31,Chinese Taipei,Sri Lanka,1,3,SQ
+2026-03-30,Kenya,Grenada,3,0,FFS
+2026-03-30,Gabon,Trinidad and Tobago,2,2,FFS
+2026-03-30,Indonesia,Bulgaria,0,1,FFS
+2026-03-30,Germany,Ghana,2,1,F
+2026-03-30,Rwanda,Estonia,2,0,FFS
+2026-03-31,Ukraine,Albania,1,0,F
+2026-03-31,Slovakia,Romania,2,0,F
+2026-03-31,Iraq,Bolivia,2,1,WQ
+2026-03-31,Netherlands,Ecuador,1,1,F
 2026-03-31,Togo,Niger,1,0,F
+2026-03-31,Thailand,Turkmenistan,2,1,SQ
+2026-03-31,Sweden,Poland,3,2,WQ
+2026-03-31,San Marino,Andorra,0,0,F
+2026-03-31,Bosnia-Herzegovina,Italy,1,1,WQ
+2026-03-31,Bhutan,Brunei Darussalam,2,1,SQ
+2026-03-31,Costa Rica,IR Iran,0,5,NSM
 2026-03-31,Kosovo,Türkiye,0,1,WQ
 2026-03-31,Jordan,Nigeria,2,2,NSM
-2026-03-31,Equatorial Guinea,Madagascar,1,1,F
-2026-03-31,Kazakhstan,Comoros,1,0,FFS
-2026-03-31,Benin,Guinea,1,0,F
-2026-03-31,England,Japan,0,1,F
-2026-03-31,South Africa,Panama,1,2,F
-2026-03-31,Eswatini,Eritrea,1,2,FQ
-2026-03-31,Serbia,Saudi Arabia,2,1,F
-2026-03-31,Iraq,Bolivia,2,1,WQ
-2026-03-31,San Marino,Andorra,0,0,F
-2026-03-31,Canada,Tunisia,0,0,FT
-2026-03-31,Brazil,Croatia,3,1,F
-2026-03-31,Botswana,Malawi,1,0,MKR
-2026-03-31,Hungary,Greece,0,0,F
-2026-03-31,Ireland,North Macedonia,0,0,F
-2026-03-31,Slovakia,Romania,2,0,F
-2026-03-31,Norway,Switzerland,0,0,F
-2026-03-31,Wales,Northern Ireland,1,1,F
-2026-03-31,Cameroon,China PR,2,0,FFS
 2026-03-31,Argentina,Zambia,5,0,F
-2026-03-31,Algeria,Uruguay,0,0,F
-2026-03-31,Bosnia-Herzegovina,Italy,1,1,WQ
-2026-03-31,Latvia,Gibraltar,1,0,ECD
-2026-03-31,Burundi,Chad,4,0,FQ
-2026-03-31,Senegal,The Gambia,3,1,F
-2026-03-31,India,"Hong Kong, China",2,1,SQ
-2026-03-31,Ethiopia,Sao Tome and Principe,1,0,FQ
-2026-03-31,Congo DR,Jamaica,1,0,WQ
-2026-03-31,Russia,Mali,0,0,F
-2026-03-31,Vietnam,Malaysia,3,1,SQ
+2026-03-31,Canada,Tunisia,0,0,FT
+2026-03-31,Cameroon,China PR,2,0,FFS
 2026-03-31,Burkina Faso,Guinea-Bissau,1,1,F
-2026-03-31,Laos,Nepal,1,0,SQ
-2026-03-31,Luxembourg,Malta,3,0,ECD
+2026-03-31,Honduras,Peru,2,2,F
+2026-03-31,Austria,Korea Republic,1,0,F
+2026-03-31,India,"Hong Kong, China",2,1,SQ
+2026-03-31,Kazakhstan,Comoros,1,0,FFS
+2026-03-31,United States,Portugal,0,2,F
+2026-03-31,South Africa,Panama,1,2,F
+2026-03-31,Haiti,Iceland,1,1,FT
+2026-03-31,Burundi,Chad,4,0,FQ
+2026-03-31,England,Japan,0,1,F
+2026-03-31,Brazil,Croatia,3,1,F
+2026-03-31,Spain,Egypt,0,0,F
+2026-03-31,Congo DR,Jamaica,1,0,WQ
+2026-03-31,Botswana,Malawi,1,0,MKR
+2026-03-31,Ireland,North Macedonia,0,0,F
+2026-03-31,Hungary,Greece,0,0,F
+2026-03-31,Wales,Northern Ireland,1,1,F
+2026-03-31,Equatorial Guinea,Madagascar,1,1,F
+2026-03-31,Norway,Switzerland,0,0,F
+2026-03-31,Tajikistan,Philippines,1,1,SQ
 2026-03-31,Syria,Afghanistan,5,1,SQ
 2026-03-31,Singapore,Bangladesh,1,0,SQ
-2026-03-31,Morocco,Paraguay,2,1,F
-2026-03-31,United States,Portugal,0,2,F
-2026-03-31,Czechia,Denmark,2,2,WQ
-2026-03-31,Australia,Curaçao,5,1,FFS
 2026-03-31,Maldives,East Timor,2,1,SQ
-2026-03-31,Sweden,Poland,3,2,WQ
-2026-03-31,Thailand,Turkmenistan,2,1,SQ
-2026-03-31,Costa Rica,IR Iran,0,5,NSM
-2026-03-31,Netherlands,Ecuador,1,1,F
-2026-03-31,Spain,Egypt,0,0,F
-2026-03-31,Pakistan,Myanmar,1,2,SQ
-2026-03-31,Honduras,Peru,2,2,F
-2026-03-31,Tajikistan,Philippines,1,1,SQ
+2026-03-31,Benin,Guinea,1,0,F
+2026-03-31,Morocco,Paraguay,2,1,F
+2026-03-31,Ethiopia,Sao Tome and Principe,1,0,FQ
+2026-03-31,Australia,Curaçao,5,1,FFS
+2026-03-31,Senegal,The Gambia,3,1,F
+2026-03-31,Luxembourg,Malta,3,0,ECD
+2026-03-31,Liberia,Libya,2,2,F
+2026-03-31,Russia,Mali,0,0,F
 2026-03-31,Belgium,Mexico,1,1,F
 2026-03-31,Montenegro,Slovenia,2,3,F
-2026-03-31,Ukraine,Albania,1,0,F
-2026-03-31,Côte d'Ivoire,Scotland,1,0,F
+2026-03-31,Serbia,Saudi Arabia,2,1,F
+2026-03-31,Vietnam,Malaysia,3,1,SQ
 2026-03-31,Mauritius,Somalia,0,0,FQ
-2026-03-31,Liberia,Libya,2,2,F
-2026-03-31,Austria,Korea Republic,1,0,F
+2026-03-31,Czechia,Denmark,2,2,WQ
+2026-03-31,Pakistan,Myanmar,1,2,SQ
+2026-03-31,Eswatini,Eritrea,1,2,FQ
+2026-03-31,Chinese Taipei,Sri Lanka,1,3,SQ
+2026-03-31,Latvia,Gibraltar,1,0,ECD
+2026-03-31,Laos,Nepal,1,0,SQ
+2026-03-31,Algeria,Uruguay,0,0,F
+2026-03-31,Côte d'Ivoire,Scotland,1,0,F
 2026-05-16,Ireland,Grenada,5,0,F
 2026-05-22,Mexico,Ghana,2,0,F
 2026-05-26,Nigeria,Zimbabwe,2,0,UTC
 2026-05-26,Morocco,Burundi,5,0,F
 2026-05-27,Jamaica,India,2,0,UTC
-2026-05-28,Egypt,Russia,1,0,F
 2026-05-28,Ireland,Qatar,1,0,F
-2026-05-29,Bosnia-Herzegovina,North Macedonia,0,0,F
-2026-05-29,IR Iran,The Gambia,3,1,F
+2026-05-28,Egypt,Russia,1,0,F
 2026-05-29,Iraq,Andorra,1,0,F
+2026-05-29,IR Iran,The Gambia,3,1,F
 2026-05-29,South Africa,Nicaragua,0,0,F
-2026-05-30,Korea Republic,Trinidad and Tobago,5,0,F
-2026-05-30,Nigeria,Jamaica,3,0,UTC
-2026-05-30,Ecuador,Saudi Arabia,2,1,F
-2026-05-30,Scotland,Curaçao,4,1,F
+2026-05-29,Bosnia-Herzegovina,North Macedonia,0,0,F
 2026-05-30,Zimbabwe,India,1,0,UTC
+2026-05-30,Scotland,Curaçao,4,1,F
 2026-05-30,Mexico,Australia,1,0,F
-2026-05-31,Japan,Iceland,1,0,F
+2026-05-30,Ecuador,Saudi Arabia,2,1,F
+2026-05-30,Nigeria,Jamaica,3,0,UTC
+2026-05-30,Korea Republic,Trinidad and Tobago,5,0,F
 2026-05-31,Brazil,Panama,6,2,F
-2026-05-31,Germany,Finland,4,0,F
+2026-05-31,Japan,Iceland,1,0,F
+2026-05-31,United States,Senegal,3,2,F
+2026-05-31,Czechia,Kosovo,2,1,F
 2026-05-31,Singapore,Mongolia,4,0,F
 2026-05-31,Poland,Ukraine,0,2,F
-2026-05-31,Czechia,Kosovo,2,1,F
 2026-05-31,Cape Verde,Serbia,3,0,F
-2026-05-31,United States,Senegal,3,2,F
+2026-05-31,Germany,Finland,4,0,F
 2026-05-31,Switzerland,Jordan,4,1,F
-2026-06-01,Türkiye,North Macedonia,4,0,F
-2026-06-01,Canada,Uzbekistan,2,0,F
-2026-06-01,Colombia,Costa Rica,3,1,F
 2026-06-01,Austria,Tunisia,1,0,F
+2026-06-01,Canada,Uzbekistan,2,0,F
 2026-06-01,Norway,Sweden,3,1,F
-2026-06-01,Maldives,Afghanistan,0,1,DJB
-2026-06-01,Slovakia,Malta,2,1,F
+2026-06-01,Colombia,Costa Rica,3,1,F
 2026-06-01,Bulgaria,Montenegro,0,1,F
-2026-06-02,Brunei Darussalam,East Timor,0,3,SEQ
-2026-06-02,Haiti,New Zealand,4,0,F
+2026-06-01,Türkiye,North Macedonia,4,0,F
+2026-06-01,Slovakia,Malta,2,1,F
+2026-06-01,Maldives,Afghanistan,0,1,DJB
 2026-06-02,Wales,Ghana,1,1,F
+2026-06-02,Haiti,New Zealand,4,0,F
+2026-06-02,Brunei Darussalam,East Timor,0,3,SEQ
+2026-06-02,Morocco,Madagascar,4,0,F
 2026-06-02,Georgia,Romania,1,1,F
 2026-06-02,Croatia,Belgium,0,2,F
-2026-06-02,Morocco,Madagascar,4,0,F
+2026-06-03,Philippines,Guam,5,1,FT
 2026-06-03,Korea Republic,El Salvador,1,0,F
-2026-06-03,Netherlands,Algeria,0,1,F
-2026-06-03,Gibraltar,British Virgin Islands,4,0,F
 2026-06-03,Luxembourg,Italy,0,1,F
 2026-06-03,Poland,Nigeria,2,2,F
-2026-06-03,Philippines,Guam,5,1,FT
-2026-06-03,Albania,Israel,0,1,F
-2026-06-03,Denmark,Congo DR,0,0,F
 2026-06-03,Panama,Dominican Republic,4,2,F
-2026-06-04,Czechia,Guatemala,3,1,F
-2026-06-04,France,Côte d'Ivoire,1,2,F
+2026-06-03,Denmark,Congo DR,0,0,F
+2026-06-03,Albania,Israel,0,1,F
+2026-06-03,Netherlands,Algeria,0,1,F
+2026-06-03,Gibraltar,British Virgin Islands,4,0,F
+2026-06-04,Andorra,Liechtenstein,2,0,F
 2026-06-04,Sweden,Greece,2,2,F
 2026-06-04,Northern Ireland,Guinea,1,0,F
-2026-06-04,Andorra,Liechtenstein,2,0,F
-2026-06-04,Mexico,Serbia,5,1,F
-2026-06-04,Slovenia,Cyprus,1,1,F
 2026-06-04,Spain,Iraq,1,1,F
-2026-06-04,Maldives,Pakistan,0,3,DJB
+2026-06-04,Slovenia,Cyprus,1,1,F
 2026-06-04,Cambodia,Bhutan,4,0,F
-2026-06-04,IR Iran,Mali,2,0,F
-2026-06-04,Yemen,Lebanon,2,0,SQ
+2026-06-04,Mexico,Serbia,5,1,F
 2026-06-04,Kenya,Lesotho,1,1,F
-2026-06-05,Saudi Arabia,Puerto Rico,3,0,F
-2026-06-05,Central African Republic,Togo,1,1,F
-2026-06-05,Paraguay,Nicaragua,4,0,F
-2026-06-05,Singapore,China PR,1,2,F
-2026-06-05,Benin,Niger,1,1,F
-2026-06-05,Indonesia,Oman,3,0,GRD
+2026-06-04,IR Iran,Mali,2,0,F
+2026-06-04,Czechia,Guatemala,3,1,F
+2026-06-04,Maldives,Pakistan,0,3,DJB
+2026-06-04,France,Côte d'Ivoire,1,2,F
+2026-06-04,Yemen,Lebanon,2,0,SQ
+2026-06-05,Canada,Ireland,1,1,F
+2026-06-05,Russia,Burkina Faso,3,0,F
 2026-06-05,Thailand,Kuwait,2,2,F
+2026-06-05,"Hong Kong, China",Mongolia,2,0,F
+2026-06-05,Paraguay,Nicaragua,4,0,F
+2026-06-05,Georgia,Bahrain,2,0,F
+2026-06-05,Central African Republic,Togo,1,1,F
+2026-06-05,Slovakia,Montenegro,2,2,F
+2026-06-05,Malta,Azerbaijan,2,0,F
+2026-06-05,Hungary,Finland,2,1,F
 2026-06-05,Belarus,Syria,4,1,F
 2026-06-05,San Marino,Bangladesh,1,2,F
-2026-06-05,Georgia,Bahrain,2,0,F
-2026-06-05,Malta,Azerbaijan,2,0,F
-2026-06-05,Slovakia,Montenegro,2,2,F
-2026-06-05,Peru,Haiti,2,1,F
-2026-06-05,Canada,Ireland,1,1,F
-2026-06-05,Hungary,Finland,2,1,F
-2026-06-05,"Hong Kong, China",Mongolia,2,0,F
-2026-06-05,Angola,Mauritania,1,1,F
-2026-06-05,Russia,Burkina Faso,3,0,F
-2026-06-05,Tajikistan,India,3,1,F
+2026-06-05,Benin,Niger,1,1,F
+2026-06-05,Singapore,China PR,1,2,F
 2026-06-05,Moldova,Bulgaria,2,2,F
-2026-06-06,Portugal,Chile,2,1,F
-2026-06-06,Armenia,Kazakhstan,1,1,F
-2026-06-06,Vanuatu,Fiji,2,1,F
-2026-06-06,Ethiopia,Malawi,1,0,F
-2026-06-06,Estonia,Faroe Islands,1,0,BLC
+2026-06-05,Indonesia,Oman,3,0,GRD
+2026-06-05,Peru,Haiti,2,1,F
+2026-06-05,Saudi Arabia,Puerto Rico,3,0,F
+2026-06-05,Tajikistan,India,3,1,F
+2026-06-05,Angola,Mauritania,1,1,F
+2026-06-06,Gibraltar,Cayman Islands,4,1,F
 2026-06-06,England,New Zealand,1,0,F
-2026-06-06,El Salvador,Qatar,0,0,F
-2026-06-06,Romania,Wales,2,1,F
+2026-06-06,United States,Germany,1,2,F
+2026-06-06,Australia,Switzerland,1,1,F
+2026-06-06,Ethiopia,Malawi,1,0,F
 2026-06-06,Albania,Luxembourg,0,1,F
+2026-06-06,El Salvador,Qatar,0,0,F
+2026-06-06,Portugal,Chile,2,1,F
+2026-06-06,Vanuatu,Fiji,2,1,F
+2026-06-06,Brazil,Egypt,2,1,F
+2026-06-06,Türkiye,Venezuela,2,1,F
+2026-06-06,Romania,Wales,2,1,F
+2026-06-06,Curaçao,Aruba,4,0,F
+2026-06-06,Armenia,Kazakhstan,1,1,F
+2026-06-06,Jamaica,South Africa,1,1,F
+2026-06-06,British Virgin Islands,Bonaire,2,0,F
+2026-06-06,Cape Verde,Bermuda,3,0,F
+2026-06-06,Estonia,Faroe Islands,1,0,BLC
+2026-06-06,Myanmar,Guam,6,1,FT
+2026-06-06,Scotland,Bolivia,4,0,F
+2026-06-06,Sierra Leone,Liberia,1,0,F
 2026-06-06,Kyrgyz Republic,Palestine,0,0,F
+2026-06-06,Bosnia-Herzegovina,Panama,1,1,F
 2026-06-06,Lithuania,Latvia,1,1,BLC
 2026-06-06,Belgium,Tunisia,5,0,F
-2026-06-06,Sierra Leone,Liberia,1,0,F
-2026-06-06,Türkiye,Venezuela,2,1,F
-2026-06-06,Australia,Switzerland,1,1,F
-2026-06-06,Curaçao,Aruba,4,0,F
-2026-06-06,Myanmar,Guam,6,1,FT
-2026-06-06,Cape Verde,Bermuda,3,0,F
-2026-06-06,Bosnia-Herzegovina,Panama,1,1,F
-2026-06-06,Jamaica,South Africa,1,1,F
-2026-06-06,Scotland,Bolivia,4,0,F
 2026-06-06,Argentina,Honduras,2,0,F
-2026-06-06,Gibraltar,Cayman Islands,4,1,F
-2026-06-06,British Virgin Islands,Bonaire,2,0,F
-2026-06-06,Brazil,Egypt,2,1,F
-2026-06-06,United States,Germany,1,2,F
-2026-06-07,Croatia,Slovenia,2,1,F
-2026-06-07,Morocco,Norway,1,1,F
-2026-06-07,Pakistan,Afghanistan,2,0,DJB
-2026-06-07,Oman,Mozambique,4,1,GRD
-2026-06-07,Ecuador,Guatemala,3,0,F
-2026-06-07,Greece,Italy,0,1,F
-2026-06-07,Liechtenstein,Cyprus,0,2,F
-2026-06-07,Kenya,Lesotho,4,0,F
 2026-06-07,Colombia,Jordan,2,0,F
-2026-06-07,Kosovo,Andorra,3,0,F
 2026-06-07,Denmark,Ukraine,2,1,F
+2026-06-07,Croatia,Slovenia,2,1,F
+2026-06-07,Ecuador,Guatemala,3,0,F
+2026-06-07,Pakistan,Afghanistan,2,0,DJB
+2026-06-07,Liechtenstein,Cyprus,0,2,F
+2026-06-07,Morocco,Norway,1,1,F
+2026-06-07,Oman,Mozambique,4,1,GRD
+2026-06-07,Kosovo,Andorra,3,0,F
+2026-06-07,Greece,Italy,0,1,F
+2026-06-07,Kenya,Lesotho,4,0,F
 2026-06-08,Spain,Peru,3,1,F
 2026-06-08,Mauritania,Niger,1,0,F
-2026-06-08,Netherlands,Uzbekistan,2,1,F
-2026-06-08,Sri Lanka,Bhutan,4,1,F
 2026-06-08,France,Northern Ireland,3,1,F
+2026-06-08,Sri Lanka,Bhutan,4,1,F
+2026-06-08,Netherlands,Uzbekistan,2,1,F
+2026-06-09,Indonesia,Mozambique,1,0,GRD
+2026-06-09,China PR,Thailand,0,0,F
+2026-06-09,Argentina,Iceland,3,0,F
+2026-06-09,Armenia,Moldova,1,1,F
+2026-06-09,Togo,Benin,5,1,F
+2026-06-09,Kyrgyz Republic,Palestine,0,0,F
+2026-06-09,Philippines,Myanmar,5,1,FT
+2026-06-09,Belarus,Burkina Faso,2,2,F
+2026-06-09,Liberia,Sierra Leone,3,1,F
+2026-06-09,Azerbaijan,San Marino,2,1,F
+2026-06-09,Tajikistan,India,1,1,F
+2026-06-09,Angola,Central African Republic,3,0,F
+2026-06-09,Vanuatu,Fiji,2,2,F
+2026-06-09,East Timor,Brunei Darussalam,3,1,SEQ
+2026-06-09,Chile,Congo DR,2,1,F
+2026-06-09,Latvia,Faroe Islands,0,1,BLC
+2026-06-09,Ethiopia,Malawi,1,1,F
+2026-06-09,Saudi Arabia,Senegal,0,0,F
 2026-06-09,Estonia,Lithuania,1,0,BLC
 2026-06-09,Russia,Trinidad and Tobago,3,0,F
-2026-06-09,Angola,Central African Republic,3,0,F
-2026-06-09,Azerbaijan,San Marino,2,1,F
-2026-06-09,Chile,Congo DR,2,1,F
-2026-06-09,Indonesia,Mozambique,1,0,GRD
-2026-06-09,East Timor,Brunei Darussalam,3,1,SEQ
-2026-06-09,Saudi Arabia,Senegal,0,0,F
-2026-06-09,Liberia,Sierra Leone,3,1,F
-2026-06-09,China PR,Thailand,0,0,F
-2026-06-09,Armenia,Moldova,1,1,F
-2026-06-09,Belarus,Burkina Faso,2,2,F
-2026-06-09,Vanuatu,Fiji,2,2,F
 2026-06-09,Cambodia,"Hong Kong, China",2,0,F
-2026-06-09,Philippines,Myanmar,5,1,FT
-2026-06-09,Hungary,Kazakhstan,3,1,F
-2026-06-09,Comoros,Equatorial Guinea,1,0,F
-2026-06-09,Togo,Benin,5,1,F
 2026-06-09,Venezuela,Iraq,2,0,F
-2026-06-09,Ethiopia,Malawi,1,1,F
-2026-06-09,Latvia,Faroe Islands,0,1,BLC
-2026-06-09,Argentina,Iceland,3,0,F
-2026-06-09,Kyrgyz Republic,Palestine,0,0,F
-2026-06-09,Tajikistan,India,1,1,F
+2026-06-09,Comoros,Equatorial Guinea,1,0,F
+2026-06-09,Hungary,Kazakhstan,3,1,F
 2026-06-10,England,Costa Rica,3,0,F
-2026-06-10,Pakistan,Afghanistan,2,0,DJB
-2026-06-10,Algeria,Bolivia,4,0,F
 2026-06-10,Portugal,Nigeria,2,1,F
+2026-06-10,Algeria,Bolivia,4,0,F
+2026-06-10,Pakistan,Afghanistan,2,0,DJB
 2026-06-11,Mexico,South Africa,2,0,WC
 2026-06-11,Korea Republic,Czechia,2,1,WC
 2026-06-12,Canada,Bosnia-Herzegovina,1,1,WC
 2026-06-12,United States,Paraguay,4,1,WC
-2026-06-13,Brazil,Morocco,1,1,WC
-2026-06-13,Australia,Türkiye,2,0,WC
 2026-06-13,Qatar,Switzerland,1,1,WC
+2026-06-13,Brazil,Morocco,1,1,WC
 2026-06-13,Scotland,Haiti,1,0,WC
-2026-06-14,Germany,Curaçao,7,1,WC
+2026-06-13,Australia,Türkiye,2,0,WC
+2026-06-14,Sweden,Tunisia,5,1,WC
 2026-06-14,Japan,Netherlands,2,2,WC
+2026-06-14,Côte d'Ivoire,Ecuador,1,0,WC
+2026-06-14,Germany,Curaçao,7,1,WC
+2026-06-15,Saudi Arabia,Uruguay,1,1,WC
+2026-06-15,Belgium,Egypt,1,1,WC
+2026-06-15,Cape Verde,Spain,0,0,WC

@@ -46,7 +46,7 @@ CUTOFF = "2026-06-11"   # tournament kickoff — train strictly before this
 def build_snapshot() -> pd.DataFrame:
     """Freeze the model's pre-tournament prediction for every group fixture."""
     table, _ = features.build_training_table()
-    clf = model.OutcomeClassifier("random_forest").fit(table, CUTOFF)
+    clf = model.OutcomeClassifier("logistic").fit(table, CUTOFF)
     form = features.team_form(); h2h = features.h2h_table()
     sch = load.load_schedule_2026()
     rows = []

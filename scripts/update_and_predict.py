@@ -37,7 +37,7 @@ def main():
 
     table, _ = features.build_training_table()
     print(f"Trained on {len(table):,} matches (latest {table['date'].max().date()}).")
-    clf = model.OutcomeClassifier("random_forest").fit(table, str(table["date"].max() + pd.Timedelta(days=1)))
+    clf = model.OutcomeClassifier("logistic").fit(table, str(table["date"].max() + pd.Timedelta(days=1)))
 
     form = features.team_form()
     h2h = features.h2h_table()

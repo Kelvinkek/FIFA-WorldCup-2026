@@ -74,7 +74,7 @@ scripts only import it; only `src/load.py` touches `data/`.**
 
 ## 4. Feature engineering - the heart of it
 
-Every feature uses **only information available before kick-off** (no leakage). The 14 features:
+Every feature uses **only information available before kick-off** (no leakage). The 13 features:
 
 | Feature group | Columns | What it captures |
 |---|---|---|
@@ -83,7 +83,6 @@ Every feature uses **only information available before kick-off** (no leakage). 
 | **Head-to-head** | `h2h_home_wins`, `h2h_draws`, `h2h_away_wins` | share of past meetings between the two teams |
 | **Confederation** | `home/away_confederation` | region code (UEFA, CONMEBOL, …) |
 | **Venue** | `is_neutral` | neutral venue flag |
-| **Match importance** | `match_importance` | stake tier 1–5 (friendly → World Cup) |
 
 **Two signals do the work, and they're complementary:**
 - **Elo** (from **eloratings.net**, joined pre-match via `src/elodata.py`) - a professional rating
@@ -95,7 +94,9 @@ Every feature uses **only information available before kick-off** (no leakage). 
   goes stale).
 
 A homemade Elo (`compute_elo`) is kept in `features.py` for reference, but the eloratings ratings
-replaced it - switching lifted walk-forward accuracy from **~59.3% to ~60.7%** (log-loss 0.889 → 0.873).
+replaced it - switching lifted walk-forward accuracy from **~59.3% to ~60.5%** (log-loss 0.889 → 0.873).
+(A `match_importance` feature was tested and dropped: it's constant for a World-Cup-only predictor,
+and the eloratings Elo already bakes match importance into the rating.)
 
 **No-leakage discipline:** form uses `.shift()` so a match never sees its own result; Elo is the
 rating *before* the match; h2h counts only *prior* meetings. This is the single most important
@@ -114,13 +115,13 @@ exposed through one class `OutcomeClassifier(algo=...)`:
 
 | Model | Type | Notes |
 |---|---|---|
-| **Random Forest** | bagged trees | the default / best overall |
-| Gradient Boosting | boosted trees | best log-loss |
+| **Logistic Regression** | linear | **the default, used for predictions - best accuracy/log-loss/RPS + best-calibrated** |
 | XGBoost | boosted trees | competitive |
-| Extra Trees | randomised trees | competitive |
-| Logistic Regression | linear | strong, simple baseline |
+| Gradient Boosting | boosted trees | competitive |
+| Random Forest | bagged trees | competitive (alias `rf` / `random_forest`) |
+| Extra Trees | randomised trees | good accuracy but worst calibration (over-confident probs) |
 
-**Why these (and not deep learning)?** This is **small, tabular data** (~3,900 rows, 14 features) -
+**Why these (and not deep learning)?** This is **small, tabular data** (~3,900 rows, 13 features) -
 the regime where tree ensembles and linear models dominate. A neural net was tested and came
 **last** (it needs far more data). All five tuned models cluster at **~60–61%**, which is reassuring:
 the result reflects the *data*, not one lucky algorithm.
@@ -151,9 +152,9 @@ plus **calibration** curves and **permutation feature importance**.
 
 | Test | Accuracy | Log-loss |
 |---|---|---|
-| **Walk-forward** (general matches) | **~60.7%** | ~0.87 |
+| **Walk-forward** (general matches) | **~60.5%** | ~0.85 |
 | World Cup backtest (2022 finals) | ~50% | ~1.04 |
-| *always predict home* | ~44% | - |
+| *always predict home* | ~52% | - |
 | *random guess* | ~33% | 1.10 |
 
 The gap (61% vs 50%) is honest and instructive: a top-heavy tournament like the World Cup is
@@ -232,6 +233,6 @@ tournaments the eloratings data simply doesn't change until teams play again. Re
 ### TL;DR
 
 > Merge 150 years of international results → engineer **eloratings.net Elo + recent goal form +
-> match importance** (no leakage) → train **5 tuned models** (Random Forest best) → validate by
-> **time-split walk-forward** → predict any match's **Home/Draw/Away** odds, draw-aware. Result:
-> **~60.7%** general accuracy, **~50%** on a real World Cup - honest, interpretable, and reproducible.
+> recent goal form** (no leakage) → train **5 tuned models** (Logistic the default) → validate
+> by **time-split walk-forward** → predict any match's **Home/Draw/Away** odds, draw-aware. Result:
+> **~60.5%** general accuracy, **~50%** on a real World Cup - honest, interpretable, and reproducible.

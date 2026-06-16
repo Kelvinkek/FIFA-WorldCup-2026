@@ -46,7 +46,7 @@ def to_brisbane(date, time):
     return utc + timedelta(hours=10)                     # -> Brisbane
 
 table, _ = features.build_training_table()
-clf = model.OutcomeClassifier("random_forest").fit(table, "2026-06-11")
+clf = model.OutcomeClassifier("logistic").fit(table, "2026-06-11")
 form = features.team_form(); h2h = features.h2h_table()
 
 def predict(h, a):

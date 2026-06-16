@@ -2,9 +2,9 @@
 
 Team strength comes from **eloratings.net Elo** (professional, importance-weighted,
 joined pre-match via src/elodata.py), combined with **recent goal form** (goals scored /
-conceded over the last N matches), head-to-head history, confederation, a neutral-venue
-flag, and match importance. All features use only information available *before* the
-match being predicted (Elo is pre-match; form is shifted), so there is no leakage.
+conceded over the last N matches), head-to-head history, confederation and a neutral-venue
+flag. All features use only information available *before* the match being predicted
+(Elo is pre-match; form is shifted), so there is no leakage.
 
 `compute_elo()` (a homemade Elo) is kept as a reference/fallback but is no longer in the
 pipeline - attach_eloratings() supplies the Elo features instead.
@@ -12,7 +12,7 @@ pipeline - attach_eloratings() supplies the Elo features instead.
 Pipeline:
     unified_matches()      -> one chronological table of every match we have
     attach_eloratings()    -> join eloratings pre-match Elo (home_elo/away_elo/elo_diff)
-    build_training_table() -> match rows + Elo/form/h2h/confederation/importance + outcome
+    build_training_table() -> match rows + Elo/form/h2h/confederation + outcome
     team_form()            -> each team's latest form + current Elo (for new fixtures)
     h2h_table()            -> head-to-head record for any pair of teams
 """
@@ -89,9 +89,25 @@ def unified_matches(include_wc_finals: bool = True) -> pd.DataFrame:
         lv = pd.read_csv(live, parse_dates=["date"])
         parts.append(lv[["date", "home", "away", "hg", "ag", "neutral", "competition"]])
 
+    # eloratings.net recent results (every team, current) - keeps goal FORM as fresh as
+    # the Elo. Appended last so it wins dedup (correct home/away orientation + scores).
+    if elodata.RESULTS_CACHE.exists():
+        er = pd.read_csv(elodata.RESULTS_CACHE, parse_dates=["date"])
+        parts.append(pd.DataFrame({
+            "date": er["date"], "home": er["home"], "away": er["away"],
+            "hg": er["hg"], "ag": er["ag"],
+            "neutral": er["comp_code"].eq("WC"),   # WC finals neutral; qualifiers/friendlies home-away
+            "competition": "eloratings",
+        }))
+
     m = pd.concat(parts, ignore_index=True)
     m = m.dropna(subset=["date", "home", "away", "hg", "ag"])
-    m = m.drop_duplicates(subset=["date", "home", "away"], keep="last")
+    # dedup by date + UNORDERED team pair, so a match present in two sources (even with
+    # home/away swapped) counts once; eloratings was appended last, so its row wins.
+    pair = [tuple(sorted((h, a))) for h, a in zip(m["home"], m["away"])]
+    m["_lo"] = [p[0] for p in pair]
+    m["_hi"] = [p[1] for p in pair]
+    m = m.drop_duplicates(subset=["date", "_lo", "_hi"], keep="last").drop(columns=["_lo", "_hi"])
     m = m.sort_values("date").reset_index(drop=True)
     m["hg"] = m["hg"].astype(int)
     m["ag"] = m["ag"].astype(int)
@@ -168,7 +184,6 @@ def build_training_table() -> tuple[pd.DataFrame, None]:
     m = add_h2h(m)
     m = add_confederation(m)
     m["is_neutral"] = m["neutral"].astype(float)
-    m["match_importance"] = m["competition"].map(elodata.importance_of)
     m = m[m["date"].dt.year >= MIN_YEAR].reset_index(drop=True)
     m["outcome"] = np.where(m["hg"] > m["ag"], "H", np.where(m["hg"] < m["ag"], "A", "D"))
     return m, None
