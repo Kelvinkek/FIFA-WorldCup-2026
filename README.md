@@ -137,10 +137,6 @@ credit them if you reuse it.
 `scripts/daily_update.py` refreshes everything in one run: pulls finished results from
 API-Football, refreshes the eloratings Elo history + recent results, rebuilds features,
 regenerates the group-stage prediction charts, and updates the **prediction tracker**
-(`reports/viz_prediction_tracker.png`) — the model's pre-tournament picks graded against
-the actual results as they come in — plus a **per-day chart** for each match-day
-(`reports/daily/YYYY-MM-DD.png`): that day's fixtures as Win/Draw/Lose probability bars,
-with the actual result outlined once played. It uses only ~3 of the 100 daily API requests.
 
 The "initial" predictions are frozen once into `data/initial_predictions.csv` (model
 trained only on pre-kickoff data, so no leakage) and never overwritten, so the tracker is
@@ -160,9 +156,8 @@ Output is appended to `logs/daily_update.log`. Run it by hand anytime with
 ## Round-of-32 predictions
 
 The knockout bracket isn't in the static schedule (it depends on final group standings),
-and neither football API carries it on a free plan — API-Football is empty for the 2026
-World Cup, and football-data.org gates the World Cup behind a token/tier. So the R32
-matchups come from **fixturedownload.com**, a free, no-auth feed that fills in the real
+and neither football API carries it on a free plan. The R32 matchups come 
+from **fixturedownload.com**, a free, no-auth feed that fills in the real
 ties as the bracket is decided (`src/knockout.py`).
 
 `scripts/viz_r32.py` pulls those 16 ties, predicts each with the same logistic +
@@ -174,11 +169,6 @@ draw-aware model, and writes to its **own folder** (the daily charts are untouch
 
 - `reports/round_of_32/round_of_32.png` — all 16 ties at a glance
 - `reports/round_of_32/YYYY-MM-DD.png` — one PNG per match-day (same look as `daily/`)
-
-Once a tie is played, its actual result is outlined and graded, exactly like the daily
-tracker. To switch the source to the **football-data.org** API instead, add a free
-`FOOTBALL_DATA_TOKEN=...` to `.env` (it's used automatically when present, with
-fixturedownload as the fallback).
 
 ## Model versioning (MLflow)
 
@@ -193,8 +183,6 @@ freshly trained model is registered under `worldcup-outcome-model` and tagged `@
 .venv\Scripts\python.exe scripts\register_model.py --algo xgb     # log another algo to compare
 .venv\Scripts\python.exe scripts\register_model.py --no-champion  # register but don't promote
 ```
-
-Load "the current production model" anywhere by alias — no refitting:
 
 ```python
 from src import registry
