@@ -1,0 +1,17 @@
+match_no,date_utc,date,time,home,away,location
+73,2026-06-28 19:00,2026-06-29,05:00,South Africa,Canada,Los Angeles Stadium
+76,2026-06-29 17:00,2026-06-30,03:00,Brazil,Japan,Houston Stadium
+74,2026-06-29 20:30,2026-06-30,06:30,Germany,Paraguay,Boston Stadium
+75,2026-06-30 01:00,2026-06-30,11:00,Netherlands,Morocco,Monterrey Stadium
+78,2026-06-30 17:00,2026-07-01,03:00,Côte d'Ivoire,Norway,Dallas Stadium
+77,2026-06-30 21:00,2026-07-01,07:00,France,Sweden,New York/New Jersey Stadium
+79,2026-07-01 01:00,2026-07-01,11:00,Mexico,Ecuador,Mexico City Stadium
+80,2026-07-01 16:00,2026-07-02,02:00,England,Congo DR,Atlanta Stadium
+82,2026-07-01 20:00,2026-07-02,06:00,Belgium,Senegal,Seattle Stadium
+81,2026-07-02 00:00,2026-07-02,10:00,United States,Bosnia-Herzegovina,San Francisco Bay Area Stadium
+84,2026-07-02 19:00,2026-07-03,05:00,Spain,Austria,Los Angeles Stadium
+83,2026-07-02 23:00,2026-07-03,09:00,Portugal,Croatia,Toronto Stadium
+85,2026-07-03 03:00,2026-07-03,13:00,Switzerland,Algeria,BC Place Vancouver
+88,2026-07-03 18:00,2026-07-04,04:00,Australia,Egypt,Dallas Stadium
+86,2026-07-03 22:00,2026-07-04,08:00,Argentina,Cape Verde,Miami Stadium
+87,2026-07-04 01:30,2026-07-04,11:30,Colombia,Ghana,Kansas City Stadium

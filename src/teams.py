@@ -40,6 +40,7 @@ TEAM_NAME_MAP: dict[str, str] = {
     # renamed nations - historical match data uses the old name, 2026 uses the new
     "Czech Republic": "Czechia",
     "Bosnia and Herzegovina": "Bosnia-Herzegovina",
+    "Cabo Verde": "Cape Verde",
     # other common variants worth normalising defensively
     "USA": "United States",
     "Korea": "Korea Republic",

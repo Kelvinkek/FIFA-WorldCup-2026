@@ -43,10 +43,12 @@ world-cup/
 │   ├── setup_schedule.ps1    <- register/remove the daily Windows Scheduled Task
 │   ├── update_and_predict.py <- fetch latest results + predict upcoming fixtures
 │   ├── tune_models.py        <- grid-search hyperparameter tuning (all 5 models)
+│   ├── register_model.py     <- train + log + register a model version in MLflow
 │   ├── feature_analysis.py   <- analysis charts (one image per chart) -> reports/
 │   ├── viz.py                <- polished presentation visuals -> reports/
 │   ├── viz_groups.py         <- 2026 group-stage prediction charts -> reports/
-│   └── viz_results.py        <- prediction tracker: initial picks vs actual results
+│   ├── viz_results.py        <- prediction tracker: initial picks vs actual results
+│   └── viz_r32.py            <- Round-of-32 knockout predictions -> reports/round_of_32/
 │
 └── docs/
     ├── PIPELINE.md        <- full pipeline & methodology (purpose, features, validation)
@@ -154,3 +156,55 @@ powershell -ExecutionPolicy Bypass -File scripts\setup_schedule.ps1 -Remove    #
 
 Output is appended to `logs/daily_update.log`. Run it by hand anytime with
 `.venv\Scripts\python.exe scripts\daily_update.py`.
+
+## Round-of-32 predictions
+
+The knockout bracket isn't in the static schedule (it depends on final group standings),
+and neither football API carries it on a free plan — API-Football is empty for the 2026
+World Cup, and football-data.org gates the World Cup behind a token/tier. So the R32
+matchups come from **fixturedownload.com**, a free, no-auth feed that fills in the real
+ties as the bracket is decided (`src/knockout.py`).
+
+`scripts/viz_r32.py` pulls those 16 ties, predicts each with the same logistic +
+draw-aware model, and writes to its **own folder** (the daily charts are untouched):
+
+```powershell
+.venv\Scripts\python.exe scripts\viz_r32.py
+```
+
+- `reports/round_of_32/round_of_32.png` — all 16 ties at a glance
+- `reports/round_of_32/YYYY-MM-DD.png` — one PNG per match-day (same look as `daily/`)
+
+Once a tie is played, its actual result is outlined and graded, exactly like the daily
+tracker. To switch the source to the **football-data.org** API instead, add a free
+`FOOTBALL_DATA_TOKEN=...` to `.env` (it's used automatically when present, with
+fixturedownload as the fallback).
+
+## Model versioning (MLflow)
+
+Every daily retrain is logged as a new **MLflow** model version, so you keep a full,
+comparable history instead of silently overwriting the model. Each run records the params
+(algo, feature list, form/train windows, draw-boost, a data fingerprint, the git commit),
+the walk-forward + 2022-World-Cup-backtest metrics, and the fitted model artifact. The
+freshly trained model is registered under `worldcup-outcome-model` and tagged `@champion`.
+
+```powershell
+.venv\Scripts\python.exe scripts\register_model.py                # logistic -> new version + @champion
+.venv\Scripts\python.exe scripts\register_model.py --algo xgb     # log another algo to compare
+.venv\Scripts\python.exe scripts\register_model.py --no-champion  # register but don't promote
+```
+
+Load "the current production model" anywhere by alias — no refitting:
+
+```python
+from src import registry
+clf = registry.load_champion()           # -> a ready OutcomeClassifier
+```
+
+Browse runs, metrics-over-time and the registry in the web UI:
+
+```powershell
+mlflow ui --backend-store-uri sqlite:///mlflow.db    # then open http://127.0.0.1:5000
+```
+
+The tracking store (`mlflow.db`) and artifacts (`mlartifacts/`) are local and gitignored.

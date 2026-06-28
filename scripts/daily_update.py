@@ -7,6 +7,8 @@ Steps:
   2. Refresh eloratings.net Elo history + recent results   -> data/eloratings_*.csv
   3. Rebuild features + regenerate group-stage charts      -> reports/
   4. Regenerate the prediction tracker (initial vs actual) -> reports/
+  5. Refresh Round-of-32 fixtures + predictions            -> reports/round_of_32/
+  6. Train + register a new model version in MLflow        -> mlflow.db
 
 Budget: API-Football free plan = 100 requests/day; this uses ~3. eloratings is free.
 Every step is wrapped so one failure (e.g. network) never aborts the rest. Output is
@@ -75,6 +77,22 @@ def main() -> None:
         log("prediction tracker regenerated")
     except Exception as e:
         log(f"! tracker step skipped: {e!r}")
+
+    # 5. Round-of-32 knockout fixtures + predictions (separate from the daily charts)
+    try:
+        subprocess.run([sys.executable, str(Path(__file__).with_name("viz_r32.py"))], check=False)
+        log("Round-of-32 charts regenerated")
+    except Exception as e:
+        log(f"! Round-of-32 step skipped: {e!r}")
+
+    # 6. model versioning: train + register today's model as a new MLflow version
+    try:
+        from src import registry
+        info = registry.log_training_run("logistic")
+        log(f"MLflow: registered version {info.get('version')} (@champion) "
+            f"wf_acc={info['wf_accuracy']:.4f} log_loss={info['wf_log_loss']:.4f}")
+    except Exception as e:
+        log(f"! MLflow registration skipped: {e!r}")
 
     log("=== daily update finished ===")
 
